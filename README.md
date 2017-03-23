@@ -29,10 +29,10 @@ descrição breve sobre o sistema
 ## 4	Requisitos de Usuários
 ### 4.1	Requisitos Funcionais (Histórias de Usuário)
 
-| ID | Descrição | Prioridade | Pontos |
+| ID | Tema| História de Usuário | Importância | MosCoW| Estimativa | Real| Pronto?| Sprint
 | --- | --- | --- | --- |
-| RF01 | EU, COMO  **QUEM**, QUERO/GOSTARIA/DEVO/POSSO **O QUE**, PARA QUE/DE/PARA **PORQUE/RESULTADO**. | Must | 2 |
-| RF02 | EU, COMO cliente, POSSO acessar o acerto da locadora PARA QUE consiga ver os filmes disponíveis antes de sair de casa. | Should | 3 |
+| RF01 | Categoria X |EU, COMO  **QUEM**, QUERO/GOSTARIA/DEVO/POSSO **O QUE**, PARA QUE/DE/PARA **PORQUE/RESULTADO**. |10| Must| 2 | ?| N| -|
+| RF02 | Acesso os dados |EU, COMO cliente, POSSO acessar o acerto da locadora PARA QUE consiga ver os filmes disponíveis antes de sair de casa.| 80| Should | 3 |5| S| 1|
 
 ### 4.2	Requisitos Não Funcionais
 | ID | Descrição | Prioridade | Categoria | Escopo |
