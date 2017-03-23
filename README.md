@@ -29,16 +29,16 @@ descrição breve sobre o sistema
 ## 4	Requisitos de Usuários
 ### 4.1	Requisitos Funcionais (Histórias de Usuário)
 
-| ID | Tema| História de Usuário | Importância | MosCoW| Estimativa | Real| Pronto?| Sprint|
+| ID | Categoria| História| Importância | MosCoW| Estimativa | Real| Pronto?| Sprint|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| RF01 | Categoria X |EU, COMO  **QUEM**, QUERO/GOSTARIA/DEVO/POSSO **O QUE**, PARA QUE/DE/PARA **PORQUE/RESULTADO**. |10| Must| 2 | ? | N | -|
-| RF02 | Acesso os dados |EU, COMO cliente, POSSO acessar o acerto da locadora PARA QUE consiga ver os filmes disponíveis antes de sair de casa.| 80| Should | 3 |5| S| 1|
+| RF01 | Categoria X |EU, COMO  **QUEM**, QUERO/GOSTARIA/DEVO/POSSO **O QUE**, PARA QUE/DE/PARA **PORQUE/RESULTADO**. |10| Must| 2 | ? | Não | -|
+| RF02 | Acesso os dados |EU, COMO cliente, POSSO acessar o acerto da locadora PARA QUE consiga ver os filmes disponíveis antes de sair de casa.| 80| Should | 3 |5| Sim| 1|
 
 ### 4.2	Requisitos Não Funcionais
-| ID | Descrição | Prioridade | Categoria | Escopo |
-| --- | --- | --- | --- | --- |
-| RNF01 | A entrada de dados de efetuar locação pelo atendente deverá ser realizada em no máximo 30 segundos | Must | 2 | Facilidade de Operação | Funcionalidade |
-| RNF02 | O tempo de resposta de efetuar locação dever ser de no máximo 2 segundos a partir da entrada correta de dados | Should | 3 | Eficincia de Tempo | Funcionalidade |
+| ID | Categoria| Descrição |MosCoW | Estimativa | Real|Pronto?| Sprint|
+| --- | --- | --- | --- | --- |--- |
+| RNF01 |Facilidade de Operação |  A entrada de dados de efetuar locação pelo atendente deverá ser realizada em no máximo 30 segundos | Must | 2 | 5| Sim| 10|
+| RNF02 | Eficiência de Tempo | O tempo de resposta de efetuar locação dever ser de no máximo 2 segundos a partir da entrada correta de dados | Should | 3 | ?| Não| -|
 
 ### 4.3	Regras de Negócio
 | ID | Descrição | Prioridade | 
