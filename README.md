@@ -35,16 +35,16 @@ descrição breve sobre o sistema
 | RF02 | Acesso os dados |EU, COMO cliente, POSSO acessar o acerto da locadora PARA QUE consiga ver os filmes disponíveis antes de sair de casa.| 80| Should | 3 |5| Sim| 1|
 
 ### 4.2	Requisitos Não Funcionais
-| ID | Categoria| Descrição |MosCoW | Estimativa | Real|Pronto?| Sprint|Historias relacionadas |
+| ID | Categoria| Descrição |MosCoW | Estimativa Planejada | Estimativa Real|Pronto?| Sprint|Histórias relacionadas |
 | --- | --- | --- | --- | --- |--- |--- |--- |--- |
 | RNF01 |Facilidade de Operação |  A entrada de dados de efetuar locação pelo atendente deverá ser realizada em no máximo 30 segundos | Must | 2 | 5| Sim| 10|RF01|
 | RNF02 | Eficiência de Tempo | O tempo de resposta de efetuar locação dever ser de no máximo 2 segundos a partir da entrada correta de dados | Should | 3 | ?| Não| -|RF01 e RF02|
 
 ### 4.3	Regras de Negócio
-| ID | Descrição | Prioridade | 
-| --- | --- | --- |
-| RN01 | Uma reserva expira quando passadas mais do que 24h de sua comunicação para o cliente. | Must |
-| RN02 | Clientes em atraso não podem efetuar nem locações nem reservas. | Should |
+| ID | Descrição | MosCoW | Estimativa Planejada| Estimativa Real| Pronto?| Sprint|Histórias relacionadas |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| RN01 | Uma reserva expira quando passadas mais do que 24h de sua comunicação para o cliente. | Must |1|5|Sim|2|RF01|
+| RN02 | Clientes em atraso não podem efetuar nem locações nem reservas. | Should |10|5|Sim|2|RF02|
 
 
 # Desenvolvimento do Sistema
