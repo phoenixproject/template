@@ -29,16 +29,16 @@ descrição breve sobre o sistema
 ## 4	Requisitos de Usuários
 ### 4.1	Requisitos Funcionais (Histórias de Usuário)
 
-| ID | Categoria| História| Importância | MosCoW| Estimativa | Real| Pronto?| Sprint|
+| ID | Categoria| História de Usuário| Importância | MosCoW| Estimativa | Real| Pronto?| Sprint|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | RF01 | Categoria X |EU, COMO  **QUEM**, QUERO/GOSTARIA/DEVO/POSSO **O QUE**, PARA QUE/DE/PARA **PORQUE/RESULTADO**. |10| Must| 2 | ? | Não | -|
 | RF02 | Acesso os dados |EU, COMO cliente, POSSO acessar o acerto da locadora PARA QUE consiga ver os filmes disponíveis antes de sair de casa.| 80| Should | 3 |5| Sim| 1|
 
 ### 4.2	Requisitos Não Funcionais
-| ID | Categoria| Descrição |MosCoW | Estimativa | Real|Pronto?| Sprint|
-| --- | --- | --- | --- | --- |--- |
-| RNF01 |Facilidade de Operação |  A entrada de dados de efetuar locação pelo atendente deverá ser realizada em no máximo 30 segundos | Must | 2 | 5| Sim| 10|
-| RNF02 | Eficiência de Tempo | O tempo de resposta de efetuar locação dever ser de no máximo 2 segundos a partir da entrada correta de dados | Should | 3 | ?| Não| -|
+| ID | Categoria| Descrição |MosCoW | Estimativa | Real|Pronto?| Sprint|Historias relacionadas |
+| --- | --- | --- | --- | --- |--- |--- |--- |--- |
+| RNF01 |Facilidade de Operação |  A entrada de dados de efetuar locação pelo atendente deverá ser realizada em no máximo 30 segundos | Must | 2 | 5| Sim| 10|RF01|
+| RNF02 | Eficiência de Tempo | O tempo de resposta de efetuar locação dever ser de no máximo 2 segundos a partir da entrada correta de dados | Should | 3 | ?| Não| -|RF01 e RF02|
 
 ### 4.3	Regras de Negócio
 | ID | Descrição | Prioridade | 
