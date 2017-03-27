@@ -96,11 +96,11 @@ __OBS DE BD2__: neste ponto a codificação não e necessária, somente as ideia
 
 Sugestão: https://balsamiq.com/products/mockups/<br>
 
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/_PROTOTIPO/01_tela_login_cliente.png?raw=true "Tela de Login - Cliente")
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/_PROTOTIPO/02_tela_jogo_cliente.png?raw=true "Tela principal do Jogo - Cliente")
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/_PROTOTIPO/03_fim_jogo_cliente.png?raw=true "Tela final do Jogo - Cliente")
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/_PROTOTIPO/04_tela_login_servidor.png?raw=true "Tela Login - Servidor")
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/_PROTOTIPO/05_dados_servidor.png?raw=true "Tela Dados - Servidor")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/01_tela_login_cliente.png?raw=true "Tela de Login - Cliente")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/02_tela_jogo_cliente.png?raw=true "Tela principal do Jogo - Cliente")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/03_fim_jogo_cliente.png?raw=true "Tela final do Jogo - Cliente")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/04_tela_login_servidor.png?raw=true "Tela Login - Servidor")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/05_dados_servidor.png?raw=true "Tela Dados - Servidor")
 #####Projeto da Interação Humana
 apresentar diagrama de classes da IU com controladores e diagrama de sequências. Apresentar diagrama com estados de navegação.
 ####2.2.3.  Projeto da Persistência de Dados
