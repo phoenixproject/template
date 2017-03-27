@@ -34,18 +34,27 @@ Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite 
 | --- | --- | --- | --- |
 | RF01 | O usuário terá uma tela de menu inicial em que poderá escolher o nível de díficuldade ou iniciar o jogo. | Essencial | 2 |
 | RF02 | Ao escolher o modo para iniciar o jogo o usuário iniciará a partida do jogo. | Essencial | 3 |
+| RF03 | Ao escolher o modo para opções o usuário poderá alterar valores de nível de dificuldade da parttida do jogo. | Importante | 2 |
+| RF04 | Ao pressionar as teclas que compõe o direcional do teclado (cima, baixo, esquerda, direita) o jogador movimentará a nave pela por qualquer direção da tela do jogo. | Essencial | 1 |
+| RF05 | Ao pressionar o botão correspondente ao tiro, o jogador poderá acertar os inimigos que serão projetados na tela. | Essencial | 1 |
+| RF06 | Ao capturar peças de quebra cabeça durante o jogo o jogador acumulará outro tipo de pontuação que serão enviadas ao servidor e comparadas com as dos demais jogadores. | Importante | 2 |
+| RF07 | Ao acessar o endereço na web o usuário deverá acessar página de login o usuário deverá digitar seu login e senha. | Importante | 2 |
+| RF08 | Ao acessar o sistema após ter feito o login o usuário terá acesso a uma grid com as informações dos usuários com a porcentagem de conclusão do jogo. | Importante | 2 |
 
 ### 4.2	Requisitos Não Funcionais
 
 | ID | Descrição | Prioridade | Categoria | Escopo |
 | --- | --- | --- | --- | --- |
 | RNF01 | Ao escolher o modo para iniciar o jogo o usuário deverá aguardar no máximo 5 segundos até que o jogo se inicie  | Desejável | 3 | Eficiência de Tempo | RF03 | 
+| RNF02 | Ao acessar o endereço na web o usuário deverá acessar página de login do sistema que armazena os hankings de todos os usuários.  | Desejável | 3 | Eficiência de Tempo | RF07 | 
 
 ### 4.3	Regras de Negócio
 
 | ID | Descrição | Prioridade | 
 | --- | --- | --- |
-| RN01 | O tamanho da cadeia de caracteres do nome do usuário é de no máximo 15. | Essencial |
+| RN01 | O tamanho da cadeia de caracteres do nome do usuário é de no máximo 40. | Essencial |
+| RN02 | O tamanho da cadeia de caracteres da senha do usuário é de no máximo 20. | Essencial |
+| RN03 | O usuário não terá seu nome no hanking se não tiver criado seu cadastro. | Essencial |
 
 #Desenvolvimento do Sistema
 ## 1.    Análise de Sistemas:
