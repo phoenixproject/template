@@ -80,7 +80,7 @@ descrever tecnologias usadas no sistema, justificando cada uma delas com base no
 #### 2.1.3   Arquitetura de Software
 apresentar diagrama UML da arquitetura do sistema. justificar as decisões tomadas.
 
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_arquitetura_software.png?raw=true "Tela de Login - Cliente")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/developement-cliente/_MEDIA/diagrama_arquitetura_software.png?raw=true "Tela de Login - Cliente")
 
 ### 2.2. Projeto Detalhado
 OBS: repetir as seções abaixo para cada subsistema
