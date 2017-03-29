@@ -34,61 +34,88 @@ Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite 
 | --- | --- | --- | --- |
 | RF01 | O usuário terá uma tela de menu inicial em que poderá escolher o nível de díficuldade ou iniciar o jogo. | Essencial | 2 |
 | RF02 | Ao escolher o modo para iniciar o jogo o usuário iniciará a partida do jogo. | Essencial | 3 |
+| RF03 | Ao escolher o modo para opções o usuário poderá alterar valores de nível de dificuldade da parttida do jogo. | Importante | 2 |
+| RF04 | Ao pressionar as teclas que compõe o direcional do teclado (cima, baixo, esquerda, direita) o jogador movimentará a nave pela por qualquer direção da tela do jogo. | Essencial | 1 |
+| RF05 | Ao pressionar o botão correspondente ao tiro, o jogador poderá acertar os inimigos que serão projetados na tela. | Essencial | 1 |
+| RF06 | Ao capturar peças de quebra cabeça durante o jogo o jogador acumulará outro tipo de pontuação que serão enviadas ao servidor e comparadas com as dos demais jogadores. | Importante | 2 |
+| RF07 | Ao acessar o endereço na web o usuário deverá acessar página de login o usuário deverá digitar seu login e senha. | Importante | 2 |
+| RF08 | Ao acessar o sistema após ter feito o login o usuário terá acesso a uma grid com as informações dos usuários com a porcentagem de conclusão do jogo. | Importante | 2 |
 
 ### 4.2	Requisitos Não Funcionais
 
 | ID | Descrição | Prioridade | Categoria | Escopo |
 | --- | --- | --- | --- | --- |
-| RNF01 | Ao escolher o modo para iniciar o jogo o usuário deverá aguardar no máximo 5 segundos até que o jogo se inicie  | Desejável | 3 | Eficiência de Tempo | RF03 | 
+| RNF01 | Ao escolher o modo para iniciar o jogo o usuário deverá aguardar no máximo 5 segundos até que o jogo se inicie  | Desejável | 3 | Eficiência | RF03 | 
+| RNF02 | Ao acessar o endereço na web utilizando o navegador o usuário poderá acessar página de login do sistema que armazena os hankings de todos os usuários.  | Desejável | 3 | Portabilidade | RF07 | 
+| RNF03 | Ao testar o acesso a internet utilizando o cliente (jogo), o mesmo não poderá transmitir nenhum erro não tratado ao usuário, delimitando-se apenas a uma mensagem informando que a conexão no existe.  | Desejável | 3 | Disponibilidade | RF07 | 
+| RNF02 | A tela de abertura do jogo deverá ter menus de fácil acesso se concentrando em no máximo três e que não se expandam em submenus.  | Desejável | 3 | Usabilidade | RF07 | 
 
 ### 4.3	Regras de Negócio
 
 | ID | Descrição | Prioridade | 
 | --- | --- | --- |
-| RN01 | O tamanho da cadeia de caracteres do nome do usuário é de no máximo 15. | Essencial |
+| RN01 | O tamanho da cadeia de caracteres do nome do usuário é de no máximo 40. | Essencial |
+| RN02 | O tamanho da cadeia de caracteres da senha do usuário é de no máximo 20. | Essencial |
+| RN03 | O usuário não terá seu nome no hanking se não tiver criado seu cadastro. | Essencial |
+| RN04 | A cada 100 pontos o usuário ganha uma prêmiação de mais um nível. | Essencial |
 
 #Desenvolvimento do Sistema
-##1.    Análise de Sistemas:
-###1.1  Subsistemas
-inserir diagrama dos subsistemas UML
-###1.2  Modelagem de Casos de uso 
-inserir diagramas dos Casos de Uso (UML) e descrever brevemente.
+## 1.    Análise de Sistemas:
 
-###1.3  Modelagem Estrutural (Modelo Conceitual)
-** ATENÇO: USAR Notação Entidade-Relacionamentos se estiver fazendo BD2 e o diagrama de classes se estiver fazendo Projeto de Sistemas**
+### 1.1  Subsistemas
+
+inserir diagrama dos subsistemas UML
+
+### 1.2  Modelagem de Casos de uso 
+
+Inserir diagramas dos Casos de Uso (UML) e descrever brevemente.
+
+### 1.3  Modelagem Estrutural (Modelo Conceitual)
+
+** ATENÇÃO: USAR Notação Entidade-Relacionamentos se estiver fazendo BD2 e o diagrama de classes se estiver fazendo Projeto de Sistemas**
 ![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/sample_MC.png?raw=true "Modelo Conceitual")
-###1.4  Modelagem Comportamental
+
+### 1.4  Modelagem Comportamental
+
 inserir principais diagramas comportamentais da análise (principalmente, estados)
-###1.5  Dicionário de Dados
+
+### 1.5  Dicionário de Dados
+
 [classe/entidade]: [descrição da classe]
     
     EXEMPLO:
     CLIENTE: classe/entidade que representa as informações relativas ao cliente<br>
     CPF: atributo que representa o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
     
-##2.    Projeto de Sistemas:
-###2.1  Projeto Arquitetural 
-####2.1.1   Plataforma de Implementação e Tecnologias
+## 2.    Projeto de Sistemas:
+### 2.1  Projeto Arquitetural 
+#### 2.1.1   Plataforma de Implementação e Tecnologias
 descrever tecnologias usadas no sistema, justificando cada uma delas com base no contexto
 
-####2.1.2   Atributos de Qualidade e Táticas
- CATEGORIAS | RNF'S | TÁTICAS | 
+#### 2.1.2   Atributos de Qualidade e Táticas
+
+CATEGORIAS | RNF'S | TÁTICAS | 
 | --- | --- | --- |
-| Facilidade de Operação | RNF03, RNF08| Prover ao usuário a capacidade de entrar com comandos que permitam operar o sistema de modo mais eficiente. Para tal, as interfaces do sistema devem permitir, sempre que possível, a entrada por meio de seleção ou leitura de código de barras ao invés da digitação de campos. | 
+| Eficácia do Tempo | RNF01| Oferece a capacidade de trabalhar com a eficiência do tempo para o usuário. | 
+| Portabilidade | RNF02| Dá a opção de usuário acessar parte do sistema também de outra plataforma. | 
+| Disponibilidade | RNF03| Mesmo que ocorram erros de conexão o sistema cliente continuará ativo. | 
+| Usabilidade | RNF04| Propõe ao usuário uma forma simples e descomplida de navegação pelos menus. | 
 
 
-####2.1.3   Arquitetura de Software
+#### 2.1.3   Arquitetura de Software
 apresentar diagrama UML da arquitetura do sistema. justificar as decisões tomadas.
 
-###2.2. Projeto Detalhado
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/developement-cliente/_MEDIA/diagrama_arquitetura_software.png?raw=true "Tela de Login - Cliente")
+
+### 2.2. Projeto Detalhado
 OBS: repetir as seções abaixo para cada subsistema
-####2.2.1.   Projeto da Lógica de Negócio
-#####Projeto do Domínio
+#### 2.2.1.   Projeto da Lógica de Negócio
+##### Projeto do Domínio
 apresentar diagrama de classes do domínio
-#####Projeto da Aplicação
+##### Projeto da Aplicação
 apresentar diagramas de sequência e mapeamento dos casos de uso para classes
-####2.2.2.  Projeto da Interface com Usuário
-#####Projeto da Visão
+#### 2.2.2.  Projeto da Interface com Usuário
+##### Projeto da Visão
 apresentar protótipos de telas e diagramas de classes UML (caso realizado)
 OBS: Essa visão não tem nada a ver com Views de Banco de Dados
 
@@ -96,27 +123,36 @@ __OBS DE BD2__: neste ponto a codificação não e necessária, somente as ideia
 
 Sugestão: https://balsamiq.com/products/mockups/<br>
 
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/balsamiq.png?raw=true "Title")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/01_tela_login_cliente.png?raw=true "Tela de Login - Cliente")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/02_tela_jogo_cliente.png?raw=true "Tela principal do Jogo - Cliente")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/03_fim_jogo_cliente.png?raw=true "Tela final do Jogo - Cliente")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/04_tela_login_servidor.png?raw=true "Tela Login - Servidor")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/05_dados_servidor.png?raw=true "Tela Dados - Servidor")
+
 #####Projeto da Interação Humana
+
 apresentar diagrama de classes da IU com controladores e diagrama de sequências. Apresentar diagrama com estados de navegação.
-####2.2.3.  Projeto da Persistência de Dados
+
+#### 2.2.3.  Projeto da Persistência de Dados
+
 apresentar classes de acesso ao banco de dados. apresentar diagramas de sequência.
 
-####2.4.   Padrões
-#####Padrões Arquiteturais
-#####Padrões de Projeto
+#### 2.4.   Padrões
+
+##### Padrões Arquiteturais
+
+##### Padrões de Projeto
 
 No diagrama abaixo é destacado o padrão de projeto método fábrica que foi utilizado para melhorar a coesão e diminiuir o acoplamento entre as clases do sistema. O pode-se notar a classe FabricaDeFormatos cria os objetos FormatoPng, FormatoJpeg e FormatoGif tirando a dependencia entre a classes Main e essas classes. Vale ressaltar que o padrão utiliza um Interface Formato para diminiuir o acoplamento entre as classes.
 
 ![Alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Cria%C3%A7%C3%A3o/metodo_fabrica/ImagemMetodoFabrica/padrao_metodo_fabrica_conversao_imagem.png)
 
-
 O padrão foi utilizado para resolver o problema de .....
 
 O padrão foi utilizado para resolver o problema de .....
-
 
 ## 3.    Banco de Dados (BD)
+
 
 ### 3.1 Decisões do Projeto 
     [atributo]: [descrição da decisão]
@@ -128,13 +164,9 @@ O padrão foi utilizado para resolver o problema de .....
 
 
 ### 3.2	Modelo Lógico<br>
-
 ### 3.3	MODELO FÍSICO<br>
-
 ### 3.4	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-
 #### 3.4.1 DETALHAMENTO DAS INFORMAÇÕES
-
         Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
         Informar/referenciar todas as fontes usadas para:
         a) obtenção dos dados
@@ -142,44 +174,34 @@ O padrão foi utilizado para resolver o problema de .....
         c) fontes de estudo para desenvolvimento do projeto
         
 #### 3.4.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS (ARQUIVO ÚNICO COM):
-
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
         b) inclusão das instruções de inserção dos dados nas referidas tabelas
         c) inclusão das instruções para execução de outros procedimentos necessários
 
 ### 3.5	TABELAS E PRINCIPAIS CONSULTAS<br>
-
 #### 3.5.1	GERACAO DE DADOS (MÍNIMO DE 1,5 MILHÃO DE REGISTROS PARA PRINCIPAL RELAÇAO)<br>
-
     Data de Entrega: (Data a ser definida)
 <br>
 OBS: Incluir para os tópicos 3.5.2 e 3.5.3 as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 
 #### 3.5.2	SELECT DAS TABELAS COM PRIMEIROS 10 REGISTROS INSERIDOS<br> 
-
     Data de Entrega: (Data a ser definida)
 <br>
-
 #### 3.5.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS<br>
-
         a) Descrição da view sobre que grupos de usuários (operacional/estratégico) <br>
         e necessidade ela contempla.
         b) Descrição das permissões de acesso e usuários correlacionados (após definição <br>
         destas características)
     Data de Entrega: (Data a ser definida)
 <br>
-
 #### 3.5.4	LISTA DE CODIGOS DAS FUNÇÕES, ASSERÇOES E TRIGGERS<br>
-
         Detalhamento sobre funcionalidade de cada código.
         a) Objetivo
         b) Código do objeto (função/trigger/asserção)
         c) exemplo de dados para aplicação
         d) resultados em forma de tabela/imagem
 <br>
-
 #### 3.5.5	Administração do banco de dados<br>
-
         Descrição detalhada sobre como serão executadas no banco de dados as <br>
         seguintes atividades.
         a) Segurança e autorização de acesso:
@@ -187,9 +209,7 @@ OBS: Incluir para os tópicos 3.5.2 e 3.5.3 as instruções SQL + imagens (print
         c) Planejamento de rotinas de manutenção e monitoramento do banco
         d) Plano com frequencia de análises visando otimização de performance
 <br>
-
 #### 3.5.6	Backup do Banco de Dados<br>
-
         Detalhamento do backup.
         a) Tempo
         b) Tamanho
@@ -200,27 +220,21 @@ OBS: Incluir para os tópicos 3.5.2 e 3.5.3 as instruções SQL + imagens (print
 <br>
 
 #### 3.5.7	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
-
     a) Lista de índices, tipos de índices com explicação de porque foram implementados
     b) Performance esperada VS Resultados obtidos
     c) Tabela de resultados comparando velocidades antes e depois da aplicação dos índices.
 <br>
     Data de Entrega: (Data a ser definida)
 <br>   
-
 #### 3.5.8	ANÁLISE DOS DADOS COM ORANGE<br>    
-
     a) aplicação de algoritmos e interpretação dos resultados
 <br>
     Data de Entrega: (Data a ser definida)
 <br>
-
 ### 3.6	ATUALIZAÇÃO DA DOCUMENTAÇÃO/ SLIDES E ENTREGA FINAL<br>
-
 <br>
     Data de Entrega: (Data a ser definida)
 <br>
-
 ### 3.7	DIFICULDADES ENCONTRADAS PELO GRUPO<br>  
 
 # Gestão de Configuração
@@ -237,7 +251,7 @@ descrever ferramentas e a integração dessas para a arquitetura.
 
 Descrever como será aplicado esses conceitos.
 
-# Gestão de Projetos
+#Gestão de Projetos
 
 ## 1.    Project Model Canvas (PMC)
 
@@ -254,10 +268,13 @@ Acompanhamento do projeto: o grupo deve apresentar histórico, por sprint,  do a
 - Apresentando o Burndown do projeto.
 - Apresentando a velocidade do time.
 - Modificações do backlog.
+
 ## 4.    Burn down dos sprints
 
 acompanhamento dos sprints. Cada Sprint deve ter uma seção descrevendo o que foi realizado e o planejado (por meio do  o gráfico e Burndown do Sprint).
-##5.    Retrospectiva 
+
+## 5.    Retrospectiva 
+
 Apresentar a retrospectiva da equipe do sprint realizado.
 
 # Gerência de Qualidade
@@ -266,7 +283,7 @@ Apresentar a retrospectiva da equipe do sprint realizado.
 
 definir métricas de qualidade para cada artefato do projeto como, por exemplo, quantidade de codesmell, complexidade ciclomática e outras. 
 
-## 2.    Classes de equivalência e particionamento de equivalência 
+##2.    Classes de equivalência e particionamento de equivalência 
 
 defina as classes de equivalências para as métricas de qualidade. 
 
