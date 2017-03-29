@@ -185,15 +185,20 @@ O padrão foi utilizado para resolver o problema de .....
 OBS: Incluir para os tópicos 3.5.2 e 3.5.3 as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 
 #### 3.5.2	SELECT DAS TABELAS COM PRIMEIROS 10 REGISTROS INSERIDOS<br> 
+
     Data de Entrega: (Data a ser definida)
 <br>
-#### 3.5.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS<br>
+
+#### 3.5.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS
+
+<br>
         a) Descrição da view sobre que grupos de usuários (operacional/estratégico) <br>
         e necessidade ela contempla.
         b) Descrição das permissões de acesso e usuários correlacionados (após definição <br>
         destas características)
     Data de Entrega: (Data a ser definida)
 <br>
+
 #### 3.5.4	LISTA DE CODIGOS DAS FUNÇÕES, ASSERÇOES E TRIGGERS<br>
         Detalhamento sobre funcionalidade de cada código.
         a) Objetivo
