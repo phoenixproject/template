@@ -95,10 +95,7 @@ descrever tecnologias usadas no sistema, justificando cada uma delas com base no
 #### 2.1.2   Atributos de Qualidade e Táticas
 
 CATEGORIAS | RNF'S | TÁTICAS | 
-
 | --- | --- | --- |
-
-| Facilidade de Operação | RNF03, RNF08| Prover ao usuário a capacidade de entrar com comandos que permitam operar o sistema de modo mais eficiente. Para tal, as interfaces do sistema devem permitir, sempre que possível, a entrada por meio de seleção ou leitura de código de barras ao invés da digitação de campos. | 
 | Eficácia do Tempo | RNF01| Oferece a capacidade de trabalhar com a eficiência do tempo para o usuário. | 
 | Portabilidade | RNF02| Dá a opção de usuário acessar parte do sistema também de outra plataforma. | 
 | Disponibilidade | RNF03| Mesmo que ocorram erros de conexão o sistema cliente continuará ativo. | 
