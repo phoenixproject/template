@@ -13,8 +13,7 @@ Trabalho desenvolvido durante as disciplinas de:
         
 # Sumário
 
-
-#Gerência de Requisitos
+# Gerência de Requisitos
 
 ## 1	Motivação e Propósito do Sistema 
 
