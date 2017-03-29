@@ -45,8 +45,10 @@ Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite 
 
 | ID | Descrição | Prioridade | Categoria | Escopo |
 | --- | --- | --- | --- | --- |
-| RNF01 | Ao escolher o modo para iniciar o jogo o usuário deverá aguardar no máximo 5 segundos até que o jogo se inicie  | Desejável | 3 | Eficiência de Tempo | RF03 | 
-| RNF02 | Ao acessar o endereço na web o usuário deverá acessar página de login do sistema que armazena os hankings de todos os usuários.  | Desejável | 3 | Eficiência de Tempo | RF07 | 
+| RNF01 | Ao escolher o modo para iniciar o jogo o usuário deverá aguardar no máximo 5 segundos até que o jogo se inicie  | Desejável | 3 | Eficiência | RF03 | 
+| RNF02 | Ao acessar o endereço na web utilizando o navegador o usuário poderá acessar página de login do sistema que armazena os hankings de todos os usuários.  | Desejável | 3 | Portabilidade | RF07 | 
+| RNF03 | Ao testar o acesso a internet utilizando o cliente (jogo), o mesmo não poderá transmitir nenhum erro não tratado ao usuário, delimitando-se apenas a uma mensagem informando que a conexão no existe.  | Desejável | 3 | Disponibilidade | RF07 | 
+| RNF02 | A tela de abertura do jogo deverá ter menus de fácil acesso se concentrando em no máximo três e que não se expandam em submenus.  | Desejável | 3 | Usabilidade | RF07 | 
 
 ### 4.3	Regras de Negócio
 
@@ -55,20 +57,30 @@ Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite 
 | RN01 | O tamanho da cadeia de caracteres do nome do usuário é de no máximo 40. | Essencial |
 | RN02 | O tamanho da cadeia de caracteres da senha do usuário é de no máximo 20. | Essencial |
 | RN03 | O usuário não terá seu nome no hanking se não tiver criado seu cadastro. | Essencial |
+| RN04 | A cada 100 pontos o usuário ganha uma prêmiação de mais um nível. | Essencial |
 
 #Desenvolvimento do Sistema
 ## 1.    Análise de Sistemas:
+
 ### 1.1  Subsistemas
+
 inserir diagrama dos subsistemas UML
+
 ### 1.2  Modelagem de Casos de uso 
-inserir diagramas dos Casos de Uso (UML) e descrever brevemente.
+
+Inserir diagramas dos Casos de Uso (UML) e descrever brevemente.
 
 ### 1.3  Modelagem Estrutural (Modelo Conceitual)
-** ATENÇO: USAR Notação Entidade-Relacionamentos se estiver fazendo BD2 e o diagrama de classes se estiver fazendo Projeto de Sistemas**
+
+** ATENÇÃO: USAR Notação Entidade-Relacionamentos se estiver fazendo BD2 e o diagrama de classes se estiver fazendo Projeto de Sistemas**
 ![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/sample_MC.png?raw=true "Modelo Conceitual")
+
 ### 1.4  Modelagem Comportamental
+
 inserir principais diagramas comportamentais da análise (principalmente, estados)
+
 ### 1.5  Dicionário de Dados
+
 [classe/entidade]: [descrição da classe]
     
     EXEMPLO:
@@ -81,9 +93,16 @@ inserir principais diagramas comportamentais da análise (principalmente, estado
 descrever tecnologias usadas no sistema, justificando cada uma delas com base no contexto
 
 #### 2.1.2   Atributos de Qualidade e Táticas
- CATEGORIAS | RNF'S | TÁTICAS | 
+
+CATEGORIAS | RNF'S | TÁTICAS | 
+
 | --- | --- | --- |
+
 | Facilidade de Operação | RNF03, RNF08| Prover ao usuário a capacidade de entrar com comandos que permitam operar o sistema de modo mais eficiente. Para tal, as interfaces do sistema devem permitir, sempre que possível, a entrada por meio de seleção ou leitura de código de barras ao invés da digitação de campos. | 
+| Eficácia do Tempo | RNF01| Oferece a capacidade de trabalhar com a eficiência do tempo para o usuário. | 
+| Portabilidade | RNF02| Dá a opção de usuário acessar parte do sistema também de outra plataforma. | 
+| Disponibilidade | RNF03| Mesmo que ocorram erros de conexão o sistema cliente continuará ativo. | 
+| Usabilidade | RNF04| Propõe ao usuário uma forma simples e descomplida de navegação pelos menus. | 
 
 
 #### 2.1.3   Arquitetura de Software
@@ -221,53 +240,73 @@ OBS: Incluir para os tópicos 3.5.2 e 3.5.3 as instruções SQL + imagens (print
 <br>
 ### 3.7	DIFICULDADES ENCONTRADAS PELO GRUPO<br>  
 
-
-
-
 # Gestão de Configuração
 
 ## 1.    Metodologia
+
 descrever metodologias e políticas que serão usadas para realizar a gestão de configuração como, por exemplo, Gitflow, rastreabilidade de requisitos e mudanças. É necessário descrever em detalhes os procedimentos.
+
 ## 2.    Arquitetura
+
 descrever ferramentas e a integração dessas para a arquitetura. 
+
 ## 3.    Integração Contínua e Delivery Contínua
+
 Descrever como será aplicado esses conceitos.
 
 #Gestão de Projetos
 
 ## 1.    Project Model Canvas (PMC)
+
 Visão geral do projeto.
+
 ## 2.    Cronograma macro de sprints 
+
 datas dos sprints.
+
 ## 3.    Backlog de histórias de Usuário 
+
 lista de histórias de usuário categorizadas, priorizadas e com o esforço. A categorização deve utilizar a técnica MoSCoW. 
 Acompanhamento do projeto: o grupo deve apresentar histórico, por sprint,  do acompanhamento do projeto da seguinte forma:
 - Apresentando o Burndown do projeto.
 - Apresentando a velocidade do time.
 - Modificações do backlog.
+
 ## 4.    Burn down dos sprints
+
 acompanhamento dos sprints. Cada Sprint deve ter uma seção descrevendo o que foi realizado e o planejado (por meio do  o gráfico e Burndown do Sprint).
+
 ## 5.    Retrospectiva 
+
 Apresentar a retrospectiva da equipe do sprint realizado.
 
 # Gerência de Qualidade
 
 ## 1.    Métricas de qualidade 
+
 definir métricas de qualidade para cada artefato do projeto como, por exemplo, quantidade de codesmell, complexidade ciclomática e outras. 
+
 ##2.    Classes de equivalência e particionamento de equivalência 
+
 defina as classes de equivalências para as métricas de qualidade. 
 
 ## 3.    Medição 
 
 seção que escreve como as métricas estão sendo atingidas. Essa seção deve ser atualizada por sprint. 
+
 ## 4.    Testes
+
 Técnicas utilizadas para os testes: apresentar as técnicas utilizadas para o planejamento e execução de testes como, por exemplo, teste funcional sistemático e testes estruturais. 
+
 ## 5.    Cenário de Teste
+
 apresentar todos os cenários de teste sucesso e falhas das histórias de usuário.  
+
 ## 6.    Histórico  
+
 O grupo deve apresentar a evolução da qualidade dos itens ao longo das entregas, ou seja, em outras palavras, o grupo deve apresentar o histórico de evolução da qualidade dos artefatos de software e discursar o motivo da evolução.
 
-#Diário de Bordo
+# Diário de Bordo
 
 o grupo deve apresentar semanalmente um relato da atividade do grupo. O relato pode conter qualquer tipo de informação (fotos, vídeos) que possam auxiliar no entendimento das atividades do grupo. 
 
