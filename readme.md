@@ -25,7 +25,7 @@ Os usuários deste sistema de jogo prezam prezam pela ação e interação const
 
 ## 3	Minimundo 
 
-Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite ao usuário percorrer por um trajeo em um ambiente espacial onde outros inimigos poderão ser abatidos para acumular pontos para abrir caminho durante o jogo e ao mesmo tempo montar quebra cabeças.
+Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite ao usuário percorrer por um trajeto em um ambiente espacial onde outros inimigos poderão ser abatidos para acumular pontos para abrir caminho durante o jogo e ao mesmo tempo montar quebra cabeças.
 
 ## 4	Requisitos de Usuários
 
@@ -33,14 +33,14 @@ Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite 
 
 | ID | Descrição | Prioridade | Pontos |
 | --- | --- | --- | --- |
-| RF01 | O usuário terá uma tela de menu inicial em que poderá escolher o nível de díficuldade ou iniciar o jogo. | Essencial | 2 |
-| RF02 | Ao escolher o modo para iniciar o jogo o usuário iniciará a partida do jogo. | Essencial | 3 |
-| RF03 | Ao escolher o modo para opções o usuário poderá alterar valores de nível de dificuldade da parttida do jogo. | Importante | 2 |
-| RF04 | Ao pressionar as teclas que compõe o direcional do teclado (cima, baixo, esquerda, direita) o jogador movimentará a nave pela por qualquer direção da tela do jogo. | Essencial | 1 |
-| RF05 | Ao pressionar o botão correspondente ao tiro, o jogador poderá acertar os inimigos que serão projetados na tela. | Essencial | 1 |
-| RF06 | Ao capturar peças de quebra cabeça durante o jogo o jogador acumulará outro tipo de pontuação que serão enviadas ao servidor e comparadas com as dos demais jogadores. | Importante | 2 |
-| RF07 | Ao acessar o endereço na web o usuário deverá acessar página de login o usuário deverá digitar seu login e senha. | Importante | 2 |
-| RF08 | Ao acessar o sistema após ter feito o login o usuário terá acesso a uma grid com as informações dos usuários com a porcentagem de conclusão do jogo. | Importante | 2 |
+| RF01 | Sendo eu um usuário gostaria de na tela inicial escolher o nível de dificuldade do jogo. | Essencial | 2 |
+| RF02 | Como um usuário, quero escolher iniciar o jogo imediatamente a partir da tela principal. | Essencial | 3 |
+| RF03 | Sendo eu um usuário, ao entrar no menu de opções do game quero personalizar o máximo que consigo em relação a quantidade de vidas e continue. | Importante | 2 |
+| RF04 | Como um usuário eu posso movimento a nave com as teclas que compõe o direcional do teclado. | Essencial | 1 |
+| RF05 | Sendo eu um usuário quero pressionar um botão que "solta" tiros em outros inimigos e asteróides. | Essencial | 1 |
+| RF06 | Como um usuário, quero no final do jogo poder ver meu ranking junto com o dos outros usuários. | Importante | 2 |
+| RF07 | Para acessar as minhas informações usando o naveador, como um usuário gostaria de apenas digitar meu email e senha. | Importante | 2 |
+| RF08 | Sendo eu um usuário quero ter acesso a todas as informações referentes ao que fiz no jogo, minhas conquistas e pontuações. | Importante | 2 |
 
 ### 4.2	Requisitos Não Funcionais
 
