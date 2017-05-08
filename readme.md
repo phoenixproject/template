@@ -54,7 +54,7 @@ Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite 
 | RNF03 | Ao testar o acesso a internet utilizando o cliente (jogo), o mesmo não poderá transmitir nenhum erro não tratado ao usuário, delimitando-se apenas a uma mensagem informando que a conexão no existe.  | Desejável | 3 | Disponibilidade | RF07 | 
 | RNF04 | A tela de abertura do jogo deverá ter menus de fácil acesso se concentrando em no máximo três e que não se expandam em submenus.  | Desejável | 3 | Usabilidade | RF07 | 
 | RNF05 | O jogo será tanto portado para desktop quanto para dispositivos mobile e permitindo o usuári o mesmo nível de interação nas duas plataformas.  | Desejável | 3 | Portabilidade | RF10 | 
-| RNF06 | O admnistrador terá facilidade para gerar relatórios devido ao tipo de linguagem utilizada para criação do software no servidor.  | Desejável | 2 | Manutenilidade | RF09 | 
+| RNF06 | O admnistrador terá facilidade para gerar relatórios devido ao tipo de linguagem utilizada para criação do software no servidor.  | Desejável | 2 | Manutenbilidade | RF09 | 
 | RNF07 | O jogo terá um controle simplificado de operações no intuito de facilitar a experiência do usuário.  | Desejável | 3 | Usabilidade | RF01 | 
 
 
@@ -109,10 +109,15 @@ Servidor - A linguagem PHP 7 foi escolhida por sua performance, facilidade de es
 
 CATEGORIAS | RNF'S | TÁTICAS | 
 | --- | --- | --- |
-| Eficácia do Tempo | RNF01| Oferece a capacidade de trabalhar com a eficiência do tempo para o usuário. | 
-| Portabilidade | RNF02| Dá a opção de usuário acessar parte do sistema também de outra plataforma. | 
-| Disponibilidade | RNF03| Mesmo que ocorram erros de conexão o sistema cliente continuará ativo. | 
-| Usabilidade | RNF04| Propõe ao usuário uma forma simples e descomplida de navegação pelos menus. | 
+| Eficácia do Tempo | RNF01| Oferece a capacidade de trabalhar com a eficiência do tempo para o usuário pelo fato de conter apenas 3 a 4 telas no sistema, consumindo assim menos processamento. | 
+| Portabilidade | RNF02| Dá a opção de usuário acessar parte do sistema também de outra plataforma para poder acompanhar de forma gerencial o seu ranking e pontuação. | 
+| Disponibilidade | RNF03| Mesmo que ocorram erros de conexão o sistema cliente continuará ativo, pois o jogo acontece somente no cliente sem depender do servidor durante o jogo. O servidor apenas armazena informações sobre pontuação e ranking. | 
+| Usabilidade | RNF04| Propõe ao usuário uma forma simples e descomplida de navegação pelos menus por conta de a quantidade de menus ser reduzida. | 
+| Portabilidade | RNF05| O usuário terá opções de poder jogar em plataforma mobile e desktop sem alterações das informações por conta da opção de exportar o jogo na engine. | 
+| Manutenbilidade | RNF06| A escolha da linguagem e PHP e o framework front end Bootstrap visa facilitar a manutenção do código de relatórios e do sistema. | 
+| Usabilidade | RNF07 | O jogo terá apenas o direcional do teclado e um botão de tiro para manuseá-lo. | 
+
+
 
 
 #### 2.1.3   Arquitetura de Software
