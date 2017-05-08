@@ -39,8 +39,11 @@ Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite 
 | RF04 | Como um usuário eu posso movimento a nave com as teclas que compõe o direcional do teclado. | Essencial | 1 |
 | RF05 | Sendo eu um usuário quero pressionar um botão que "solta" tiros em outros inimigos e asteróides. | Essencial | 1 |
 | RF06 | Como um usuário, quero no final do jogo poder ver meu ranking junto com o dos outros usuários. | Importante | 2 |
-| RF07 | Para acessar as minhas informações usando o naveador, como um usuário gostaria de apenas digitar meu email e senha. | Importante | 2 |
+| RF07 | Para acessar as minhas informações usando o navegador, como um usuário gostaria de apenas digitar meu email e senha. | Importante | 2 |
 | RF08 | Sendo eu um usuário quero ter acesso a todas as informações referentes ao que fiz no jogo, minhas conquistas e pontuações. | Importante | 2 |
+| RF09 | Como um usuário administrador quero ter acesso a todas as informações referentes feitas no jogo a partir de relatórios num navegador na internet. | Importante | 2 |
+| RF10 | Como um usuário quero poder jogar tanto no celular quanto no desktop e te acesso ao mesmo tipo de informação. | Importante | 2 |
+| RF11 | Sendo eu um usuário quero poder compartilhar o meu hanking nas redes socias. | Importante | 1 |
 
 ### 4.2	Requisitos Não Funcionais
 
@@ -49,7 +52,11 @@ Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite 
 | RNF01 | Ao escolher o modo para iniciar o jogo o usuário deverá aguardar no máximo 5 segundos até que o jogo se inicie  | Desejável | 3 | Eficiência | RF03 | 
 | RNF02 | Ao acessar o endereço na web utilizando o navegador o usuário poderá acessar página de login do sistema que armazena os hankings de todos os usuários.  | Desejável | 3 | Portabilidade | RF07 | 
 | RNF03 | Ao testar o acesso a internet utilizando o cliente (jogo), o mesmo não poderá transmitir nenhum erro não tratado ao usuário, delimitando-se apenas a uma mensagem informando que a conexão no existe.  | Desejável | 3 | Disponibilidade | RF07 | 
-| RNF02 | A tela de abertura do jogo deverá ter menus de fácil acesso se concentrando em no máximo três e que não se expandam em submenus.  | Desejável | 3 | Usabilidade | RF07 | 
+| RNF04 | A tela de abertura do jogo deverá ter menus de fácil acesso se concentrando em no máximo três e que não se expandam em submenus.  | Desejável | 3 | Usabilidade | RF07 | 
+| RNF05 | O jogo será tanto portado para desktop quanto para dispositivos mobile e permitindo o usuári o mesmo nível de interação nas duas plataformas.  | Desejável | 3 | Portabilidade | RF10 | 
+| RNF06 | O admnistrador terá facilidade para gerar relatórios devido ao tipo de linguagem utilizada para criação do software no servidor.  | Desejável | 2 | Manutenilidade | RF09 | 
+| RNF07 | O jogo terá um controle simplificado de operações no intuito de facilitar a experiência do usuário.  | Desejável | 3 | Usabilidade | RF01 | 
+
 
 ### 4.3	Regras de Negócio
 
@@ -91,7 +98,12 @@ inserir principais diagramas comportamentais da análise (principalmente, estado
 ## 2.    Projeto de Sistemas:
 ### 2.1  Projeto Arquitetural 
 #### 2.1.1   Plataforma de Implementação e Tecnologias
-descrever tecnologias usadas no sistema, justificando cada uma delas com base no contexto
+
+As tecnologias utilizadas no sistema envolvem a engine Unity 5 com linguagem C Sharp no cliente e linguagem PHP 7 com o framework Bootstrap 3 no servidor.
+
+Cliente - Justifica-se o uso da engine Unity 5 por conta de sua produtividade e possibilidade de integração com a linguagem C Sharp. Esta linguagem se destaca por conta de ser orientada a objetos e ter uma gama extensa de bibliotecas que a tornam fácil de se trabalhar.
+
+Servidor - A linguagem PHP 7 foi escolhida por sua performance, facilidade de escrita e de hospedagem e por trabalhar com vários tipos de tecnologia web e de comunicação com servidores ou clientes remotos. O framework Bootstrap foi esocolhido por conta de sua fácil adequação a qualquer tipo de layout e seu fácil manuseio diante de uma simples leitura do manual de sua biblioteca.
 
 #### 2.1.2   Atributos de Qualidade e Táticas
 
