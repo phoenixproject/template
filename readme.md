@@ -1,4 +1,6 @@
-# TRABALHO INTEGRADO: Viagem Estelar [![Stories in Ready](https://badge.waffle.io/phoenixproject/template.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/template)
+# TRABALHO INTEGRADO: Viagem Estelar 
+[![Build status](https://ci.appveyor.com/api/projects/status/40q65vgahi2w9162/branch/master?svg=true)](https://ci.appveyor.com/project/phoenixproject/template/branch/master)
+[![Stories in Ready](https://badge.waffle.io/phoenixproject/viagemestelar.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/viagemestelar)
 
 Trabalho desenvolvido durante as disciplinas de:
 - Programação Orientada a Objetos 2,
@@ -11,8 +13,7 @@ Trabalho desenvolvido durante as disciplinas de:
         
 # Sumário
 
-
-#Gerência de Requisitos
+# Gerência de Requisitos
 
 ## 1	Motivação e Propósito do Sistema 
 
@@ -24,7 +25,7 @@ Os usuários deste sistema de jogo prezam prezam pela ação e interação const
 
 ## 3	Minimundo 
 
-Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite ao usuário percorrer por um trajeo em um ambiente espacial onde outros inimigos poderão ser abatidos para acumular pontos para abrir caminho durante o jogo e ao mesmo tempo montar quebra cabeças.
+Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite ao usuário percorrer por um trajeto em um ambiente espacial onde outros inimigos poderão ser abatidos para acumular pontos para abrir caminho durante o jogo e ao mesmo tempo montar quebra cabeças.
 
 ## 4	Requisitos de Usuários
 
@@ -32,14 +33,17 @@ Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite 
 
 | ID | Descrição | Prioridade | Pontos |
 | --- | --- | --- | --- |
-| RF01 | O usuário terá uma tela de menu inicial em que poderá escolher o nível de díficuldade ou iniciar o jogo. | Essencial | 2 |
-| RF02 | Ao escolher o modo para iniciar o jogo o usuário iniciará a partida do jogo. | Essencial | 3 |
-| RF03 | Ao escolher o modo para opções o usuário poderá alterar valores de nível de dificuldade da parttida do jogo. | Importante | 2 |
-| RF04 | Ao pressionar as teclas que compõe o direcional do teclado (cima, baixo, esquerda, direita) o jogador movimentará a nave pela por qualquer direção da tela do jogo. | Essencial | 1 |
-| RF05 | Ao pressionar o botão correspondente ao tiro, o jogador poderá acertar os inimigos que serão projetados na tela. | Essencial | 1 |
-| RF06 | Ao capturar peças de quebra cabeça durante o jogo o jogador acumulará outro tipo de pontuação que serão enviadas ao servidor e comparadas com as dos demais jogadores. | Importante | 2 |
-| RF07 | Ao acessar o endereço na web o usuário deverá acessar página de login o usuário deverá digitar seu login e senha. | Importante | 2 |
-| RF08 | Ao acessar o sistema após ter feito o login o usuário terá acesso a uma grid com as informações dos usuários com a porcentagem de conclusão do jogo. | Importante | 2 |
+| RF01 | Sendo eu um usuário gostaria de na tela inicial escolher o nível de dificuldade do jogo. | Essencial | 2 |
+| RF02 | Como um usuário, quero escolher iniciar o jogo imediatamente a partir da tela principal. | Essencial | 3 |
+| RF03 | Sendo eu um usuário, ao entrar no menu de opções do game quero personalizar o máximo que consigo em relação a quantidade de vidas e continue. | Importante | 2 |
+| RF04 | Como um usuário eu posso movimento a nave com as teclas que compõe o direcional do teclado. | Essencial | 1 |
+| RF05 | Sendo eu um usuário quero pressionar um botão que "solta" tiros em outros inimigos e asteróides. | Essencial | 1 |
+| RF06 | Como um usuário, quero no final do jogo poder ver meu ranking junto com o dos outros usuários. | Importante | 2 |
+| RF07 | Para acessar as minhas informações usando o navegador, como um usuário gostaria de apenas digitar meu email e senha. | Importante | 2 |
+| RF08 | Sendo eu um usuário quero ter acesso a todas as informações referentes ao que fiz no jogo, minhas conquistas e pontuações. | Importante | 2 |
+| RF09 | Como um usuário administrador quero ter acesso a todas as informações referentes feitas no jogo a partir de relatórios num navegador na internet. | Importante | 2 |
+| RF10 | Como um usuário quero poder jogar tanto no celular quanto no desktop e te acesso ao mesmo tipo de informação. | Importante | 2 |
+| RF11 | Sendo eu um usuário quero poder compartilhar o meu hanking nas redes socias. | Importante | 1 |
 
 ### 4.2	Requisitos Não Funcionais
 
@@ -48,7 +52,11 @@ Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite 
 | RNF01 | Ao escolher o modo para iniciar o jogo o usuário deverá aguardar no máximo 5 segundos até que o jogo se inicie  | Desejável | 3 | Eficiência | RF03 | 
 | RNF02 | Ao acessar o endereço na web utilizando o navegador o usuário poderá acessar página de login do sistema que armazena os hankings de todos os usuários.  | Desejável | 3 | Portabilidade | RF07 | 
 | RNF03 | Ao testar o acesso a internet utilizando o cliente (jogo), o mesmo não poderá transmitir nenhum erro não tratado ao usuário, delimitando-se apenas a uma mensagem informando que a conexão no existe.  | Desejável | 3 | Disponibilidade | RF07 | 
-| RNF02 | A tela de abertura do jogo deverá ter menus de fácil acesso se concentrando em no máximo três e que não se expandam em submenus.  | Desejável | 3 | Usabilidade | RF07 | 
+| RNF04 | A tela de abertura do jogo deverá ter menus de fácil acesso se concentrando em no máximo três e que não se expandam em submenus.  | Desejável | 3 | Usabilidade | RF07 | 
+| RNF05 | O jogo será tanto portado para desktop quanto para dispositivos mobile e permitindo o usuário o mesmo nível de interação nas duas plataformas.  | Desejável | 3 | Portabilidade | RF10 | 
+| RNF06 | O admnistrador terá facilidade para gerar relatórios devido ao tipo de linguagem utilizada para criação do software no servidor.  | Desejável | 2 | Manutenbilidade | RF09 | 
+| RNF07 | O jogo terá um controle simplificado de operações no intuito de facilitar a experiência do usuário.  | Desejável | 3 | Usabilidade | RF01 | 
+
 
 ### 4.3	Regras de Negócio
 
@@ -90,16 +98,26 @@ inserir principais diagramas comportamentais da análise (principalmente, estado
 ## 2.    Projeto de Sistemas:
 ### 2.1  Projeto Arquitetural 
 #### 2.1.1   Plataforma de Implementação e Tecnologias
-descrever tecnologias usadas no sistema, justificando cada uma delas com base no contexto
+
+As tecnologias utilizadas no sistema envolvem a engine Unity 5 com linguagem C Sharp no cliente e linguagem PHP 7 com o framework Bootstrap 3 no servidor.
+
+Cliente - Justifica-se o uso da engine Unity 5 por conta de sua produtividade e possibilidade de integração com a linguagem C Sharp. Esta linguagem se destaca por conta de ser orientada a objetos e ter uma gama extensa de bibliotecas que a tornam fácil de se trabalhar.
+
+Servidor - A linguagem PHP 7 foi escolhida por sua performance, facilidade de escrita e de hospedagem e por trabalhar com vários tipos de tecnologia web e de comunicação com servidores ou clientes remotos. O framework Bootstrap foi esocolhido por conta de sua fácil adequação a qualquer tipo de layout e seu fácil manuseio diante de uma simples leitura do manual de sua biblioteca.
 
 #### 2.1.2   Atributos de Qualidade e Táticas
 
 CATEGORIAS | RNF'S | TÁTICAS | 
 | --- | --- | --- |
-| Eficácia do Tempo | RNF01| Oferece a capacidade de trabalhar com a eficiência do tempo para o usuário. | 
-| Portabilidade | RNF02| Dá a opção de usuário acessar parte do sistema também de outra plataforma. | 
-| Disponibilidade | RNF03| Mesmo que ocorram erros de conexão o sistema cliente continuará ativo. | 
-| Usabilidade | RNF04| Propõe ao usuário uma forma simples e descomplida de navegação pelos menus. | 
+| Eficácia do Tempo | RNF01| Oferece a capacidade de trabalhar com a eficiência do tempo para o usuário pelo fato de conter apenas 3 a 4 telas no sistema, consumindo assim menos processamento. | 
+| Portabilidade | RNF02| Dá a opção de usuário acessar parte do sistema também de outra plataforma para poder acompanhar de forma gerencial o seu ranking e pontuação. | 
+| Disponibilidade | RNF03| Mesmo que ocorram erros de conexão o sistema cliente continuará ativo, pois o jogo acontece somente no cliente sem depender do servidor durante o jogo. O servidor apenas armazena informações sobre pontuação e ranking. | 
+| Usabilidade | RNF04| Propõe ao usuário uma forma simples e descomplida de navegação pelos menus por conta de a quantidade de menus ser reduzida. | 
+| Portabilidade | RNF05| O usuário terá opções de poder jogar em plataforma mobile e desktop sem alterações das informações por conta da opção de exportar o jogo na engine. | 
+| Manutenbilidade | RNF06| A escolha da linguagem e PHP e o framework front end Bootstrap visa facilitar a manutenção do código de relatórios e do sistema. | 
+| Usabilidade | RNF07 | O jogo terá apenas o direcional do teclado e um botão de tiro para manuseá-lo. | 
+
+
 
 
 #### 2.1.3   Arquitetura de Software
