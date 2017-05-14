@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViagemEstelar", "ViagemEstelar.csproj", "{E14749FA-E022-130B-3BA6-F7218A19CB46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViagemEstelar.Aplicacao", "ViagemEstelar.Aplicacao\ViagemEstelar.Aplicacao.csproj", "{10155A2E-84AE-420B-9305-636086640C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViagemEstelar.Repositorio", "ViagemEstelar.Repositorio\ViagemEstelar.Repositorio.csproj", "{BDACCF5B-C0D0-4414-8686-8481AF0C7BFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E14749FA-E022-130B-3BA6-F7218A19CB46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E14749FA-E022-130B-3BA6-F7218A19CB46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E14749FA-E022-130B-3BA6-F7218A19CB46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E14749FA-E022-130B-3BA6-F7218A19CB46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10155A2E-84AE-420B-9305-636086640C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10155A2E-84AE-420B-9305-636086640C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10155A2E-84AE-420B-9305-636086640C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10155A2E-84AE-420B-9305-636086640C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDACCF5B-C0D0-4414-8686-8481AF0C7BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDACCF5B-C0D0-4414-8686-8481AF0C7BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDACCF5B-C0D0-4414-8686-8481AF0C7BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDACCF5B-C0D0-4414-8686-8481AF0C7BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

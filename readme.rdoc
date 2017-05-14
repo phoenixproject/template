@@ -1,0 +1,1 @@
+{<img alt='Stories in Ready' src='https://badge.waffle.io/phoenixproject/viagemestelar.png?label=ready&title=Ready' />}[https://waffle.io/phoenixproject/viagemestelar]
