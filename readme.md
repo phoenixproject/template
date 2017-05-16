@@ -1,5 +1,7 @@
 # TRABALHO INTEGRADO: Viagem Estelar 
+**AppVeyor:** 
 [![Build status](https://ci.appveyor.com/api/projects/status/40q65vgahi2w9162/branch/master?svg=true)](https://ci.appveyor.com/project/phoenixproject/template/branch/master)
+**Waffle IO:** 
 [![Stories in Ready](https://badge.waffle.io/phoenixproject/viagemestelar.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/template)
 
 
