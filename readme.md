@@ -1,6 +1,6 @@
 # TRABALHO INTEGRADO: Viagem Estelar 
 [![Build status](https://ci.appveyor.com/api/projects/status/40q65vgahi2w9162/branch/master?svg=true)](https://ci.appveyor.com/project/phoenixproject/template/branch/master)
-[![Stories in Ready](https://badge.waffle.io/phoenixproject/viagemestelar.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/viagemestelar)
+
 
 Trabalho desenvolvido durante as disciplinas de:
 - Programação Orientada a Objetos 2,
