@@ -1,9 +1,9 @@
 # TRABALHO INTEGRADO: Viagem Estelar 
-**AppVeyor:** 
+**Integração Contínua > AppVeyor:** 
 <br>
 [![Build status](https://ci.appveyor.com/api/projects/status/40q65vgahi2w9162/branch/master?svg=true)](https://ci.appveyor.com/project/phoenixproject/template/branch/master)
 <br><br>
-**Waffle IO:** 
+**Acopanhamento de Issues > Waffle IO:** 
 <br>
 [![Stories in Ready](https://badge.waffle.io/phoenixproject/viagemestelar.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/template)
 
@@ -23,7 +23,8 @@ Trabalho desenvolvido durante as disciplinas de:
 
 ## 1	Motivação e Propósito do Sistema 
 
-O projeto Viagem Estelar surgiu a partir da necessidade de se construir um jogo não só com características de um shooter, mas também de estimular o raciocínio para montar quebra cabeças durante a execução do jogo.
+O projeto Viagem Estelar surgiu a partir da necessidade de se construir um jogo não só com características de um shooter, mas também, desejavelmente, de estimular o raciocínio para montar quebra cabeças durante a execução do jogo. 
+
 
 ## 2	Personas
 
@@ -31,7 +32,8 @@ Os usuários deste sistema de jogo prezam prezam pela ação e interação const
 
 ## 3	Minimundo 
 
-Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite ao usuário percorrer por um trajeto em um ambiente espacial onde outros inimigos poderão ser abatidos para acumular pontos para abrir caminho durante o jogo e ao mesmo tempo montar quebra cabeças.
+Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite ao usuário percorrer por um trajeto em um ambiente espacial onde outros inimigos poderão ser abatidos para acumular pontos para abrir caminho durante o jogo e ao mesmo, , desejavelmente, tempo montar quebra cabeças.
+O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides e naves inimigas com o intuito de ganhar pontuação para serem posteriormente armazenadas em um servidor na internet. Este servidor possui uma área para gerenciamento de dados pessoais que o usuário poderá acessar e que os administradores do sistema poderão retirar relatórios de atividades ou gerenciar atividades do usuário.
 
 ## 4	Requisitos de Usuários
 
