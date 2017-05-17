@@ -1,11 +1,11 @@
+[![Stories in Ready](https://badge.waffle.io/phoenixproject/template.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/template)
+
 # TRABALHO INTEGRADO: Viagem Estelar 
 **Integração Contínua > AppVeyor:** 
 <br>
 [![Build status](https://ci.appveyor.com/api/projects/status/40q65vgahi2w9162/branch/master?svg=true)](https://ci.appveyor.com/project/phoenixproject/template/branch/master)
 <br><br>
 **Acopanhamento de Issues > Waffle IO:** 
-<br>
-[![Stories in Ready](https://badge.waffle.io/phoenixproject/template.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/template)
 <br>
 
 Trabalho desenvolvido durante as disciplinas de:
