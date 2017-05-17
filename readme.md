@@ -6,7 +6,7 @@
 **Acopanhamento de Issues > Waffle IO:** 
 <br>
 [![Stories in Ready](https://badge.waffle.io/phoenixproject/template.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/template)
-
+<br>
 
 Trabalho desenvolvido durante as disciplinas de:
 - Programação Orientada a Objetos 2,
