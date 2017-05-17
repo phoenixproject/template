@@ -1,5 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/phoenixproject/template.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/template)
-
 # TRABALHO INTEGRADO: Viagem Estelar 
 **Integração Contínua > AppVeyor:** 
 <br>
@@ -7,6 +5,7 @@
 <br><br>
 **Acopanhamento de Issues > Waffle IO:** 
 <br>
+[![Stories in Ready](https://badge.waffle.io/phoenixproject/template.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/template)
 
 Trabalho desenvolvido durante as disciplinas de:
 - Programação Orientada a Objetos 2,
