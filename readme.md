@@ -5,7 +5,7 @@
 <br><br>
 **Acopanhamento de Issues > Waffle IO:** 
 <br>
-[![Stories in Ready](https://badge.waffle.io/phoenixproject/template.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/template)
+[![Stories in Ready](https://badge.waffle.io/phoenixproject/viagemestelar.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/viagemestelar)
 
 Trabalho desenvolvido durante as disciplinas de:
 - Programação Orientada a Objetos 2,
