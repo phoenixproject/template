@@ -1,0 +1,22 @@
+{
+      "name": "viagemestelar",
+      "require": {
+         "php": ">=7.1.1"
+      },
+      "require-dev": {
+      },
+      "minimum-stability": "alpha",
+      "authors": [{
+         "name": "Pchan!",
+         "email": "serviconoturno@yandex.com"
+      }],
+      "autoload": {
+         "psr-4": {
+            "ifes\\" : "vendor/ifes",
+            "app\\" : "app"
+         } 
+      }, 
+      "config": {
+         "bin-dir": "bin"
+      }
+}
