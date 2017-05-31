@@ -173,6 +173,13 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 #####Projeto da Interação Humana
 
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_de_estado_modo_admin.png?raw=true "Diagrama de Estado - Modo Admin")
+<br>
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_de_estado_modo_usuario.png?raw=true "Diagrama de Estado - Modo Usuário")
+<br>
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_interface_usuario_servidor.png?raw=true "Diagrama de Interface com o Usuário - Servidor")
+<br>
+
 apresentar diagrama de classes da IU com controladores e diagrama de sequências. Apresentar diagrama com estados de navegação.
 
 #### 2.2.3.  Projeto da Persistência de Dados
