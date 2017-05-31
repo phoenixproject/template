@@ -4,8 +4,6 @@ namespace app;
 
 use ifes\init\Bootstrap;
 
-//use controllers\Index;
-
 /**
  * Description of Init
  *
@@ -14,14 +12,6 @@ use ifes\init\Bootstrap;
  */
 class Init extends Bootstrap {
 
-    //private $teste;
-    
-    /*public function __construct($teste)
-    {
-        $this->teste = $teste;
-        //echo "It works";
-        //parent::__construct();
-    }*/
     
     protected function initRoutes(){
         

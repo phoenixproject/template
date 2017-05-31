@@ -23,17 +23,4 @@ class ClienteDao extends GenericDao {
         parent::__construct(new Cliente());
     }
     
-    /*public function listar($ordem){        
-        $resultado = parent::listar($ordem);
-        
-        //foreach ($serviceDb->listar("id desc") as $c){
-        //foreach ($resultado as $registro){
- 	//echo $c['nome'],"<br>";
-        //
-        
-        return $resultado;
-        
-        //return parent::listar($ordem);
-    }*/
-    
 }
