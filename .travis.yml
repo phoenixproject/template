@@ -1,2 +1,29 @@
-language: csharp
+# .travis.yml
+language: csharp php
 solution: ViagemEstelar.sln
+
+env:
+ global:
+  - EnableNuGetPackageRestore=true 
+
+# Do not forget to provide your CODACY_PROJECT_TOKEN as described in https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings
+
+php:
+  - 5.3
+  - 5.4
+  - 5.5
+  - 5.6
+  - 7.0
+  - 7.1
+  - hhvm
+
+# In case of timeouts and build failures you may want to prepend 'travis_retry' to the following commands:
+before_script:
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar install -n
+
+script:
+  - php vendor/bin/phpunit
+
+after_script:
+  - php vendor/bin/codacycoverage clover path/to/clover.xml
