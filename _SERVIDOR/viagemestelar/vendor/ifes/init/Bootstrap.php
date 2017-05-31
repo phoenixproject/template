@@ -24,15 +24,11 @@ abstract class Bootstrap{
             $this->action = $_GET[$this->route];   
         }
         
-        
         //Para inicializar as rotas
         $this->initRoutes();
-        //echo $this->routes['empresa']['route'];
-        
+                
         //Para exibir o controller
         $this->run($this->getUrl());                        
-        //$this->run($this->getController());
-        //echo $this->getUrl();
     }
     
     abstract protected function initRoutes();
@@ -79,8 +75,7 @@ abstract class Bootstrap{
     }
     
     protected function getUrl(){
-    	$variableName = key($_GET);
-        //return parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH).$variableName;
+    	$variableName = key($_GET);        
         return '/'.$variableName;
     }
     

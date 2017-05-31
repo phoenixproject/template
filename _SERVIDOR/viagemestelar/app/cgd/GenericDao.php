@@ -53,15 +53,6 @@ class GenericDao{
                 $stmt = $this->db->getDbconnect()->query($query);
 
                 return $stmt->fetchAll(\PDO::FETCH_ASSOC);
-                //return $stmt->fetchAll(\PDO::FETCH_CLASS, "Cliente" );
-                //return $stmt->fetchAll(\PDO::FETCH_OBJ);
-                //return $stmt->fetchAll(\PDO::FETCH_CLASS, get_class([$this->entity]));
-
-                //$stmt->bindParam(':id', $id, \PDO::PARAM_INT);
-
-                //return $stmt->fetchAll(\PDO::FETCH_CLASS, "app\cdp\Cliente");                
-                //return $stmt->fetchAll(\PDO::FETCH_FUNC);                
-                //return $stmt->fetch(\PDO::FETCH_COLUMN);                                
             } 
             catch (PDOException $ex) {
                 # call the get_error function
