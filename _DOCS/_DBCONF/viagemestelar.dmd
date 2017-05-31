@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="viagemestelar" id="6FB81F88-EBC1-B60F-E54E-B2C0753E5005" version="3.5">
+<createdBy>pchan</createdBy>
+<createdTime>2017-05-31 07:47:16 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>6FB81F88-EBC1-B60F-E54E-B2C0753E5005</designId>
+</OSDM_Design>

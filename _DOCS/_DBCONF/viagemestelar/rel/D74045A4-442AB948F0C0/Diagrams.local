@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="680BBA50-2239-09FE-E5ED-406785E34AF5" name="Viagem Estelar" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

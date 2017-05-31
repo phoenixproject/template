@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Viagem Estelar" id="D74045A4-C529-F97B-ECF6-442AB948F0C0" mainViewID="680BBA50-2239-09FE-E5ED-406785E34AF5">
+<createdBy>pchan</createdBy>
+<createdTime>2017-05-31 07:47:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

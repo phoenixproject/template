@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="8F4DC791-A602-E61B-0EED-9F5140AA43AC" mainViewID="578D0B95-7A09-41BB-205D-0092AF48CB26">
+<createdBy>pchan</createdBy>
+<createdTime>2017-05-31 07:47:16 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
