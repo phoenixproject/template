@@ -1,4 +1,8 @@
 # TRABALHO INTEGRADO: Viagem Estelar 
+**Integração Contínua > Travis-CI:** 
+<br>
+https://travis-ci.org/phoenixproject/viagemestelar.svg?branch=master
+<br><br>
 **Integração Contínua > AppVeyor:** 
 <br>
 [![Build status](https://ci.appveyor.com/api/projects/status/40q65vgahi2w9162/branch/master?svg=true)](https://ci.appveyor.com/project/phoenixproject/template/branch/master)
@@ -6,6 +10,11 @@
 **Acopanhamento de Issues > Waffle IO:** 
 <br>
 [![Stories in Ready](https://badge.waffle.io/phoenixproject/viagemestelar.png?label=ready&title=Ready)](http://waffle.io/phoenixproject/viagemestelar)
+<br><br>
+#Gráfico de rendimento 
+<br>
+[![Throughput Graph](https://graphs.waffle.io/phoenixproject/viagemestelar/throughput.svg)](https://waffle.io/phoenixproject/viagemestelar/metrics/throughput)
+<br><br>
 
 Trabalho desenvolvido durante as disciplinas de:
 - Programação Orientada a Objetos 2,
