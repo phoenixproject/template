@@ -1,7 +1,7 @@
 # TRABALHO INTEGRADO: Viagem Estelar 
 **Integração Contínua > Travis-CI:** 
 <br>
-https://travis-ci.org/phoenixproject/viagemestelar.svg?branch=master
+[![Build status] (https://travis-ci.org/phoenixproject/viagemestelar.svg?branch=master?svg=true)] (https://travis-ci.org/phoenixproject/viagemestelar)
 <br><br>
 **Integração Contínua > AppVeyor:** 
 <br>
