@@ -200,7 +200,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/04_tela_login_servidor.png?raw=true "Tela Login - Servidor")
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/05_dados_servidor.png?raw=true "Tela Dados - Servidor")
 
-#####Projeto da Interação Humana
+##### Projeto da Interação Humana
+
+<!--apresentar diagrama de classes da IU com controladores e diagrama de sequências. Apresentar diagrama com estados de navegação.-->
 
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_de_estado_modo_admin.png?raw=true "Diagrama de Estado - Modo Admin")
 <br>
@@ -208,8 +210,6 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 <br>
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_interface_usuario_servidor.png?raw=true "Diagrama de Interface com o Usuário - Servidor")
 <br>
-
-apresentar diagrama de classes da IU com controladores e diagrama de sequências. Apresentar diagrama com estados de navegação.
 
 #### 2.2.3.  Projeto da Persistência de Dados
 
@@ -231,7 +231,6 @@ O padrão foi utilizado para resolver o problema de .....
 
 ## 3.    Banco de Dados (BD)
 
-
 ### 3.1 Decisões do Projeto 
     [atributo]: [descrição da decisão]
     
@@ -242,6 +241,9 @@ O padrão foi utilizado para resolver o problema de .....
 
 
 ### 3.2	Modelo Lógico<br>
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_logico_sql_developer.png?raw=true "Diagrama de Modelo Lógico")
+
 ### 3.3	MODELO FÍSICO<br>
 ### 3.4	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 3.4.1 DETALHAMENTO DAS INFORMAÇÕES
