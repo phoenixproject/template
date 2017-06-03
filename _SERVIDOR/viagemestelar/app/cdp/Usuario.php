@@ -14,5 +14,44 @@ namespace app\cdp;
  * @author pchan
  */
 class Usuario {
-    //put your code here
+    
+    public $cd_usuario;
+    public $email;
+    public $password;
+    public $dt_criacao;
+    
+    function getCd_usuario() : int {
+        return $this->cd_usuario;
+    }
+
+    function getEmail() : string {
+        return $this->email;
+    }
+
+    function getPassword() : string {
+        return $this->password;
+    }
+
+    function getDt_criacao() : \DateTime {
+        return $this->dt_criacao;
+    }
+
+    function setCd_usuario($cd_usuario) {
+        $this->cd_usuario = $cd_usuario;
+    }
+
+    function setEmail($email) {
+        $this->email = $email;
+    }
+
+    function setPassword($password) {
+        $this->password = $password;
+    }
+
+    function setDt_criacao($dt_criacao) {
+        $this->dt_criacao = $dt_criacao;
+    }
+
+
+    
 }
