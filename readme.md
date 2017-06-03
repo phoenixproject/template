@@ -44,7 +44,7 @@ Os usuários deste sistema de jogo prezam prezam pela ação e interação const
 
 ## 3	Minimundo 
 
-Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite ao usuário percorrer por um trajeto em um ambiente espacial onde outros inimigos poderão ser abatidos para acumular pontos para abrir caminho durante o jogo e ao mesmo, , desejavelmente, tempo montar quebra cabeças.
+Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite ao usuário percorrer por um trajeto em um ambiente espacial onde outros inimigos poderão ser abatidos para acumular pontos para abrir caminho durante o jogo e desejavelmente, ao mesmo tempo montar um quebra cabeças, fazer combinações entre tipos de armas e naves distintas, armazenando as pontuções no servidor, bem como os tipos de atividades que estão acontecendo (login, ganhou, perdeu, etc).
 O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides e naves inimigas com o intuito de ganhar pontuação para serem posteriormente armazenadas em um servidor na internet. Este servidor possui uma área para gerenciamento de dados pessoais que o usuário poderá acessar e que os administradores do sistema poderão retirar relatórios de atividades ou gerenciar atividades do usuário.
 
 ## 4	Requisitos de Usuários
@@ -354,7 +354,10 @@ Acompanhamento do projeto: o grupo deve apresentar histórico, por sprint,  do a
 
 ## 4.    Burn down dos sprints
 
-acompanhamento dos sprints. Cada Sprint deve ter uma seção descrevendo o que foi realizado e o planejado (por meio do  o gráfico e Burndown do Sprint).
+#Gráfico de rendimento dos Sprints 
+<br>
+[![Throughput Graph](https://graphs.waffle.io/phoenixproject/viagemestelar/throughput.svg)](https://waffle.io/phoenixproject/viagemestelar/metrics/throughput)
+<br><br>
 
 ## 5.    Retrospectiva 
 
