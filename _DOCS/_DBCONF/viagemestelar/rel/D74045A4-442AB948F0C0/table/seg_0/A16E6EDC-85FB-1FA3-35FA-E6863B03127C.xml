@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A16E6EDC-85FB-1FA3-35FA-E6863B03127C" name="Partida">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 20:48:35 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_partida" id="F7E0974B-ACB5-641D-A4C5-098DC05B313D">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 20:50:00 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pontos" id="071E707D-AE5D-2476-CF20-7F6F8BAB170A">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 20:54:51 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_combinacao" id="01765102-0B03-D44A-5270-EFD885AA1255">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 20:50:35 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>81BAC022-A7DB-9FBB-DE55-F1B2884A1DCA</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E077BCBF-5E1C-257E-53E8-99A186B82428" referredColumn="81BAC022-A7DB-9FBB-DE55-F1B2884A1DCA"/>
+</associations>
+</Column>
+<Column name="cd_configuracao" id="EF0BC3F7-F212-84E3-E552-015C21F8815F">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 20:50:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>E3AECEB6-26AE-56C3-9B56-BD00D607E2BC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="889E247A-BD98-9B57-3FF9-E4765715F5E1" referredColumn="E3AECEB6-26AE-56C3-9B56-BD00D607E2BC"/>
+</associations>
+</Column>
+<Column name="cd_atividade" id="31DEE7A9-C504-0940-F016-0833A343920A">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 20:53:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>7D58AA98-A169-41A4-6C18-797FF84C024E</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3ACEA8A7-1F21-068D-8DC2-FCAD39586511" referredColumn="7D58AA98-A169-41A4-6C18-797FF84C024E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DBA32ADD-5B02-8910-1A33-164BFDC9561F" name="Partida_PK">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 20:50:00 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7E0974B-ACB5-641D-A4C5-098DC05B313D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F19315F1-FB88-0677-7A9C-AA0508FF8A63" name="FK_Partida_Combinacao_cd_combinacao">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 20:50:35 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01765102-0B03-D44A-5270-EFD885AA1255"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BF391D6-F23E-33D2-8E6D-63287C285BED" name="FK_Partida_Configuracao_cd_configuracao">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 20:50:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF0BC3F7-F212-84E3-E552-015C21F8815F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1D4D4D4-A2E0-FB5F-79E4-C741E4A1D8E5" name="FK_Partida_Atividade_cd_atividade">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 20:53:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31DEE7A9-C504-0940-F016-0833A343920A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

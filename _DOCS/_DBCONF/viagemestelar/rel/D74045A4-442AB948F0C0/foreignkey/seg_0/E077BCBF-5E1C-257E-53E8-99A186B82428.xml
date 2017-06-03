@@ -1,12 +1,12 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="030682DC-AC5E-8232-E917-247A78ED2DB5" name="FK_Atividade_Combinacao_cd_combinacao">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E077BCBF-5E1C-257E-53E8-99A186B82428" name="FK_Partida_Combinacao_cd_combinacao">
 <createdBy>pchan</createdBy>
-<createdTime>2017-06-03 17:26:08 UTC</createdTime>
+<createdTime>2017-06-03 20:50:35 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>viagemestelar</ownerDesignName>
-<containerWithKeyObject>417781E9-97D4-A5A8-7F18-4CCB63B3ED97</containerWithKeyObject>
+<containerWithKeyObject>A16E6EDC-85FB-1FA3-35FA-E6863B03127C</containerWithKeyObject>
 <deleteRule>NO ACTION</deleteRule>
-<localFKIndex>386E5708-CC47-5E71-7AE1-735864452C9D</localFKIndex>
+<localFKIndex>F19315F1-FB88-0677-7A9C-AA0508FF8A63</localFKIndex>
 <keyObject>8E156056-67EB-F857-EFA8-E308F45A1442</keyObject>
 <mandatory>true</mandatory>
 <transferable>true</transferable>

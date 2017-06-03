@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3ACEA8A7-1F21-068D-8DC2-FCAD39586511" name="FK_Partida_Atividade_cd_atividade">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 20:53:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<containerWithKeyObject>A16E6EDC-85FB-1FA3-35FA-E6863B03127C</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>A1D4D4D4-A2E0-FB5F-79E4-C741E4A1D8E5</localFKIndex>
+<keyObject>620683B9-48EB-A09B-A616-0238E02F8398</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
