@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90D18634-0547-6598-ABFE-6AA676580945" name="Combinacao">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:21:39 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_combinacao" id="81BAC022-A7DB-9FBB-DE55-F1B2884A1DCA">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:23:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_combinacao" id="FE918B43-3BDA-03BA-667E-D29B2E9A1581">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:23:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_nave" id="7E1DE314-6BC6-1B32-E997-DC83B4626258">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:24:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>84ABFFE8-79E1-695C-EEC0-08C1D9EC5461</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88CB243E-9B4C-B383-03A7-E4D7B4827B64" referredColumn="84ABFFE8-79E1-695C-EEC0-08C1D9EC5461"/>
+</associations>
+</Column>
+<Column name="tp_arma" id="A25DAC88-5A99-9F29-9532-403FDF3A613D">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:25:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>37F94AE8-9467-F706-B116-261F189528F5</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B915DDC-8505-3856-9567-A544D8FD56F8" referredColumn="37F94AE8-9467-F706-B116-261F189528F5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8E156056-67EB-F857-EFA8-E308F45A1442" name="Combinacao_PK">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:23:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81BAC022-A7DB-9FBB-DE55-F1B2884A1DCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="165AEF5C-CB95-7769-88D9-77E230718808" name="FK_Combinacao_Tipo_Nave_tp_nave">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:24:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E1DE314-6BC6-1B32-E997-DC83B4626258"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8786F699-8C9E-7895-C368-CE08D8CA5AE6" name="FK_Combinacao_Tipo_Arma_tp_arma">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:25:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A25DAC88-5A99-9F29-9532-403FDF3A613D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

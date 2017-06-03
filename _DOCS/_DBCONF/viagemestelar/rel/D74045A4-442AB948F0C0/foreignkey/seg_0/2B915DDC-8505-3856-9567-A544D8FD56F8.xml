@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2B915DDC-8505-3856-9567-A544D8FD56F8" name="FK_Combinacao_Tipo_Arma_tp_arma">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:25:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<containerWithKeyObject>90D18634-0547-6598-ABFE-6AA676580945</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>8786F699-8C9E-7895-C368-CE08D8CA5AE6</localFKIndex>
+<keyObject>C5FE0EB2-8416-9B07-B0DC-55D11C697677</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

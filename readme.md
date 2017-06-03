@@ -86,6 +86,7 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 | RN02 | O tamanho da cadeia de caracteres da senha do usuário é de no máximo 20. | Essencial |
 | RN03 | O usuário não terá seu nome no hanking se não tiver criado seu cadastro. | Essencial |
 | RN04 | A cada 100 pontos o usuário ganha uma prêmiação de mais um nível. | Essencial |
+| RN05 | O jogador poderá combinar a cada fase um tipo de nave e arma diferentes. | Desejável |
 
 #Desenvolvimento do Sistema
 ## 1.    Análise de Sistemas:

@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D78C399-4B2D-1C00-3BCC-09212FB91669" name="Usuario">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-02 23:42:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_usuario" id="6AEC9EE9-F859-317E-949C-2F3EBC7DE42D">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-02 23:45:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="8792674B-0451-2CDC-F967-7CC767E042A8">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-02 23:45:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="3F82976C-C05A-0A35-A11D-A1BF6496CFFD">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-02 23:45:34 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_criacao" id="3013EA69-D6BF-E760-163E-F0758108DA1D">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-02 23:45:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_usuario" id="2A76EC87-3A91-AFF8-91A8-8547A253C7C7">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:09:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D1F75484-25B1-A919-58EA-948826A86A36</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="160EF964-675D-8F55-00D4-937A7D483B13" referredColumn="D1F75484-25B1-A919-58EA-948826A86A36"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45AC7EB4-C2F8-6C16-091C-10D18DF66F71" name="Usuario_PK">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-02 23:45:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AEC9EE9-F859-317E-949C-2F3EBC7DE42D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E40B499-5268-CE5D-570E-19ADED0C2A8D" name="FK_Usuario_Tipo_Usuario_tp_usuario">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:09:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A76EC87-3A91-AFF8-91A8-8547A253C7C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

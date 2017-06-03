@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FCC0999E-46DE-D993-4BCD-68B5AF1B95B4" name="Configuracao">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 13:04:21 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_configuracao" id="E3AECEB6-26AE-56C3-9B56-BD00D607E2BC">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 13:46:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_confiiguracao" id="506DB031-0BCA-01C5-91D7-BDEBB9E23218">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 13:46:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nivel_dificuldade" id="30802D99-F28D-7360-B5CA-6ED615CD9B8E">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 17:00:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4BA92E80-893B-8219-CCEE-E1013B9AC15D" name="Configuracao_PK">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-03 13:46:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3AECEB6-26AE-56C3-9B56-BD00D607E2BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

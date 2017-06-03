@@ -1,5 +1,5 @@
-CREATE SCHEMA IF NOT EXISTS `pagpms`;
-USE `pagpms`;
+CREATE SCHEMA IF NOT EXISTS `viagemestelar`;
+USE `viagemestelar`;
 
 CREATE TABLE IF NOT EXISTS  Tipo_Usuario (
 	tp_usuario          integer not null AUTO_INCREMENT,
@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS Celular_Tipo (
 );
 
 
-ALTER TABLE Setor ADD CONSTRAINT FK_Setor_Secretaria_cd_sec FOREIGN KEY (cd_sec) REFERENCES Secretaria(cd_sec);
+ALTER TABLE Atividade ADD CONSTRAINT FK_Setor_Secretaria_cd_sec FOREIGN KEY (cd_sec) REFERENCES Secretaria(cd_sec);
 
 ALTER TABLE Usuario ADD CONSTRAINT FK_Usuario_Tipo_Usuario_tp_usuario FOREIGN KEY (tp_usuario) REFERENCES Tipo_Usuario(tp_usuario);
 ALTER TABLE Usuario ADD CONSTRAINT FK_Usuario_Setor_cd_setor FOREIGN KEY (cd_setor) REFERENCES Setor(cd_setor);

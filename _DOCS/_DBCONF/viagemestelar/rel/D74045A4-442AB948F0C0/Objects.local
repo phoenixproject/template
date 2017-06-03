@@ -1,2 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<oracle.dbtools.crest.model.design.relational.RelationalDesign/>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="417781E9-97D4-A5A8-7F18-4CCB63B3ED97" name="Atividade" seqName="seg_0"/>
+   <object objectType="Table" objectID="90D18634-0547-6598-ABFE-6AA676580945" name="Combinacao" seqName="seg_0"/>
+   <object objectType="Table" objectID="FCC0999E-46DE-D993-4BCD-68B5AF1B95B4" name="Configuracao" seqName="seg_0"/>
+   <object objectType="Table" objectID="528172D3-C2B4-8B7B-D980-C5D01A3A2525" name="Tipo_Arma" seqName="seg_0"/>
+   <object objectType="Table" objectID="9649D829-0639-16F1-6ADA-3DDD174C8B0B" name="Tipo_Atividade" seqName="seg_0"/>
+   <object objectType="Table" objectID="AB78C947-21D3-95FA-6374-053CA2EAA45E" name="Tipo_Nave" seqName="seg_0"/>
+   <object objectType="Table" objectID="A2EFEF15-B057-C5A9-875B-EDEBF33D63E0" name="Tipo_Usuario" seqName="seg_0"/>
+   <object objectType="Table" objectID="0D78C399-4B2D-1C00-3BCC-09212FB91669" name="Usuario" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="030682DC-AC5E-8232-E917-247A78ED2DB5" name="FK_Atividade_Combinacao_cd_combinacao" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="84DE18DD-86F2-657B-07EE-220EA539B9A8" name="FK_Atividade_Configuracao_cd_configuracao" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="26E91236-26B4-92F8-F717-744571E55884" name="FK_Atividade_Tipo_Atividade_tp_atividade" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="57EBA180-E4A4-C4B3-5904-4634C0BEF6EE" name="FK_Atividade_Usuario_cd_usuario" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="2B915DDC-8505-3856-9567-A544D8FD56F8" name="FK_Combinacao_Tipo_Arma_tp_arma" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="88CB243E-9B4C-B383-03A7-E4D7B4827B64" name="FK_Combinacao_Tipo_Nave_tp_nave" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="160EF964-675D-8F55-00D4-937A7D483B13" name="FK_Usuario_Tipo_Usuario_tp_usuario" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
