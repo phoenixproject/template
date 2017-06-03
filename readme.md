@@ -44,7 +44,7 @@ Os usuários deste sistema de jogo prezam prezam pela ação e interação const
 
 ## 3	Minimundo 
 
-Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite ao usuário percorrer por um trajeto em um ambiente espacial onde outros inimigos poderão ser abatidos para acumular pontos para abrir caminho durante o jogo e ao mesmo, , desejavelmente, tempo montar quebra cabeças.
+Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite ao usuário percorrer por um trajeto em um ambiente espacial onde outros inimigos poderão ser abatidos para acumular pontos para abrir caminho durante o jogo e desejavelmente, ao mesmo tempo montar um quebra cabeças, fazer combinações entre tipos de armas e naves distintas, armazenando as pontuções no servidor, bem como os tipos de atividades que estão acontecendo (login, ganhou, perdeu, etc).
 O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides e naves inimigas com o intuito de ganhar pontuação para serem posteriormente armazenadas em um servidor na internet. Este servidor possui uma área para gerenciamento de dados pessoais que o usuário poderá acessar e que os administradores do sistema poderão retirar relatórios de atividades ou gerenciar atividades do usuário.
 
 ## 4	Requisitos de Usuários
@@ -200,7 +200,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/04_tela_login_servidor.png?raw=true "Tela Login - Servidor")
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/05_dados_servidor.png?raw=true "Tela Dados - Servidor")
 
-#####Projeto da Interação Humana
+##### Projeto da Interação Humana
+
+<!--apresentar diagrama de classes da IU com controladores e diagrama de sequências. Apresentar diagrama com estados de navegação.-->
 
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_de_estado_modo_admin.png?raw=true "Diagrama de Estado - Modo Admin")
 <br>
@@ -208,8 +210,6 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 <br>
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_interface_usuario_servidor.png?raw=true "Diagrama de Interface com o Usuário - Servidor")
 <br>
-
-apresentar diagrama de classes da IU com controladores e diagrama de sequências. Apresentar diagrama com estados de navegação.
 
 #### 2.2.3.  Projeto da Persistência de Dados
 
@@ -231,7 +231,6 @@ O padrão foi utilizado para resolver o problema de .....
 
 ## 3.    Banco de Dados (BD)
 
-
 ### 3.1 Decisões do Projeto 
     [atributo]: [descrição da decisão]
     
@@ -242,6 +241,9 @@ O padrão foi utilizado para resolver o problema de .....
 
 
 ### 3.2	Modelo Lógico<br>
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_logico_sql_developer.png?raw=true "Diagrama de Modelo Lógico")
+
 ### 3.3	MODELO FÍSICO<br>
 ### 3.4	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 3.4.1 DETALHAMENTO DAS INFORMAÇÕES
@@ -354,7 +356,10 @@ Acompanhamento do projeto: o grupo deve apresentar histórico, por sprint,  do a
 
 ## 4.    Burn down dos sprints
 
-acompanhamento dos sprints. Cada Sprint deve ter uma seção descrevendo o que foi realizado e o planejado (por meio do  o gráfico e Burndown do Sprint).
+#Gráfico de rendimento dos Sprints 
+<br>
+[![Throughput Graph](https://graphs.waffle.io/phoenixproject/viagemestelar/throughput.svg)](https://waffle.io/phoenixproject/viagemestelar/metrics/throughput)
+<br><br>
 
 ## 5.    Retrospectiva 
 
