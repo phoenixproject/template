@@ -17,17 +17,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="pontos" id="22A23A6C-7F6A-EA37-B688-485C086937E0">
-<createdBy>pchan</createdBy>
-<createdTime>2017-06-02 23:54:54 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>viagemestelar</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="dt_atividade" id="F23F4432-D0FB-1053-77F2-FAB666CD5FFB">
 <createdBy>pchan</createdBy>
 <createdTime>2017-06-02 23:54:54 UTC</createdTime>
@@ -69,36 +58,6 @@
 <colAssociation fkAssociation="26E91236-26B4-92F8-F717-744571E55884" referredColumn="C068A4E2-7D31-3926-8DA3-EFAA25909263"/>
 </associations>
 </Column>
-<Column name="cd_configuracao" id="AEDFD9F7-B5AD-4005-5FD1-FF58B2CBAC9A">
-<createdBy>pchan</createdBy>
-<createdTime>2017-06-03 17:05:20 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>viagemestelar</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<delegate>E3AECEB6-26AE-56C3-9B56-BD00D607E2BC</delegate>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="84DE18DD-86F2-657B-07EE-220EA539B9A8" referredColumn="E3AECEB6-26AE-56C3-9B56-BD00D607E2BC"/>
-</associations>
-</Column>
-<Column name="cd_combinacao" id="F06222ED-77DE-1FB0-9C26-040E5A5BABDF">
-<createdBy>pchan</createdBy>
-<createdTime>2017-06-03 17:26:08 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>viagemestelar</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<delegate>81BAC022-A7DB-9FBB-DE55-F1B2884A1DCA</delegate>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="030682DC-AC5E-8232-E917-247A78ED2DB5" referredColumn="81BAC022-A7DB-9FBB-DE55-F1B2884A1DCA"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="620683B9-48EB-A09B-A616-0238E02F8398" name="Atividade_PK">
@@ -133,28 +92,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BD87CE8E-2BEB-72DA-57DA-D313F190A355"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="EE46236C-9F34-51E3-55CC-493F2ABE0F91" name="FK_Atividade_Configuracao_cd_configuracao">
-<createdBy>pchan</createdBy>
-<createdTime>2017-06-03 17:05:20 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>viagemestelar</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="AEDFD9F7-B5AD-4005-5FD1-FF58B2CBAC9A"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="386E5708-CC47-5E71-7AE1-735864452C9D" name="FK_Atividade_Combinacao_cd_combinacao">
-<createdBy>pchan</createdBy>
-<createdTime>2017-06-03 17:26:08 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>viagemestelar</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="F06222ED-77DE-1FB0-9C26-040E5A5BABDF"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
