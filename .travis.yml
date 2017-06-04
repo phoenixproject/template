@@ -1,6 +1,6 @@
 # .travis.yml
-language: csharp php
-solution: ViagemEstelar.sln
+language: php
+# solution: ViagemEstelar.sln
 
 env:
  global:
@@ -23,7 +23,7 @@ before_script:
   - php composer.phar install -n
 
 script:
-  - php vendor/bin/phpunit
+  - php vendor/phpunit/phpunit/phpunit
 
 after_script:
-  - php vendor/bin/codacycoverage clover path/to/clover.xml
+  - php vendor/codacy/coverage/bin/codacycoverage clover path/to/clover.xml
