@@ -9,7 +9,7 @@
 <br><br>
 **Integração Contínua > AppVeyor:** 
 <br>
-[![Build status](https://ci.appveyor.com/api/projects/status/40q65vgahi2w9162/branch/master?svg=true)](https://ci.appveyor.com/project/phoenixproject/template/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/yffvife4pum4r0c9/branch/master?svg=true)](https://ci.appveyor.com/project/phoenixproject/template/branch/master)
 <br><br>
 **Acompanhamento de Issues > Waffle IO:** 
 <br>
