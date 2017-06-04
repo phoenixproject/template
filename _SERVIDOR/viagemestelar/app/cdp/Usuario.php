@@ -19,6 +19,7 @@ class Usuario {
     public $email;
     public $password;
     public $dt_criacao;
+    public $tp_usuario;
     
     function getCd_usuario() : int {
         return $this->cd_usuario;
@@ -35,6 +36,10 @@ class Usuario {
     function getDt_criacao() : \DateTime {
         return $this->dt_criacao;
     }
+    
+    function getTp_usuario() : int {
+        return $this->tp_usuario;
+    }
 
     function setCd_usuario($cd_usuario) {
         $this->cd_usuario = $cd_usuario;
@@ -50,6 +55,10 @@ class Usuario {
 
     function setDt_criacao($dt_criacao) {
         $this->dt_criacao = $dt_criacao;
+    }
+
+    function setTp_usuario($tp_usuario) {
+        $this->tp_usuario = $tp_usuario;
     }
 
 

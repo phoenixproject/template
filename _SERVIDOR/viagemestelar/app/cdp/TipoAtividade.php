@@ -14,5 +14,23 @@ namespace app\cdp;
  * @author pchan
  */
 class TipoAtividade {
-    //put your code here
+    
+        private $tp_atividade;
+    private $ds_tp_atividade;
+    
+    function getTp_atividade() : int {
+        return $this->tp_atividade;
+    }
+
+    function getDs_tp_atividade() : string {
+        return $this->ds_tp_atividade;
+    }
+
+    function setTp_atividade($tp_atividade) {
+        $this->tp_atividade = $tp_atividade;
+    }
+
+    function setDs_tp_atividade($ds_tp_atividade) {
+        $this->ds_tp_atividade = $ds_tp_atividade;
+    }
 }
