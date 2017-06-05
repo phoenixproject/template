@@ -1,6 +1,7 @@
 <?php
 
 namespace ifes\init;
+session_start();
 
 abstract class Bootstrap{
     
@@ -9,6 +10,16 @@ abstract class Bootstrap{
     private $action;
         
     public function __construct() {
+        
+        //Capturando a info
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+        
+        //if(isset($_POST["email"])){
+        if(filter_input(INPUT_POST, 'email', FILTER_DEFAULT, FILTER_REQUIRE_SCALAR) &&
+           filter_input(INPUT_POST, 'password', FILTER_DEFAULT, FILTER_REQUIRE_SCALAR)){
+            
+        }
         
         //Se não existe chave(exemplo de chave que poderia existir: minhaurl.php?cliente=add)
         if(key($_GET) == null){

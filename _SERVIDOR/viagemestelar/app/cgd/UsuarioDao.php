@@ -7,12 +7,27 @@
  */
 
 namespace app\cgd;
-
+use app\cdp\Usuario;
+use app\cgd\GenericDao;
 /**
  * Description of UsuarioDao
  *
  * @author pchan
  */
-class UsuarioDao {
-    //put your code here
+class UsuarioDao extends GenericDao {
+    
+    public function __construct(){
+        parent::__construct(new Usuario());
+    }
+        
+    public function ObterUsuarioPorEmailESenha($email, $senha){
+
+        $query = "Select * from {$this->entity->getTable()} where id=:id";
+
+        $stmt = $this->db->getDbconnect()->prepare($query);
+        $stmt->bindValue(':id', $id);
+        $stmt->execute();
+
+        return $stmt->fetch((PDO::FETCH_ASSOC));	
+    }
 }

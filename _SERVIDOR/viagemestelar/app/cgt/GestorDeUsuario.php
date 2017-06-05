@@ -7,12 +7,26 @@
  */
 
 namespace app\cgt;
+use app\cgd\UsuarioDao;
 
 /**
  * Description of GestorDeUsuario
  *
  * @author pchan
  */
-class GestorDeUsuario {
-    //put your code here
+class GestorDeUsuario implements InterfaceDeApresentacao {
+       
+    
+    public function deletar($id): bool {
+        
+    }
+
+    public function find($id) {
+        
+    }
+
+    public function listar($ordem): array {
+        
+    }
+
 }

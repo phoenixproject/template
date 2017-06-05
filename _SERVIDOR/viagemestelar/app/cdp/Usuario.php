@@ -13,13 +13,17 @@ namespace app\cdp;
  *
  * @author pchan
  */
-class Usuario {
+class Usuario extends Entity {
     
     public $cd_usuario;
     public $email;
     public $password;
     public $dt_criacao;
     public $tp_usuario;
+    
+    public function __construct() {
+        parent::__construct("usuario");        
+    }
     
     function getCd_usuario() : int {
         return $this->cd_usuario;
