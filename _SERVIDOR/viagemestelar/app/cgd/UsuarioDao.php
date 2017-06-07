@@ -20,12 +20,13 @@ class UsuarioDao extends GenericDao {
         parent::__construct(new Usuario());
     }
         
-    public function ObterUsuarioPorEmailESenha($email, $senha){
+    public function ObterUsuarioPorEmailESenha($email, $password) : bool {
 
-        $query = "Select * from {$this->entity->getTable()} where id=:id";
+        $query = "Select * from {$this->entity->getTable()} where email=:email and password=:password";
 
         $stmt = $this->db->getDbconnect()->prepare($query);
-        $stmt->bindValue(':id', $id);
+        $stmt->bindValue(':email', $email);
+        $stmt->bindValue(':password', $password);
         $stmt->execute();
 
         return $stmt->fetch((PDO::FETCH_ASSOC));	

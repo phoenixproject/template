@@ -47,4 +47,15 @@ class Init extends Bootstrap {
         );
         $this->setRoutes($ar);
     }
+    
+    protected function initRouteLogin(){
+    
+        $ar['login'] = array(
+            'route'=>'/login',
+            'controller'=>'login',
+            'action'=>'start'
+        );
+        
+        $this->setRoutes($ar);
+    }    
 }

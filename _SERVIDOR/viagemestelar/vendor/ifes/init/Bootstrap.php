@@ -1,7 +1,6 @@
 <?php
 
 namespace ifes\init;
-session_start();
 
 abstract class Bootstrap{
     
@@ -11,38 +10,39 @@ abstract class Bootstrap{
         
     public function __construct() {
         
+        //Para armazenar informações da Url
+        $this->armazenaInformacaoDaUrl();
+        
+        if(!isset($_SESSION['usuariosessao'])){
+            //Para inicializar somente a rota para login
+            $this->initRouteLogin();
+        }
+        else{
+            //Para inicializar as rotas
+            $this->initRoutes();
+        }
+        
+        //Para exibir o controller
+        $this->run($this->getUrl());                        
+        
         //Capturando a info
-        $email = $_POST["email"];
+        /*$email = $_POST["email"];
         $password = $_POST["password"];
         
         //if(isset($_POST["email"])){
         if(filter_input(INPUT_POST, 'email', FILTER_DEFAULT, FILTER_REQUIRE_SCALAR) &&
            filter_input(INPUT_POST, 'password', FILTER_DEFAULT, FILTER_REQUIRE_SCALAR)){
             
-        }
-        
-        //Se não existe chave(exemplo de chave que poderia existir: minhaurl.php?cliente=add)
-        if(key($_GET) == null){
-            //Armazena a chave como vazio 
-            $this->route = "";            
-            //Armazena o valor da chave como vazio
-            $this->action = "";   
-        }
-        else{
-            //Armazena a chave (cliente)
-            $this->route = key($_GET);            
-            //Armazena o valor da chave (add)
-            $this->action = $_GET[$this->route];   
-        }
-        
-        //Para inicializar as rotas
-        $this->initRoutes();
+            
+           $_SESSION['usersession'] = serialize($obj);   
+        }*/        
                 
-        //Para exibir o controller
-        $this->run($this->getUrl());                        
+        
     }
     
     abstract protected function initRoutes();
+    
+    abstract protected function initRouteLogin();
        
     protected function run($url){
     	//array_walk é um método que fica percorrendo um array como um foreach.
@@ -92,6 +92,23 @@ abstract class Bootstrap{
     
     protected function getController(){
     	return key($_GET);
+    }
+    
+    public function armazenaInformacaoDaUrl(){
+        
+        //Se não existe chave(exemplo de chave que poderia existir: minhaurl.php?cliente=add)
+        if(key($_GET) == null){
+            //Armazena a chave como vazio 
+            $this->route = "";            
+            //Armazena o valor da chave como vazio
+            $this->action = "";   
+        }
+        else{
+            //Armazena a chave (cliente)
+            $this->route = key($_GET);            
+            //Armazena o valor da chave (add)
+            $this->action = $_GET[$this->route];   
+        }        
     }
     
 }

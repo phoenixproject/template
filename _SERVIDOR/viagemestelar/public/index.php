@@ -3,6 +3,10 @@
     require_once '../vendor/autoload.php';
     use app\Init;
 
-   $init = new Init;
+    if(!$_SESSION['usuariosessao']){
+        $init = new Init;
+    }
+    
+   
    
 ?>
