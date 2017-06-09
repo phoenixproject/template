@@ -19,13 +19,13 @@ use app\cdp\Usuario;
  *
  * @author pchan
  */
-class Login {
+class Login extends Action {
     
     private $intarfaceDeApresentacao;
 
     public function __construct() {        
         //Inicia a sessão
-        session_start();
+        //session_start();
         $this->intarfaceDeApresentacao = new GestorDeUsuario();        
     }
     
@@ -34,13 +34,8 @@ class Login {
     }
     
     function logar() {
-    
-      if (isset($_POST['customer'])) {
-          
-      }
-        
-              
-      if (isset($_GET['id'])) {
+                  
+    if (isset($_GET['id'])) {
         $id = $_GET['id'];
         if (isset($_POST['customer'])) {
           $customer = $_POST['customer'];

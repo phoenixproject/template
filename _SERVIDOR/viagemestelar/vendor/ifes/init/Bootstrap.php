@@ -7,21 +7,18 @@ abstract class Bootstrap{
     private $routes;    
     private $route;
     private $action;
+    private $teste;
         
     public function __construct() {
         
+        $this->teste = key($_GET);
+        
+        //Para inicializar as rotas
+         $this->initRoutes();
+        
         //Para armazenar informações da Url
         $this->armazenaInformacaoDaUrl();
-        
-        if(!isset($_SESSION['usuariosessao'])){
-            //Para inicializar somente a rota para login
-            $this->initRouteLogin();
-        }
-        else{
-            //Para inicializar as rotas
-            $this->initRoutes();
-        }
-        
+                
         //Para exibir o controller
         $this->run($this->getUrl());                        
         
@@ -56,7 +53,7 @@ abstract class Bootstrap{
                 $nomerota = $this->route;
                 $nomeacao = $this->action;
             
-    		if($url == $route['route']){
+    		if($url == $route['route'] || $route['route'] == '/login'){
                         
                     //Se a rota estiver vazia é porque se trata do index 
                     //if(!(isset($this->route))){
@@ -97,17 +94,27 @@ abstract class Bootstrap{
     public function armazenaInformacaoDaUrl(){
         
         //Se não existe chave(exemplo de chave que poderia existir: minhaurl.php?cliente=add)
-        if(key($_GET) == null){
+        if(!isset($_SESSION['usuariosessao'])){
             //Armazena a chave como vazio 
-            $this->route = "";            
+            $this->route = "login";            
             //Armazena o valor da chave como vazio
-            $this->action = "";   
+            $this->action = "start";   
+            //Reescreve rotas para inicializar somente a rota para login
+            $this->initRouteLogin();
         }
         else{
-            //Armazena a chave (cliente)
-            $this->route = key($_GET);            
-            //Armazena o valor da chave (add)
-            $this->action = $_GET[$this->route];   
+            if(key($_GET) == null){
+                //Armazena a chave como vazio 
+                $this->route = "";            
+                //Armazena o valor da chave como vazio
+                $this->action = "";   
+            }
+            else{
+                //Armazena a chave (cliente)
+                $this->route = key($_GET);            
+                //Armazena o valor da chave (add)
+                $this->action = $_GET[$this->route];   
+            }                    
         }        
     }
     

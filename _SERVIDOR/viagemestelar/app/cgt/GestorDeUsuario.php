@@ -18,7 +18,7 @@ class GestorDeUsuario implements InterfaceDeApresentacao {
        
     
     public function deletar($id): bool {
-        
+        return false;
     }
 
     public function find($id) {
@@ -26,7 +26,7 @@ class GestorDeUsuario implements InterfaceDeApresentacao {
     }
 
     public function listar($ordem): array {
-        
+        return "";
     }
 
 }
