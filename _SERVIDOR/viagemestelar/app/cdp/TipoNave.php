@@ -14,5 +14,23 @@ namespace app\cdp;
  * @author pchan
  */
 class TipoNave {
-    //put your code here
+    
+        private $tp_nave;
+    private $ds_tp_nave;
+    
+    function getTp_nave() : int {
+        return $this->tp_nave;
+    }
+
+    function getDs_tp_nave() : string {
+        return $this->ds_tp_nave;
+    }
+
+    function setTp_nave($tp_nave) {
+        $this->tp_nave = $tp_nave;
+    }
+
+    function setDs_tp_nave($ds_tp_nave) {
+        $this->ds_tp_nave = $ds_tp_nave;
+    }
 }

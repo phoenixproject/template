@@ -14,19 +14,10 @@ namespace app\cdp;
 abstract class Entity {
     
     	private $table;
-	private $id;	
-        
+	        
         public function __construct($table) {            
             $this->table = $table;
         }        
-    
-        function getId() : int {
-            return $this->id;
-        }
-        
-        function setId($id) {
-            $this->id = $id;
-        }
         
         function getTable() : string {
             return $this->table;

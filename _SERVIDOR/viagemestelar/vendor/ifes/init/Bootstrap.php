@@ -7,31 +7,39 @@ abstract class Bootstrap{
     private $routes;    
     private $route;
     private $action;
+    private $teste;
         
     public function __construct() {
         
-        //Se não existe chave(exemplo de chave que poderia existir: minhaurl.php?cliente=add)
-        if(key($_GET) == null){
-            //Armazena a chave como vazio 
-            $this->route = "";            
-            //Armazena o valor da chave como vazio
-            $this->action = "";   
-        }
-        else{
-            //Armazena a chave (cliente)
-            $this->route = key($_GET);            
-            //Armazena o valor da chave (add)
-            $this->action = $_GET[$this->route];   
-        }
+        $this->teste = key($_GET);
         
         //Para inicializar as rotas
-        $this->initRoutes();
+         $this->initRoutes();
+        
+        //Para armazenar informações da Url
+        $this->armazenaInformacaoDaUrl();
                 
         //Para exibir o controller
         $this->run($this->getUrl());                        
+        
+        //Capturando a info
+        /*$email = $_POST["email"];
+        $password = $_POST["password"];
+        
+        //if(isset($_POST["email"])){
+        if(filter_input(INPUT_POST, 'email', FILTER_DEFAULT, FILTER_REQUIRE_SCALAR) &&
+           filter_input(INPUT_POST, 'password', FILTER_DEFAULT, FILTER_REQUIRE_SCALAR)){
+            
+            
+           $_SESSION['usersession'] = serialize($obj);   
+        }*/        
+                
+        
     }
     
     abstract protected function initRoutes();
+    
+    abstract protected function initRouteLogin();
        
     protected function run($url){
     	//array_walk é um método que fica percorrendo um array como um foreach.
@@ -45,7 +53,7 @@ abstract class Bootstrap{
                 $nomerota = $this->route;
                 $nomeacao = $this->action;
             
-    		if($url == $route['route']){
+    		if($url == $route['route'] || $route['route'] == '/login'){
                         
                     //Se a rota estiver vazia é porque se trata do index 
                     //if(!(isset($this->route))){
@@ -81,6 +89,33 @@ abstract class Bootstrap{
     
     protected function getController(){
     	return key($_GET);
+    }
+    
+    public function armazenaInformacaoDaUrl(){
+        
+        //Se não existe chave(exemplo de chave que poderia existir: minhaurl.php?cliente=add)
+        if(!isset($_SESSION['usuariosessao'])){
+            //Armazena a chave como vazio 
+            $this->route = "login";            
+            //Armazena o valor da chave como vazio
+            $this->action = "start";   
+            //Reescreve rotas para inicializar somente a rota para login
+            $this->initRouteLogin();
+        }
+        else{
+            if(key($_GET) == null){
+                //Armazena a chave como vazio 
+                $this->route = "";            
+                //Armazena o valor da chave como vazio
+                $this->action = "";   
+            }
+            else{
+                //Armazena a chave (cliente)
+                $this->route = key($_GET);            
+                //Armazena o valor da chave (add)
+                $this->action = $_GET[$this->route];   
+            }                    
+        }        
     }
     
 }

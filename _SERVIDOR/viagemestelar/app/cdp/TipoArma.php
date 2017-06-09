@@ -14,5 +14,23 @@ namespace app\cdp;
  * @author pchan
  */
 class TipoArma {
-    //put your code here
+    
+    private $tp_arma;
+    private $ds_tp_arma;
+    
+    function getTp_arma() : int {
+        return $this->tp_arma;
+    }
+
+    function getDs_tp_arma() : string {
+        return $this->ds_tp_arma;
+    }
+
+    function setTp_arma($tp_arma) {
+        $this->tp_arma = $tp_arma;
+    }
+
+    function setDs_tp_arma($ds_tp_arma) {
+        $this->ds_tp_arma = $ds_tp_arma;
+    }    
 }
