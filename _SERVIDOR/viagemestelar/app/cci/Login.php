@@ -22,19 +22,42 @@ use app\cdp\Usuario;
 class Login extends Action {
     
     private $intarfaceDeApresentacao;
+    public $loginuser;
 
     public function __construct() {        
+       
         //Inicia a sessão
         //session_start();
+        
         $this->intarfaceDeApresentacao = new GestorDeUsuario();        
+        
+        $this->configuraLogin();        
     }
     
     public function start(){
-        $this->render('start',false);
+        
+        //$teste1 = $_REQUEST['email'];
+        //$teste2 = $_REQUEST['password'];
+        
+        if (isset($_REQUEST['email']) && isset($_REQUEST['password'])) {
+            
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+                        
+            $_SESSION['usuariosessao'] = "usuariodasessao";
+            
+            echo "ok";
+            
+            $this->render('index');           
+        }
+        else{
+            $this->render('start',false);    
+        }
+        
     }
     
     function logar() {
-                  
+        
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
         if (isset($_POST['customer'])) {
@@ -50,4 +73,10 @@ class Login extends Action {
         header('location: index.php');
       }
     }     
+    
+    function configuraLogin(){
+        $this->loginuser = array();
+        $this->loginuser['email'] = "";
+        $this->loginuser['password'] = "";
+    }
 }

@@ -11,6 +11,8 @@ abstract class Bootstrap{
         
     public function __construct() {
         
+        session_start();
+        
         $this->teste = key($_GET);
         
         //Para inicializar as rotas
@@ -53,6 +55,7 @@ abstract class Bootstrap{
                 $nomerota = $this->route;
                 $nomeacao = $this->action;
             
+                //Se rota estiver na lista de rotas ou for uma rota do tipo login
     		if($url == $route['route'] || $route['route'] == '/login'){
                         
                     //Se a rota estiver vazia é porque se trata do index 
@@ -103,6 +106,9 @@ abstract class Bootstrap{
             $this->initRouteLogin();
         }
         else{
+            
+            //session_destroy();
+            
             if(key($_GET) == null){
                 //Armazena a chave como vazio 
                 $this->route = "";            

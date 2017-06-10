@@ -40,6 +40,11 @@ class Init extends Bootstrap {
             'controller'=>'cliente',
             'action'=>'edit'
         );
+        $ar['logout'] = array(
+            'route'=>'/logout',
+            'controller'=>'logout',
+            'action'=>'yes'
+        );        
         $this->setRoutes($ar);
     }
     
