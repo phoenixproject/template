@@ -15,18 +15,10 @@ use \ifes\controller\Action;
  * @author pchan
  */
 class Logout extends Action {
-    
-    //public function __construct() {               
-        //Gravar a hora do último login
-        //$this->intarfaceDeApresentacao = new GestorDeUsuario();                
-    //}
-    
+        
     public function yes(){
         session_destroy();
-        $this->render('index');           
-        //header('index.php'); 
-        //header('Localização: mapeamento.php'); 
-        //echo "<meta HTTP-EQUIV='refresh' CONTENT='5;URL=index.php'>";
+        $this->render('index');                   
         header("Refresh:0; url=index.php");
     }
     

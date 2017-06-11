@@ -106,9 +106,6 @@ abstract class Bootstrap{
             $this->initRouteLogin();
         }
         else{
-            
-            //session_destroy();
-            
             if(key($_GET) == null){
                 //Armazena a chave como vazio 
                 $this->route = "";            

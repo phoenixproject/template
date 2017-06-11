@@ -46,8 +46,7 @@ class Login extends Action {
                         
             $_SESSION['usuariosessao'] = "usuariodasessao";
             
-            echo "ok";
-            
+            //Retorna para o índice
             $this->render('index');           
         }
         else{
