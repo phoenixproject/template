@@ -4,8 +4,6 @@
     use app\Init;
 
     $init = new Init;
-
-    
    
    
 ?>
