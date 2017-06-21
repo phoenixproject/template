@@ -109,14 +109,13 @@ inserir principais diagramas comportamentais da análise (principalmente, estado
 
 ### 1.5  Dicionário de Dados
 
-[classe/entidade]: [descrição da classe]
-    
-    EXEMPLO:
-    CLIENTE: classe/entidade que representa as informações relativas ao cliente<br>
-    CPF: atributo que representa o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+[Modelo Físico do banco de dados ](https://github.com/phoenixproject/viagemestelar/wiki/Banco-de-Dados---MySQL-Server#dicionario_de_dados)
     
 ## 2.    Projeto de Sistemas:
 ### 2.1  Projeto Arquitetural 
+
+[Projeto Arquitetural Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#arquitetura_de_software)
+
 #### 2.1.1   Plataforma de Implementação e Tecnologias
 
 As tecnologias utilizadas no sistema envolvem a engine Unity 5 com linguagem C Sharp no cliente e linguagem PHP 7 com o framework Bootstrap 3 no servidor.
@@ -239,9 +238,10 @@ O padrão foi utilizado para resolver o problema de .....
 
 ### 3.2	Modelo Lógico<br>
 
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_logico_sql_developer.png?raw=true "Diagrama de Modelo Lógico")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_logico_sql_developer.png?raw=true "Diagrama de Modelo Lógico")'![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_logico_sql_developer.png?raw=true "Diagrama de Modelo Lógico")
 
 ### 3.3	MODELO FÍSICO<br>
+
 [Modelo Físico do banco de dados ](https://github.com/phoenixproject/viagemestelar/wiki/Banco-de-Dados---MySQL-Server#modelo_fisico)
 
 ### 3.6	ATUALIZAÇÃO DA DOCUMENTAÇÃO/ SLIDES E ENTREGA FINAL<br>
