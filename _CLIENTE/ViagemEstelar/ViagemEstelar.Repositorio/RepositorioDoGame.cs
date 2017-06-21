@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ViagemEstelar.Repositorio
 {
-	class RepositorioDoGame
+	public class RepositorioDoGame
 	{
 	}
 }

@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Bomba.cs" />
     <Compile Include="Assets\Scripts\Colisao.cs" />
     <Compile Include="Assets\Scripts\Explosao.cs" />
+    <Compile Include="Assets\Scripts\HistoricoGame.cs" />
     <Compile Include="Assets\Scripts\Inimigo.cs" />
     <Compile Include="Assets\Scripts\Jogador.cs" />
   </ItemGroup>
