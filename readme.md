@@ -245,77 +245,8 @@ O padrão foi utilizado para resolver o problema de .....
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_logico_sql_developer.png?raw=true "Diagrama de Modelo Lógico")
 
 ### 3.3	MODELO FÍSICO<br>
-### 3.4	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-#### 3.4.1 DETALHAMENTO DAS INFORMAÇÕES
-        Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
-        Informar/referenciar todas as fontes usadas para:
-        a) obtenção dos dados
-        b) obtenção de códigos reutilizados (caso tenha feito uso destes)
-        c) fontes de estudo para desenvolvimento do projeto
-        
-#### 3.4.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS (ARQUIVO ÚNICO COM):
-        a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
-        b) inclusão das instruções de inserção dos dados nas referidas tabelas
-        c) inclusão das instruções para execução de outros procedimentos necessários
+[Modelo Físico (Inserts, Descrição completa sobre banco de dados)](https://github.com/phoenixproject/viagemestelar/wiki/Banco-de-Dados---MySQL-Server#modelo_fisico)
 
-### 3.5	TABELAS E PRINCIPAIS CONSULTAS<br>
-#### 3.5.1	GERACAO DE DADOS (MÍNIMO DE 1,5 MILHÃO DE REGISTROS PARA PRINCIPAL RELAÇAO)<br>
-    Data de Entrega: (Data a ser definida)
-<br>
-OBS: Incluir para os tópicos 3.5.2 e 3.5.3 as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
-
-#### 3.5.2	SELECT DAS TABELAS COM PRIMEIROS 10 REGISTROS INSERIDOS<br> 
-
-    Data de Entrega: (Data a ser definida)
-<br>
-
-#### 3.5.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS
-
-<br>
-        a) Descrição da view sobre que grupos de usuários (operacional/estratégico) <br>
-        e necessidade ela contempla.
-        b) Descrição das permissões de acesso e usuários correlacionados (após definição <br>
-        destas características)
-    Data de Entrega: (Data a ser definida)
-<br>
-
-#### 3.5.4	LISTA DE CODIGOS DAS FUNÇÕES, ASSERÇOES E TRIGGERS<br>
-        Detalhamento sobre funcionalidade de cada código.
-        a) Objetivo
-        b) Código do objeto (função/trigger/asserção)
-        c) exemplo de dados para aplicação
-        d) resultados em forma de tabela/imagem
-<br>
-#### 3.5.5	Administração do banco de dados<br>
-        Descrição detalhada sobre como serão executadas no banco de dados as <br>
-        seguintes atividades.
-        a) Segurança e autorização de acesso:
-        b) Estimativas de aquisição de recursos para armazenamento e processamento da informação
-        c) Planejamento de rotinas de manutenção e monitoramento do banco
-        d) Plano com frequencia de análises visando otimização de performance
-<br>
-#### 3.5.6	Backup do Banco de Dados<br>
-        Detalhamento do backup.
-        a) Tempo
-        b) Tamanho
-        c) Teste de restauração (backup)
-        d) Tempo para restauração
-        e) Teste de restauração (script sql)
-        f) Tempo para restauração (script sql)
-<br>
-
-#### 3.5.7	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
-    a) Lista de índices, tipos de índices com explicação de porque foram implementados
-    b) Performance esperada VS Resultados obtidos
-    c) Tabela de resultados comparando velocidades antes e depois da aplicação dos índices.
-<br>
-    Data de Entrega: (Data a ser definida)
-<br>   
-#### 3.5.8	ANÁLISE DOS DADOS COM ORANGE<br>    
-    a) aplicação de algoritmos e interpretação dos resultados
-<br>
-    Data de Entrega: (Data a ser definida)
-<br>
 ### 3.6	ATUALIZAÇÃO DA DOCUMENTAÇÃO/ SLIDES E ENTREGA FINAL<br>
 <br>
     Data de Entrega: (Data a ser definida)
