@@ -42,9 +42,7 @@ O projeto Viagem Estelar surgiu a partir da necessidade de se construir um jogo 
 
 Os usuários deste sistema de jogo prezam prezam pela ação e interação constante que estimule a adrenalina.
 
-## 3 Mini Mundo
-
-# minimundo
+## 3_Mini_Mundo
 
 Viagem Estelar se trata de um jogo de tiro no estilo nave (shooter) que permite ao usuário percorrer por um trajeto em um ambiente espacial onde outros inimigos poderão ser abatidos para acumular pontos para abrir caminho durante o jogo e desejavelmente, ao mesmo tempo montar um quebra cabeças, fazer combinações entre tipos de armas e naves distintas, armazenando as pontuções no servidor, bem como os tipos de atividades que estão acontecendo (login, ganhou, perdeu, etc).
 O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides e naves inimigas com o intuito de ganhar pontuação para serem posteriormente armazenadas em um servidor na internet. Este servidor possui uma área para gerenciamento de dados pessoais que o usuário poderá acessar e que os administradores do sistema poderão retirar relatórios de atividades ou gerenciar atividades do usuário.
