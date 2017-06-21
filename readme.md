@@ -231,21 +231,18 @@ O padrão foi utilizado para resolver o problema de .....
 
 ## 3.    Banco de Dados (BD)
 
-### 3.1 Decisões do Projeto 
-    [atributo]: [descrição da decisão]
-    
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
+[Documentação completa sobre banco de dados)](https://github.com/phoenixproject/viagemestelar/wiki/Banco-de-Dados---MySQL-Server)
 
+### 3.1 Decisões do Projeto 
+
+[Decisões de Projeto](https://github.com/phoenixproject/viagemestelar/wiki/Banco-de-Dados---MySQL-Server#decis%C3%B5es_de_projeto)
 
 ### 3.2	Modelo Lógico<br>
 
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_logico_sql_developer.png?raw=true "Diagrama de Modelo Lógico")
 
 ### 3.3	MODELO FÍSICO<br>
-[Modelo Físico (Inserts, Descrição completa sobre banco de dados)](https://github.com/phoenixproject/viagemestelar/wiki/Banco-de-Dados---MySQL-Server#modelo_fisico)
+[Modelo Físico do banco de dados ](https://github.com/phoenixproject/viagemestelar/wiki/Banco-de-Dados---MySQL-Server#modelo_fisico)
 
 ### 3.6	ATUALIZAÇÃO DA DOCUMENTAÇÃO/ SLIDES E ENTREGA FINAL<br>
 <br>
