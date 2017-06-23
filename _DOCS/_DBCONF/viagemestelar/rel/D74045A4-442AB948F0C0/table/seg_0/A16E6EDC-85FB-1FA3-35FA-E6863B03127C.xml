@@ -28,6 +28,28 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="inimigos_destruidos" id="1FF8DFA5-B3BF-4872-F84E-52AF52A9FF8A">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-21 13:45:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fases_completadas" id="6DE728C6-66BB-59FB-A019-BA970B17C328">
+<createdBy>pchan</createdBy>
+<createdTime>2017-06-21 13:45:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>viagemestelar</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="cd_combinacao" id="01765102-0B03-D44A-5270-EFD885AA1255">
 <createdBy>pchan</createdBy>
 <createdTime>2017-06-03 20:50:35 UTC</createdTime>
