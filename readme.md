@@ -101,7 +101,17 @@ Inserir diagramas dos Casos de Uso (UML) e descrever brevemente.
 
 ### 1.3  Modelagem Estrutural (Modelo Conceitual)
 
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_conceitual.png?raw=true "Modelo Conceitual")
+Modelo Conceitual representando a rotina do Usuário no Cliente.
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_conceitual_cliente_usuario.png?raw=true "Modelo Conceitual - Cliente (Usuario)")
+
+Modelo Conceitual representando a rotina do Usuário no Servidor.
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_conceitual_servidor_usuario.png?raw=true "Modelo Conceitual - Cliente (Usuario)")
+
+Modelo Conceitual representando a rotina do Administrador no Servidor.
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_conceitual_servidor_usuario.png?raw=true "Modelo Conceitual - Cliente (Usuario)")
 
 ### 1.4  Modelagem Comportamental
 
