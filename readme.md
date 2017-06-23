@@ -95,7 +95,7 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 
 Arquitetura de subsistemas envolvidos.
 
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_arquitetura_software?raw=true "Diagrama de Arquitetura de Software")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_arquitetura_software.png?raw=true "Diagrama de Arquitetura de Software")
 
 [Projeto Arquitetural Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#arquitetura_de_software)
 
