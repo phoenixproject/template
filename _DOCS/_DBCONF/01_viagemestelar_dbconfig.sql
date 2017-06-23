@@ -51,6 +51,8 @@ CREATE TABLE IF NOT EXISTS Atividade (
 CREATE TABLE IF NOT EXISTS Partida (
     cd_partida	        integer not null AUTO_INCREMENT,
 	pontos				integer not null,
+	inimigos_destruidos	integer not null,
+	fases_completadas	integer not null,
 	cd_combinacao		integer not null,
 	cd_atividade		integer not null,    
 	PRIMARY KEY(cd_partida)

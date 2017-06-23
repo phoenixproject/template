@@ -33,12 +33,11 @@ Trabalho desenvolvido durante as disciplinas de:
 
 # Gerência de Requisitos
 
-## 1	Motivação e Propósito do Sistema 
+## 1 Motivação e Propósito do Sistema 
 
 O projeto Viagem Estelar surgiu a partir da necessidade de se construir um jogo não só com características de um shooter, mas também, desejavelmente, de estimular o raciocínio para montar quebra cabeças durante a execução do jogo. 
 
-
-## 2	Personas
+## 2 Personas
 
 Os usuários deste sistema de jogo prezam prezam pela ação e interação constante que estimule a adrenalina.
 
@@ -88,7 +87,8 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 | RN04 | A cada 100 pontos o usuário ganha uma prêmiação de mais um nível. | Essencial |
 | RN05 | O jogador poderá combinar a cada fase um tipo de nave e arma diferentes. | Desejável |
 
-#Desenvolvimento do Sistema
+# Desenvolvimento do Sistema
+
 ## 1.    Análise de Sistemas:
 
 ### 1.1  Subsistemas
@@ -120,39 +120,41 @@ inserir principais diagramas comportamentais da análise (principalmente, estado
 
 As tecnologias utilizadas no sistema envolvem a engine Unity 5 com linguagem C Sharp no cliente e linguagem PHP 7 com o framework Bootstrap 3 no servidor.
 
-Cliente - Justifica-se o uso da engine Unity 5 por conta de sua produtividade e possibilidade de integração com a linguagem C Sharp. Esta linguagem se destaca por conta de ser orientada a objetos e ter uma gama extensa de bibliotecas que a tornam fácil de se trabalhar, especialmente por conter biblioteca que permite manipular o protocolo JSON e utilizá-lo entre comunicação de cliente e servidor.
+##### Cliente - Justifica-se o uso da engine Unity 5 por conta de sua produtividade e possibilidade de integração com a linguagem C Sharp. Esta linguagem se destaca por conta de ser orientada a objetos e ter uma gama extensa de bibliotecas que a tornam fácil de se trabalhar, especialmente por conter biblioteca que permite manipular o protocolo JSON e utilizá-lo entre comunicação de cliente e servidor.
 
-Servidor - A linguagem PHP 7 foi escolhida por sua performance, facilidade de escrita e de hospedagem e por trabalhar com vários tipos de tecnologia web e de comunicação com servidores ou clientes remotos. O framework Bootstrap foi esocolhido por conta de sua fácil adequação a qualquer tipo de layout e seu fácil manuseio diante de uma simples leitura do manual de sua biblioteca.
+##### Servidor - A linguagem PHP 7 foi escolhida por sua performance, facilidade de escrita e de hospedagem e por trabalhar com vários tipos de tecnologia web e de comunicação com servidores ou clientes remotos. O framework Bootstrap foi esocolhido por conta de sua fácil adequação a qualquer tipo de layout e seu fácil manuseio diante de uma simples leitura do manual de sua biblioteca.
 
-Acerca das tecnologias envolvidas:
+##### Acerca das tecnologias envolvidas:
 
-AppVeyor - Ferramenta/Serviço utilizada para integração contínua e análise de consistência de código durante merge de branchs em pull requests.
+##### AppVeyor - Ferramenta/Serviço utilizada para integração contínua e análise de consistência de código durante merge de branchs em pull requests.
 
-Codacy - Ferramenta/Serviço utilizada para análise de erros de código em tempo real.
+##### Codacy - Ferramenta/Serviço utilizada para análise de erros de código em tempo real.
 
-Waffle - Ferramenta/Serviço utilizado para gerenciamento de Issues no Github.
+##### Waffle - Ferramenta/Serviço utilizado para gerenciamento de Issues no Github.
 
-Astah Community - Programa utilizado para a elaboração de diagramas na documentação do sistema.
+##### Astah Community - Programa utilizado para a elaboração de diagramas na documentação do sistema.
 
-SQL Developer - Ferramenta da Oracle utilizada para criação de modelo lógico de banco de dados.
+##### SQL Developer - Ferramenta da Oracle utilizada para criação de modelo lógico de banco de dados.
 
-Composer - Gerenciador de Dependências do PHP.
+##### Composer - Gerenciador de Dependências do PHP.
 
-Netbeans - IDE utilizada para desenvolver o projeto de servidor PHP 7.
+##### Netbeans - IDE utilizada para desenvolver o projeto de servidor PHP 7.
 
-Nginx - Proxy reverso utilizado para servir as requisições via FAST CGI do PHP-FPM.
+##### Apache - Servidor web responsável por hospedar e servir os arquivos PHP.
 
-Bootstrap - Framework CSS que permite desenho de telas em html de modo responsivo.
+##### Nginx - Proxy reverso utilizado na simulação do projeto para servir as requisições via FAST CGI do PHP-FPM.
 
-MySQL - Banco de dados da Oracle, free para projetos open source.
+##### Bootstrap - Framework CSS que permite desenho de telas em html de modo responsivo.
 
-C# (c sharp) - Linguagem orientada a objetos da Microsoft de alto nível, altamente tipada e utilizada para comunicação com servidor e interação com o game.
+##### MySQL - Banco de dados da Oracle, free para projetos open source.
 
-PHP 7 - Linguagem orientada a objetos de alto nível, fracamente tipada e utilizada para receber requisições de clientes e gerenciar informações em banco de dados MySQL.
+##### C# (c sharp) - Linguagem orientada a objetos da Microsoft de alto nível, altamente tipada e utilizada para comunicação com servidor e interação com o game.
 
-Visual Studio 2017 Community - IDE responsável pelo desenvolvimento de software cliente em C# e Unity 5.
+##### PHP 7 - Linguagem orientada a objetos de alto nível, fracamente tipada e utilizada para receber requisições de clientes e gerenciar informações em banco de dados MySQL.
 
-Unity 5 - Game Engine responsável para fazer a intermediação/interação entre a linguagem C# (utilizada como script na Unity) e bitmaps do jogo.
+##### Visual Studio 2017 Community - IDE responsável pelo desenvolvimento de software cliente em C# e Unity 5.
+
+##### Unity 5 - Game Engine responsável para fazer a intermediação/interação entre a linguagem C# (utilizada como script na Unity) e bitmaps do jogo.
 
 #### 2.1.2   Atributos de Qualidade e Táticas
 
