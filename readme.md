@@ -93,7 +93,11 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 
 ### 1.1  Subsistemas
 
-inserir diagrama dos subsistemas UML
+Arquitetura de subsistemas envolvidos.
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_arquitetura_software?raw=true "Diagrama de Arquitetura de Software")
+
+[Projeto Arquitetural Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#arquitetura_de_software)
 
 ### 1.2  Modelagem de Casos de uso 
 
@@ -111,7 +115,7 @@ Modelo Conceitual representando a rotina do Usuário no Servidor.
 
 Modelo Conceitual representando a rotina do Administrador no Servidor.
 
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_conceitual_servidor_usuario.png?raw=true "Modelo Conceitual - Cliente (Usuario)")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_conceitual_servidor_administrador.png?raw=true "Modelo Conceitual - Cliente (Usuario)")
 
 ### 1.4  Modelagem Comportamental
 
@@ -186,9 +190,12 @@ apresentar diagrama UML da arquitetura do sistema. justificar as decisões tomad
 
 ### 2.2. Projeto Detalhado
 OBS: repetir as seções abaixo para cada subsistema
+
 #### 2.2.1.   Projeto da Lógica de Negócio
+
 ##### Projeto do Domínio
-apresentar diagrama de classes do domínio
+
+[Projeto Arquitetural Servidor Web - Padrão de Lógica de Negócio - Justificativa](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#padrao_de_logica_de_negocio)
 
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_dominio_problema_cliente.png?raw=true "Modelo Domínio Cliente")
 
