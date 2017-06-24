@@ -214,21 +214,21 @@ Digrama de Caso de Uso:
 | Atributo | Valor |
 | --- | --- | 
 | Nome do Caso de Uso | Opções no cliente | 
-| Objetivo: | Efetuar login no sistema para validar as informações do usuário no servidor |
-| RFs: | RF12 |
+| Objetivo: | Alterar nível de dificuldade do jogo |
+| RFs: | RF01 |
 | Atores: | Usuário (jogador) | 
 | Prioridade: | 2 |
-| Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento de usuários pronta. | 
-| Frequência de uso: | Toda a vez em que for necessário o envio e recebimento de informações do servidor. | 
-| Campos: | email e password. | 
-| Fluxo Principal: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela de login e password é exibida. c) O usuário digita seu login, password e clica no botão login. | 
+| Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento de jogo pronta. | 
+| Frequência de uso: | Quando se quiser alterar o nível de dificuldade do jogo. | 
+| Campos: | nível de dificuldade, voltar para a tela inicial. | 
+| Fluxo Principal: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela cotendo os itens Jogar, Opções e Login é exibida. c) O usuário clica no link Opções. d) Em seguida, na tela em que se abrirá ele poderá alterar o nível de dificuldade clicando ao lado do direito da caixa onde está escrito nível de dificuldade e alterando os parâmetros númericos com o teclado. e) Clica no botão voltar para tela inicial. | 
 | Fluxo Alternativo: | - | 
-| Fluxo de Exceção: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela de login e password é exibida. c) O usuário digita seu login, password e clica no botão login. d) O email ou senha digitados estão incorretos. e) Volta para o item "b" ou clica no botão fazer um novo cadastro |
-| Validações | Os campos email e password são tidos como de preenchimento obrigatórios. | 
+| Fluxo de Exceção: | - |
+| Validações | O parâmetro nível de dificuldade só permite valores entre 1 e 3 | 
 
 Protótipo de tela de login:
 
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/02_tela_login_cliente.png?raw=true "Tela de opções de Jogo - Cliente")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/03_tela_opcoes_jogo.png?raw=true "Tela de opções de Jogo - Cliente")
 
 Digrama de Caso de Uso:
 
