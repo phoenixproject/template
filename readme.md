@@ -108,7 +108,7 @@ Arquitetura de Software (Cliente)
 
 ### 1.2  Modelagem de Casos de uso 
 
-[Diagramas de Casos de Uso Cliente/Servidor](https://github.com/phoenixproject/viagemestelar/wiki/Diagrama-de-Casos-de-Uso---Cliente-Servidor#diagramas_de_caso_de_uso)
+[Decrição e Diagramas de Casos de Uso Cliente/Servidor e Protótipos(Moockups)](https://github.com/phoenixproject/viagemestelar/wiki/Diagrama-de-Casos-de-Uso---Cliente-Servidor#diagramas_de_caso_de_uso)
 
 ### 1.3  Modelagem Estrutural (Modelo Conceitual)
 
@@ -197,7 +197,7 @@ Diagrama de Arquitetura de Software
 
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_arquitetura_software.png?raw=true "Diagrama de Arquitetura de Software")
 
-Justificativa - Padrão de Lógica de Negócio (Servidor) - 
+Justificativa - Padrão de Lógica de Negócio (Servidor)
 
 [Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Padrao_De_Logica_Negocio)
 
@@ -224,16 +224,6 @@ apresentar diagramas de sequência e mapeamento dos casos de uso para classes
 ##### Projeto da Visão
 apresentar protótipos de telas e diagramas de classes UML (caso realizado)
 OBS: Essa visão não tem nada a ver com Views de Banco de Dados
-
-__OBS DE BD2__: neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
-
-Sugestão: https://balsamiq.com/products/mockups/<br>
-
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/02_tela_jogo_cliente.png?raw=true "Tela principal do Jogo - Cliente")
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/03_fim_jogo_cliente.png?raw=true "Tela final do Jogo - Cliente")
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/04_tela_login_servidor.png?raw=true "Tela Login - Servidor")
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/05_dados_servidor.png?raw=true "Tela Dados - Servidor")
 
 ##### Projeto da Interação Humana
 
