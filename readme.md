@@ -55,7 +55,7 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 | RF01 | Sendo eu um usuário gostaria de na tela inicial escolher o nível de dificuldade do jogo. | Essencial | 2 |
 | RF02 | Como um usuário, quero escolher iniciar o jogo imediatamente a partir da tela principal. | Essencial | 3 |
 | RF03 | Sendo eu um usuário, ao entrar no menu de opções do game quero personalizar o máximo que consigo em relação a quantidade de vidas e continue. | Importante | 2 |
-| RF04 | Como um usuário eu posso movimento a nave com as teclas que compõe o direcional do teclado. | Essencial | 1 |
+| RF04 | Como um usuário eu posso movimentar a nave com as teclas que compõe o direcional do teclado. | Essencial | 1 |
 | RF05 | Sendo eu um usuário quero pressionar um botão que "solta" tiros em outros inimigos e asteróides. | Essencial | 1 |
 | RF06 | Como um usuário, quero no final do jogo poder ver meu ranking junto com o dos outros usuários. | Importante | 2 |
 | RF07 | Para acessar as minhas informações usando o navegador, como um usuário gostaria de apenas digitar meu email e senha. | Importante | 2 |
@@ -64,7 +64,8 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 | RF10 | Como um usuário quero poder jogar tanto no celular quanto no desktop e te acesso ao mesmo tipo de informação. | Importante | 2 |
 | RF11 | Sendo eu um usuário quero poder compartilhar o meu hanking nas redes socias. | Importante | 1 |
 | RF12 | Para acessar as minhas informações no jogo, como um usuário gostaria de apenas digitar meu email e senha. | Importante | 2 |
-| RF13 | Sendo eu um usuário gostaria de na tela inicial poder escolher se desejo fazer login no servidor ou não | Essencial | 2 |
+| RF13 | Sendo eu um usuário gostaria de na tela inicial poder escolher se desejo fazer login no servidor ou não. | Essencial | 2 |
+| RF14 | Sendo eu um usuário gostaria de fazer um cadastro de meu email e senha na tela login do jogo. | Essencial | 1 |
 
 ### 4.2	Requisitos Não Funcionais
 
@@ -97,25 +98,13 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 
 Arquitetura de subsistemas envolvidos.
 
-Diagrama de Arquitetura de Software
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_arquitetura_software.png?raw=true "Diagrama de Arquitetura de Software")
-
 Arquitetura de Software (Servidor)
 
 [Projeto Arquitetural Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#arquitetura_de_software)
 
 Arquitetura de Software (Cliente)
 
-[Projeto Arquitetural Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Desktop)#arquitetura_de_software)
-
-Padrão de Lógica de Negócio (Servidor)
-
-[Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Padrao_De_Logica_Negocio)
-
-Padrão de Lógica de Negócio (Cliente)
-
-[Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Cliente)
+[Projeto Arquitetural Desktop](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Desktop)#arquitetura_de_software)
 
 ### 1.2  Modelagem de Casos de uso 
 
@@ -205,13 +194,82 @@ Digrama de Caso de Uso:
 
 Protótipo de tela de login:
 
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/01_tela_login_cliente.png?raw=true "Tela de Login - Cliente")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/02_tela_login_cliente.png?raw=true "Tela de Login - Cliente")
 
 Digrama de Caso de Uso:
 
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_logar_jogo_cliente.png?raw=true "Caso de Uso - Logar no Jogo)")
 
-Inserir diagramas dos Casos de Uso (UML) e descrever brevemente.
+| Atributo | Valor |
+| --- | --- | 
+| Nome do Caso de Uso | Opções no cliente | 
+| Objetivo: | Alterar nível de dificuldade do jogo |
+| RFs: | RF01 |
+| Atores: | Usuário (jogador) | 
+| Prioridade: | 2 |
+| Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento de jogo pronta. | 
+| Frequência de uso: | Quando se quiser alterar o nível de dificuldade do jogo. | 
+| Campos: | nível de dificuldade, voltar para a tela inicial. | 
+| Fluxo Principal: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela cotendo os itens Jogar, Opções e Login é exibida. c) O usuário clica no link Opções. d) Em seguida, na tela em que se abrirá ele poderá alterar o nível de dificuldade clicando ao lado do direito da caixa onde está escrito nível de dificuldade e alterando os parâmetros númericos com o teclado. e) Clica no botão voltar para tela inicial. | 
+| Fluxo Alternativo: | - | 
+| Fluxo de Exceção: | - |
+| Validações | O parâmetro nível de dificuldade só permite valores entre 1 e 3 | 
+
+Protótipo de tela de login:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/04_tela_opcoes_jogo.png?raw=true "Tela de opções de Jogo - Cliente")
+
+Digrama de Caso de Uso:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_alterar_parametros_cliente.png?raw=true "Caso de Uso - Alterar Parâmetros do Jogo)")
+
+| Atributo | Valor |
+| --- | --- | 
+| Nome do Caso de Uso | Cadastrar Login | 
+| Objetivo: | Cadastrar um novo Login no servidor caso o usuário não tenha um. |
+| RFs: | RF14 |
+| Atores: | Usuário (jogador) | 
+| Prioridade: | 2 |
+| Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento de jogo pronta. | 
+| Frequência de uso: | Quando se quiser alterar o nível de dificuldade do jogo. | 
+| Campos: | email, password, botão cadastrar, voltar para a tela inicial. | 
+| Fluxo Principal: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela cotendo os itens Jogar, Opções e Login é exibida. c) O usuário clica no link Login. d) Em seguida, na tela em que se abrirá ele poderá cadastrar um novo login clicando no lado inferior direito da tela. e) O usuário digita seu login e password e clica no botão Cadastrar. f) Clica no botão voltar para a tela inicial. | 
+| Fluxo Alternativo: | - | 
+| Fluxo de Exceção 1: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela cotendo os itens Jogar, Opções e Login é exibida. c) O usuário clica no link Login. d) Em seguida, na tela em que se abrirá ele poderá cadastrar um novo login clicando no lado inferior direito da tela. e) O usuário digita seu login e password e clica no botão Cadastrar. f) É informado que o email cadastrado tem formato inválido. |
+| Fluxo de Exceção 2: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela cotendo os itens Jogar, Opções e Login é exibida. c) O usuário clica no link Login. d) Em seguida, na tela em que se abrirá ele poderá cadastrar um novo login clicando no lado inferior direito da tela. e) O usuário digita seu login e password e clica no botão Cadastrar. f) É informado que o email já está cadastrado na base de dados. |
+| Fluxo de Exceção 3: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela cotendo os itens Jogar, Opções e Login é exibida. c) O usuário clica no link Login. d) Em seguida, na tela em que se abrirá ele poderá cadastrar um novo login clicando no lado inferior direito da tela. e) O usuário digita seu login e password e clica no botão Cadastrar. f) É informado que a senha não contém número de caracteres mínimos necessários. |
+| Validações | O campo password não aceita senha com míninos de 6 caracteres e de máximo 20. | 
+
+Protótipo de tela de login:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/03_tela_cadastro_login_cliente.png?raw=true "Tela de Cadastro de Jogo - Cliente")
+
+Digrama de Caso de Uso:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_alterar_parametros_cliente.png?raw=true "Caso de Uso - Alterar Parâmetros do Jogo)")
+
+| Atributo | Valor |
+| --- | --- | 
+| Nome do Caso de Uso | Logar no Servidor | 
+| Objetivo: | Efetuar login no sistema para validar as informações do usuário no servidor |
+| RFs: | RF09 |
+| Atores: | Usuário (jogador) | 
+| Prioridade: | 3 |
+| Pré condições: | O sistema do servidor deverá estar estruturado com todas as suas rotinas e hospedado em algum site. | 
+| Frequência de uso: | Toda a vez em que um usuário desejar se logar no servidor. | 
+| Campos: | email e password. | 
+| Fluxo Principal: | a) O usuário (jogador) digita o endereço do site do jogo no navegador. b) Uma tela de login e password é exibida. c) O usuário digita seu login, password e clica no botão login. | 
+| Fluxo Alternativo: | - | 
+| Fluxo de Exceção: | a) O usuário (jogador) digita o endereço do site do jogo no navegador. b) Uma tela de login e password é exibida. c) O usuário digita seu login, password e clica no botão login. d) O email ou senha digitados estão incorretos. e) Volta para o item "b" ou clica no botão fazer um novo cadastro |
+| Validações | Os campos email e password são tidos como de preenchimento obrigatórios. | 
+
+Protótipo de tela de login:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/07_tela_login_servidor.png?raw=true "Tela de Login - Servidor")
+
+Digrama de Caso de Uso:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_logar_servidor.png?raw=true "Caso de Uso - Logar no Servidor)")
 
 ### 1.3  Modelagem Estrutural (Modelo Conceitual)
 
@@ -294,9 +352,19 @@ CATEGORIAS | RNF'S | TÁTICAS |
 
 
 #### 2.1.3   Arquitetura de Software
-apresentar diagrama UML da arquitetura do sistema. justificar as decisões tomadas.
+<!--apresentar diagrama UML da arquitetura do sistema. justificar as decisões tomadas.-->
 
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/developement-cliente/_MEDIA/diagrama_arquitetura_software.png?raw=true "Tela de Login - Cliente")
+Diagrama de Arquitetura de Software
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_arquitetura_software.png?raw=true "Diagrama de Arquitetura de Software")
+
+Justificativa - Padrão de Lógica de Negócio (Servidor) - 
+
+[Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Padrao_De_Logica_Negocio)
+
+Justificativa - Padrão de Lógica de Negócio (Cliente)
+
+[Padrão de Lógica de Negócio Desktop](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Cliente)
 
 ### 2.2. Projeto Detalhado
 OBS: repetir as seções abaixo para cada subsistema
