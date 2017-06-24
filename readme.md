@@ -55,7 +55,7 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 | RF01 | Sendo eu um usuário gostaria de na tela inicial escolher o nível de dificuldade do jogo. | Essencial | 2 |
 | RF02 | Como um usuário, quero escolher iniciar o jogo imediatamente a partir da tela principal. | Essencial | 3 |
 | RF03 | Sendo eu um usuário, ao entrar no menu de opções do game quero personalizar o máximo que consigo em relação a quantidade de vidas e continue. | Importante | 2 |
-| RF04 | Como um usuário eu posso movimento a nave com as teclas que compõe o direcional do teclado. | Essencial | 1 |
+| RF04 | Como um usuário eu posso movimentar a nave com as teclas que compõe o direcional do teclado. | Essencial | 1 |
 | RF05 | Sendo eu um usuário quero pressionar um botão que "solta" tiros em outros inimigos e asteróides. | Essencial | 1 |
 | RF06 | Como um usuário, quero no final do jogo poder ver meu ranking junto com o dos outros usuários. | Importante | 2 |
 | RF07 | Para acessar as minhas informações usando o navegador, como um usuário gostaria de apenas digitar meu email e senha. | Importante | 2 |
@@ -211,7 +211,29 @@ Digrama de Caso de Uso:
 
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_logar_jogo_cliente.png?raw=true "Caso de Uso - Logar no Jogo)")
 
-Inserir diagramas dos Casos de Uso (UML) e descrever brevemente.
+| Atributo | Valor |
+| --- | --- | 
+| Nome do Caso de Uso | Opções no cliente | 
+| Objetivo: | Efetuar login no sistema para validar as informações do usuário no servidor |
+| RFs: | RF12 |
+| Atores: | Usuário (jogador) | 
+| Prioridade: | 2 |
+| Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento de usuários pronta. | 
+| Frequência de uso: | Toda a vez em que for necessário o envio e recebimento de informações do servidor. | 
+| Campos: | email e password. | 
+| Fluxo Principal: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela de login e password é exibida. c) O usuário digita seu login, password e clica no botão login. | 
+| Fluxo Alternativo: | - | 
+| Fluxo de Exceção: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela de login e password é exibida. c) O usuário digita seu login, password e clica no botão login. d) O email ou senha digitados estão incorretos. e) Volta para o item "b" ou clica no botão fazer um novo cadastro |
+| Validações | Os campos email e password são tidos como de preenchimento obrigatórios. | 
+
+Protótipo de tela de login:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/02_tela_login_cliente.png?raw=true "Tela de opções de Jogo - Cliente")
+
+Digrama de Caso de Uso:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_alterar_parametros_cliente.png?raw=true "Caso de Uso - Alterar Parâmetros do Jogo)")
+
 
 ### 1.3  Modelagem Estrutural (Modelo Conceitual)
 
