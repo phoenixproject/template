@@ -240,7 +240,7 @@ Digrama de Caso de Uso:
 | Fluxo de Exceção 3: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela cotendo os itens Jogar, Opções e Login é exibida. c) O usuário clica no link Login. d) Em seguida, na tela em que se abrirá ele poderá cadastrar um novo login clicando no lado inferior direito da tela. e) O usuário digita seu login e password e clica no botão Cadastrar. f) É informado que a senha não contém número de caracteres mínimos necessários. |
 | Validações | O campo password não aceita senha com míninos de 6 caracteres e de máximo 20. | 
 
-Protótipo de tela de login:
+Protótipo de tela de cadastro de login:
 
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/03_tela_cadastro_login_cliente.png?raw=true "Tela de Cadastro de Jogo - Cliente")
 
@@ -258,18 +258,41 @@ Digrama de Caso de Uso:
 | Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento do game pronto. | 
 | Frequência de uso: | Toda a vez em que alguém precisar iniciar uma nova partida. | 
 | Campos: | - | 
-| Fluxo Principal: | a) O usuário (jogador) controle a nave a partir das setas do teclado e atira nos inimigos com o a tecla espaço. b) Ao completar chegar no fim da fase a tela do jogo se fecha mostrando sua pontuação. | 
+| Fluxo Principal: | a) O usuário (jogador) controle a nave a partir das setas do teclado e atira nos inimigos com o a tecla espaço. | 
 | Fluxo Alternativo: | - | 
 | Fluxo de Exceção: | a) O usuário (jogador) controle a nave a partir das setas do teclado e atira nos inimigos com o a tecla espaço. b) Ao encostar em alguma nave ou asteroid a nave do jogador é destruída. |
 | Validações | - | 
 
-Protótipo de tela inicial:
+Protótipo de tela do jogo:
 
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/05_tela_jogo_cliente.png?raw=true "Tela Inicial - Cliente - Atirar com a Nave")
 
 Digrama de Caso de Uso:
 
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_atirar_nave_cliente.png?raw=true "Caso de Uso - Atirar com a Nave)")
+
+| Atributo | Valor |
+| --- | --- | 
+| Nome do Caso de Uso | Ver ranking do jogo | 
+| Objetivo: |  |
+| RFs: | RF06 |
+| Atores: | Usuário (jogador) | 
+| Prioridade: | 4 |
+| Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento do game. | 
+| Frequência de uso: | Toda a vez em que alguém acabar uma partida. | 
+| Campos: | - | 
+| Fluxo Principal: | a) O usuário (jogador) controle a nave a partir das setas do teclado e atira nos inimigos com o a tecla espaço. b) Ao completar chegar no fim da fase a tela do jogo se fecha mostrando sua pontuação. | 
+| Fluxo Alternativo: | - | 
+| Fluxo de Exceção: | a) O usuário (jogador) controle a nave a partir das setas do teclado e atira nos inimigos com o a tecla espaço. b) Ao encostar em alguma nave ou asteroid a nave do jogador é destruída. |
+| Validações | - | 
+
+Protótipo de Ranking:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/06_fim_jogo_cliente.png?raw=true "Tela De Ranking - Cliente - Ver ranking do jogo")
+
+Digrama de Caso de Uso:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_ver_ranking_jogo_cliente.png?raw=true "Caso de Uso - Atirar com a Nave)")
 
 | Atributo | Valor |
 | --- | --- | 
