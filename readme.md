@@ -63,6 +63,8 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 | RF09 | Como um usuário administrador quero ter acesso a todas as informações referentes feitas no jogo a partir de relatórios num navegador na internet. | Importante | 2 |
 | RF10 | Como um usuário quero poder jogar tanto no celular quanto no desktop e te acesso ao mesmo tipo de informação. | Importante | 2 |
 | RF11 | Sendo eu um usuário quero poder compartilhar o meu hanking nas redes socias. | Importante | 1 |
+| RF12 | Para acessar as minhas informações no jogo, como um usuário gostaria de apenas digitar meu email e senha. | Importante | 2 |
+| RF13 | Sendo eu um usuário gostaria de na tela inicial poder escolher se desejo fazer login no servidor ou não | Essencial | 2 |
 
 ### 4.2	Requisitos Não Funcionais
 
@@ -95,11 +97,119 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 
 Arquitetura de subsistemas envolvidos.
 
+Diagrama de Arquitetura de Software
+
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_arquitetura_software.png?raw=true "Diagrama de Arquitetura de Software")
+
+Arquitetura de Software (Servidor)
 
 [Projeto Arquitetural Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#arquitetura_de_software)
 
+Arquitetura de Software (Cliente)
+
+[Projeto Arquitetural Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Desktop)#arquitetura_de_software)
+
+Padrão de Lógica de Negócio (Servidor)
+
+[Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Padrao_De_Logica_Negocio)
+
+Padrão de Lógica de Negócio (Cliente)
+
+[Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Cliente)
+
 ### 1.2  Modelagem de Casos de uso 
+
+| Atributo | Valor |
+| --- | --- | 
+| Nome do Caso de Uso | Escolher Jogar | 
+| Objetivo: |  |
+| RFs: | RF02 |
+| Atores: | Usuário (jogador) | 
+| Prioridade: | 1 |
+| Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento de usuários e do game prontos. | 
+| Frequência de uso: | Toda a vez em que alguém precisar acessar o jogo. | 
+| Campos: | Jogar, Opções, Login. | 
+| Fluxo Principal: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela cotendo os itens Jogar, Opções e Login é exibida. c) O usuário clica no link Jogar. | 
+| Fluxo Alternativo: | - | 
+| Fluxo de Exceção: | - |
+| Validações | - | 
+
+Protótipo de tela inicial:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/01_tela_inicial_cliente.png?raw=true "Tela Inicial - Cliente - Escolher Jogar")
+
+Digrama de Caso de Uso:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_tela_inicial_cliente.png?raw=true "Caso de Uso - Logar no Jogo)")
+
+| Atributo | Valor |
+| --- | --- | 
+| Nome do Caso de Uso | Parametrizar Jogo | 
+| Objetivo: |  |
+| RFs: | RF01, RF03, RF13 |
+| Atores: | Usuário (jogador) | 
+| Prioridade: | 1 |
+| Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento de usuários e do game prontos. | 
+| Frequência de uso: | Toda a vez em que alguém precisar alterar parâmetros do jogo. | 
+| Campos: | Jogar, Opções, Login. | 
+| Fluxo Principal: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela cotendo os itens Jogar, Opções e Login é exibida. c) O usuário clica no link Opções. | 
+| Fluxo Alternativo: | - | 
+| Fluxo de Exceção: | - |
+| Validações | - | 
+
+Protótipo de tela de login:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/01_tela_inicial_cliente.png?raw=true "Tela Inicial - Cliente - Parametrizar Jogo")
+
+Digrama de Caso de Uso:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_tela_inicial_cliente.png?raw=true "Caso de Uso - Logar no Jogo)")
+
+| Atributo | Valor |
+| --- | --- | 
+| Nome do Caso de Uso | Escolher Login | 
+| Objetivo: |  |
+| RFs: | RF13 |
+| Atores: | Usuário (jogador) | 
+| Prioridade: | 1 |
+| Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento de usuários pronta. | 
+| Frequência de uso: | Toda a vez em que alguém precisar acessar o jogo. | 
+| Campos: | Jogar, Opções, Login. | 
+| Fluxo Principal: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela cotendo os itens Jogar, Opções e Login é exibida. c) O usuário clica no link Login. | 
+| Fluxo Alternativo: | - | 
+| Fluxo de Exceção: | - |
+| Validações | - | 
+
+Protótipo de tela de inicial:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/01_tela_inicial_cliente.png?raw=true "Tela Inicial - Cliente - Escolher Login")
+
+Digrama de Caso de Uso:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_tela_inicial_cliente.png?raw=true "Caso de Uso - Logar no Jogo)")
+
+| Atributo | Valor |
+| --- | --- | 
+| Nome do Caso de Uso | Logar no cliente | 
+| Objetivo: | Efetuar login no sistema para validar as informações do usuário no servidor |
+| RFs: | RF12 |
+| Atores: | Usuário (jogador) | 
+| Prioridade: | 2 |
+| Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento de usuários pronta. | 
+| Frequência de uso: | Toda a vez em que for necessário o envio e recebimento de informações do servidor. | 
+| Campos: | email e password. | 
+| Fluxo Principal: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela de login e password é exibida. c) O usuário digita seu login, password e clica no botão login. | 
+| Fluxo Alternativo: | - | 
+| Fluxo de Exceção: | a) O usuário (jogador) mandar executar o aplicativo do jogo. b) Uma tela de login e password é exibida. c) O usuário digita seu login, password e clica no botão login. d) O email ou senha digitados estão incorretos. e) Volta para o item "b" ou clica no botão fazer um novo cadastro |
+| Validações | Os campos email e password são tidos como de preenchimento obrigatórios. | 
+
+Protótipo de tela de login:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/01_tela_login_cliente.png?raw=true "Tela de Login - Cliente")
+
+Digrama de Caso de Uso:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_logar_jogo_cliente.png?raw=true "Caso de Uso - Logar no Jogo)")
 
 Inserir diagramas dos Casos de Uso (UML) e descrever brevemente.
 
@@ -212,7 +322,7 @@ __OBS DE BD2__: neste ponto a codificação não e necessária, somente as ideia
 
 Sugestão: https://balsamiq.com/products/mockups/<br>
 
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/01_tela_login_cliente.png?raw=true "Tela de Login - Cliente")
+
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/02_tela_jogo_cliente.png?raw=true "Tela principal do Jogo - Cliente")
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/03_fim_jogo_cliente.png?raw=true "Tela final do Jogo - Cliente")
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/04_tela_login_servidor.png?raw=true "Tela Login - Servidor")
