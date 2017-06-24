@@ -107,7 +107,7 @@ Arquitetura de Software (Servidor)
 
 Arquitetura de Software (Cliente)
 
-[Projeto Arquitetural Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Desktop)#arquitetura_de_software)
+[Projeto Arquitetural Desktop](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Desktop)#arquitetura_de_software)
 
 Padrão de Lógica de Negócio (Servidor)
 
@@ -115,7 +115,7 @@ Padrão de Lógica de Negócio (Servidor)
 
 Padrão de Lógica de Negócio (Cliente)
 
-[Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Cliente)
+[Padrão de Lógica de Negócio Desktop](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Cliente)
 
 ### 1.2  Modelagem de Casos de uso 
 
@@ -205,7 +205,7 @@ Digrama de Caso de Uso:
 
 Protótipo de tela de login:
 
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/01_tela_login_cliente.png?raw=true "Tela de Login - Cliente")
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/02_tela_login_cliente.png?raw=true "Tela de Login - Cliente")
 
 Digrama de Caso de Uso:
 
