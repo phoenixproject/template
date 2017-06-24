@@ -250,6 +250,29 @@ Digrama de Caso de Uso:
 
 | Atributo | Valor |
 | --- | --- | 
+| Nome do Caso de Uso | Atirar com a Nave | 
+| Objetivo: |  |
+| RFs: | RF04, RF05 |
+| Atores: | Usuário (jogador) | 
+| Prioridade: | 1 |
+| Pré condições: | O sistema deve estar estruturado com toda a rotina que diz respeito ao gerenciamento do game pronto. | 
+| Frequência de uso: | Toda a vez em que alguém precisar iniciar uma nova partida. | 
+| Campos: | - | 
+| Fluxo Principal: | a) O usuário (jogador) controle a nave a partir das setas do teclado e atira nos inimigos com o a tecla espaço. b) Ao completar chegar no fim da fase a tela do jogo se fecha mostrando sua pontuação. | 
+| Fluxo Alternativo: | - | 
+| Fluxo de Exceção: | a) O usuário (jogador) controle a nave a partir das setas do teclado e atira nos inimigos com o a tecla espaço. b) Ao encostar em alguma nave ou asteroid a nave do jogador é destruída. |
+| Validações | - | 
+
+Protótipo de tela inicial:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/05_tela_jogo_cliente.png?raw=true "Tela Inicial - Cliente - Atirar com a Nave")
+
+Digrama de Caso de Uso:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_atirar_nave_cliente.png?raw=true "Caso de Uso - Atirar com a Nave)")
+
+| Atributo | Valor |
+| --- | --- | 
 | Nome do Caso de Uso | Logar no Servidor | 
 | Objetivo: | Efetuar login no sistema para validar as informações do usuário no servidor |
 | RFs: | RF09 |
