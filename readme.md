@@ -317,6 +317,29 @@ Digrama de Caso de Uso:
 
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_logar_servidor.png?raw=true "Caso de Uso - Logar no Servidor)")
 
+| Atributo | Valor |
+| --- | --- | 
+| Nome do Caso de Uso | Ver ranking do jogo no servidor | 
+| Objetivo: |  |
+| RFs: | RF08 |
+| Atores: | Usuário (jogador) | 
+| Prioridade: | 4 |
+| Pré condições: | O sistema deve estar hospedado em um servidor e estruturado com rotina que recebe dados vindos do cliente, bem como as tela de grid para exibir as informações. | 
+| Frequência de uso: | Toda a vez em que alguém se logar no servidor e clicar em dados das partidas. | 
+| Campos: | - | 
+| Fluxo Principal: | a) O usuário (jogador) controle a nave a partir das setas do teclado e atira nos inimigos com o a tecla espaço. b) Ao completar chegar no fim da fase a tela do jogo se fecha mostrando sua pontuação. | 
+| Fluxo Alternativo: | - | 
+| Fluxo de Exceção: | a) O usuário (jogador) controle a nave a partir das setas do teclado e atira nos inimigos com o a tecla espaço. b) Ao encostar em alguma nave ou asteroid a nave do jogador é destruída. |
+| Validações | - | 
+
+Protótipo de Ranking:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_PROTOTIPO/08_dados_servidor.png?raw=true "Tela De Ranking - Servidor - Ver ranking do jogo no servidor")
+
+Digrama de Caso de Uso:
+
+![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_caso_de_uso_ver_ranking_jogo_servidor.png?raw=true "Caso de Uso - Ver ranking no servidor)")
+
 ### 1.3  Modelagem Estrutural (Modelo Conceitual)
 
 Modelo Conceitual representando a rotina do Usuário no Cliente.
