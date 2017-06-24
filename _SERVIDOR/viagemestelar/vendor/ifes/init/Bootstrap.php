@@ -12,9 +12,7 @@ abstract class Bootstrap{
     public function __construct() {
         
         session_start();
-        
-        $this->teste = key($_GET);
-        
+                
         //Para inicializar as rotas
          $this->initRoutes();
         
@@ -22,21 +20,7 @@ abstract class Bootstrap{
         $this->armazenaInformacaoDaUrl();
                 
         //Para exibir o controller
-        $this->run($this->getUrl());                        
-        
-        //Capturando a info
-        /*$email = $_POST["email"];
-        $password = $_POST["password"];
-        
-        //if(isset($_POST["email"])){
-        if(filter_input(INPUT_POST, 'email', FILTER_DEFAULT, FILTER_REQUIRE_SCALAR) &&
-           filter_input(INPUT_POST, 'password', FILTER_DEFAULT, FILTER_REQUIRE_SCALAR)){
-            
-            
-           $_SESSION['usersession'] = serialize($obj);   
-        }*/        
-                
-        
+        $this->run($this->getUrl());                                
     }
     
     abstract protected function initRoutes();

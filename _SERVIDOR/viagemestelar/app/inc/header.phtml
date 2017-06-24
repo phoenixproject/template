@@ -28,9 +28,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="index.php" class="navbar-brand">CRUD</a>
+          <a href="index.php" class="navbar-brand">Viagem Estelar</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">          
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Usuários <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="?usuario=getall">Gerenciar Usuários</a></li>
+                    <li><a href="?usuario=add">Novo Usuário</a></li>
+                </ul>                
+            </li>
+          </ul>
           <ul class="nav navbar-nav">          
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -41,7 +52,7 @@
                     <li><a href="customers/add.php">Novo Cliente</a></li>
                 </ul>                
             </li>
-          </ul>
+          </ul>            
         <div class="navbar-header">
             <a href="index.php?logout=yes" class="navbar-brand">Logout</a>
         </div>
