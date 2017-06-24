@@ -96,9 +96,25 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 
 Arquitetura de subsistemas envolvidos.
 
+Diagrama de Arquitetura de Software
+
 ![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_arquitetura_software.png?raw=true "Diagrama de Arquitetura de Software")
 
+Arquitetura de Software (Servidor)
+
 [Projeto Arquitetural Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#arquitetura_de_software)
+
+Arquitetura de Software (Cliente)
+
+[Projeto Arquitetural Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Desktop)#arquitetura_de_software)
+
+Padrão de Lógica de Negócio (Servidor)
+
+[Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Padrao_De_Logica_Negocio)'
+
+Padrão de Lógica de Negócio (Cliente)
+
+[Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Cliente)'
 
 ### 1.2  Modelagem de Casos de uso 
 
