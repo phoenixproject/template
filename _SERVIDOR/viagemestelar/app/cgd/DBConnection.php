@@ -35,9 +35,7 @@ class DBConnection {
                             "dbname=".$this->dbconfig->getParametro()[$this->indice]['DB_NAME'],
                             $this->dbconfig->getParametro()[$this->indice]['DB_USER'],
                             $this->dbconfig->getParametro()[$this->indice]['DB_PASS']
-                        );
-                //$conexao = new \PDO("mysql:host=127.0.0.1;dbname=phppdo","root","roadrash");	
-                //$this->dbconnect = new \PDO("mysql:host=127.0.0.1;dbname=wda_crud","root","roadrash");	                
+                        );                                
             } catch (\PDOException $e){
                 die("Não foi possível estabelecer uma conexã com o banco: Erro: ".$e->getMessage());
             } catch (Exception $e) {

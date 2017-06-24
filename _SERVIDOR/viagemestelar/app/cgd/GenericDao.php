@@ -25,7 +25,7 @@ class GenericDao{
             $this->db = new DBConnection();
             $this->entity = $entity;
 	}
-	
+        
 	public function find($id){
             
             $query = "Select * from {$this->entity->getTable()} where id=:id";
