@@ -2,6 +2,10 @@
 insert into Tipo_Usuario values('','Admin');
 insert into Tipo_Usuario values('','Usuário');
 
+-- Tabela Usuario
+insert into Usuario values('','admin@email.com','123',CURDATE(),1);
+insert into Usuario values('','usuario@email.com','123',CURDATE(),2);
+
 -- Tabela Tipo_Nave
 insert into Tipo_Nave values('','Stardust (E27-01)');
 insert into Tipo_Nave values('','Space Discovery (ASX-99)');
