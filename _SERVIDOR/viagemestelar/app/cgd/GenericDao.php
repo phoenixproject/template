@@ -18,8 +18,8 @@ use app\cgd\DBConnection;
  */
 class GenericDao{
 	
-	private $db;
-	private $entity;
+        protected $db;
+	protected $entity;
 	
 	public function __construct($entity){
             $this->db = new DBConnection();
@@ -108,10 +108,5 @@ class GenericDao{
             else{
                     return false;
             }
-	}	
-        
-        public function getDbConnection(){
-            return $this->db;
-        }
-	
+	}
 }

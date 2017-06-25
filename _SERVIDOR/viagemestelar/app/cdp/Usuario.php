@@ -22,7 +22,7 @@ class Usuario extends Entity {
     public $tp_usuario;
     
     public function __construct() {
-        parent::__construct("usuario");        
+        parent::__construct("Usuario");        
     }
     
     function getCd_usuario() : int {
@@ -37,7 +37,7 @@ class Usuario extends Entity {
         return $this->password;
     }
 
-    function getDt_criacao() : \DateTime {
+    function getDt_criacao() : string {
         return $this->dt_criacao;
     }
     

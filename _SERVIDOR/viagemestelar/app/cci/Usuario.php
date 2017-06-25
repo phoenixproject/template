@@ -14,5 +14,7 @@ namespace app\cci;
  * @author pchan
  */
 class Usuario {
-    //put your code here
+    
+    
+    
 }
