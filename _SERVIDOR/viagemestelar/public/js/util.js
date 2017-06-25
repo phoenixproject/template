@@ -30,3 +30,19 @@ function enviaRequisicaoLogin() {
 
   return false;
 }
+
+function enviaTesteConexao() {
+   $.ajax({
+      url:'index.php?servico=dbtest',
+      dataType : 'html',
+      type : 'GET',      
+      complete: function (response) {
+         alert(response.responseText);
+      },
+      error: function () {
+          alert('Erro');
+      }
+  });  
+
+  return false;
+}

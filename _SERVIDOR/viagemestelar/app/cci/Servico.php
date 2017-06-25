@@ -6,21 +6,22 @@
  * and open the template in the editor.
  */
 
-namespace app\cgt;
+namespace app\cci;
 
 use app\cgt\InterfaceDeServico;
-use app\cgd\ServicoDao;
+use app\cgt\AplServico;
+
 /**
- * Description of AplServico
+ * Description of Servico
  *
  * @author pchan
  */
-class AplServico implements InterfaceDeServico {
+class Servico {
     
-    private $ServicoDao;
+    private $interfaceDeServico;
     
     public function __construct() {
-        $this->ServicoDao = new ServicoDao(); 
+        $this->interfaceDeServico = new AplServico();
     }
-    
+ 
 }

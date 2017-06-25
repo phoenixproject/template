@@ -109,5 +109,9 @@ class GenericDao{
                     return false;
             }
 	}	
+        
+        public function getDbConnection(){
+            return $this->db;
+        }
 	
 }

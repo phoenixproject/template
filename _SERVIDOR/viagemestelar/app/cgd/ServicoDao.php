@@ -8,12 +8,14 @@
 
 namespace app\cgd;
 
+use app\cgd\GenericDao;
+
 /**
  * Description of ServicoDao
  *
  * @author pchan
  */
-class ServicoDao {
+class ServicoDao extends GenericDao {
     
     public function __construct(){
         parent::__construct(null);

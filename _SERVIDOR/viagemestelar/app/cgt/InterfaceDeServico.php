@@ -14,5 +14,4 @@ namespace app\cgt;
  */
 interface InterfaceDeServico {
     
-    public function testarConexao() : bool;
 }

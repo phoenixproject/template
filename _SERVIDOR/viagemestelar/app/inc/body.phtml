@@ -59,7 +59,11 @@
 	</div>
 </div>
 
+<br/>
 
-<div class="alert alert-danger" role="alert">
-	<p><strong>ERRO:</strong> Não foi possível Conectar ao Banco de Dados!</p>
-</div>
+<?php
+    use \app\cci\Servico;
+    
+    //Testa conexão com banco de dados
+    $servico = new Servico();    
+?>

@@ -14,7 +14,7 @@ use app\cgd\DBConfig;
  *
  * @author pchan
  */
-class DBConnection {
+class DBConnection extends \Exception {
     
     private $dbconfig;
     private $dbconnect;
@@ -25,9 +25,6 @@ class DBConnection {
             $this->indice = 1;            
             $this->dbconfig = new DBConfig();
             
-            //$host = $this->dbconfig->getParametro()[$this->indice]['DB_TYPE'];
-            //$caminho = new \PDO("mysql:host=127.0.0.1;dbname=wda_crud","root","roadrash");
-                        
             try{
                 $this->dbconnect = new \PDO(
                             $this->dbconfig->getParametro()[$this->indice]['DB_TYPE'].
@@ -37,9 +34,12 @@ class DBConnection {
                             $this->dbconfig->getParametro()[$this->indice]['DB_PASS']
                         );                                
             } catch (\PDOException $e){
-                die("Não foi possível estabelecer uma conexã com o banco: Erro: ".$e->getMessage());
+                //die("Não foi possível estabelecer uma conexã com o banco: Erro: ".$e->getMessage());
+                die('<div class="alert alert-danger" role="alert">
+                    <p><strong>ERRO:</strong> Não foi possível Conectar ao Banco de Dados!</p>
+                 </div>;');                    
             } catch (Exception $e) {
-                $e->getMessage();
+                $e->getMessage();                
             }            
 
             //echo $this->dbconnect;
@@ -61,6 +61,6 @@ class DBConnection {
     public function setDbconnect(\PDO $dbconnect) {
             $this->dbconnect = $dbconnect;
             return $this;
-    }    
+    } 
     
 }
