@@ -6,15 +6,12 @@
  * and open the template in the editor.
  */
 
-namespace app\cci;
+namespace app\cgt;
 
 /**
- * Description of Usuario
  *
  * @author pchan
  */
-class Usuario {
-    
-    
-    
+interface InterfaceDeLogin {
+    public function ObterUsuarioPorEmailESenha($email, $password);
 }

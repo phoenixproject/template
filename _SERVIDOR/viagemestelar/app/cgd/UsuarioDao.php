@@ -7,6 +7,7 @@
  */
 
 namespace app\cgd;
+
 use app\cdp\Usuario;
 use app\cgd\GenericDao;
 /**
@@ -20,15 +21,32 @@ class UsuarioDao extends GenericDao {
         parent::__construct(new Usuario());
     }
         
-    public function ObterUsuarioPorEmailESenha($email, $password) : bool {
+    public function ObterUsuarioPorEmailESenha($email, $password) {
 
-        $query = "Select * from {$this->entity->getTable()} where email=:email and password=:password";
+        //$usuario = new Usuario();
+        
+        $query = "";
+        
+        $query .= "Select * from {$this->entity->getTable()} where ";
+        $query .= "email=:email and password=:password";
 
-        $stmt = $this->db->getDbconnect()->prepare($query);
-        $stmt->bindValue(':email', $email);
-        $stmt->bindValue(':password', $password);
-        $stmt->execute();
-
-        return $stmt->fetch((PDO::FETCH_ASSOC));	
+        try{
+        
+            $stmt = $this->db->getDbconnect()->prepare($query);
+            //$stmt = $this->db->prepare($query);
+            
+            $stmt->bindValue(':email', $email);
+            $stmt->bindValue(':password', $password);
+            
+            $stmt->execute();
+            
+            return $stmt->fetch((\PDO::FETCH_ASSOC));	
+            
+        } catch (Exception $ex) {
+            $teste = $this->get_error($e);                
+        } catch (PDOException $ex) {
+            # call the get_error function
+            $teste = $this->get_error($e);                
+        } 
     }
 }

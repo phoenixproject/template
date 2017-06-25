@@ -9,8 +9,10 @@
 namespace app\cci;
 
 use \ifes\controller\Action;
-use app\cgt\InterfaceDeApresentacao;
-use app\cgt\GestorDeUsuario;
+
+use app\cgt\InterfaceDeLogin;
+
+use app\cgt\AplUsuario;
 use app\cdp\Usuario;
 
 
@@ -20,8 +22,8 @@ use app\cdp\Usuario;
  * @author pchan
  */
 class Login extends Action {
-    
-    private $intarfaceDeApresentacao;
+        
+    private $interfaceDeLogin;
     public $loginuser;
 
     public function __construct() {        
@@ -29,25 +31,35 @@ class Login extends Action {
         //Inicia a sessão
         //session_start();
         
-        $this->intarfaceDeApresentacao = new GestorDeUsuario();        
+        $this->interfaceDeLogin = new AplUsuario();
         
-        $this->configuraLogin();        
+        //$this->configuraLogin();        
     }
     
     public function start(){
-        
+                        
         //$teste1 = $_REQUEST['email'];
         //$teste2 = $_REQUEST['password'];
         
         if (isset($_REQUEST['email']) && isset($_REQUEST['password'])) {
             
             $email = $_POST['email'];
-            $password = $_POST['password'];
-                        
-            $_SESSION['usuariosessao'] = "usuariodasessao";
+            $password = $_POST['password'];            
             
-            //Retorna para o índice
-            $this->render('index');           
+            $usuario = $this->interfaceDeLogin->ObterUsuarioPorEmailESenha($email, $password);
+            
+            if($usuario != 0){
+                
+                //session_start();
+                
+                $_SESSION['usuariosessao'] = $usuario;
+                
+                //Retorna para o índice                
+                header("Refresh:0; url=index.php");
+            }
+            else{
+                $this->render('start',false);    
+            }
         }
         else{
             $this->render('start',false);    
