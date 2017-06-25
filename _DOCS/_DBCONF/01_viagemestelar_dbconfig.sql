@@ -59,11 +59,11 @@ CREATE TABLE IF NOT EXISTS Partida (
 );
 
 CREATE TABLE IF NOT EXISTS Usuario (
-    cd_usuario          integer not null AUTO_INCREMENT,
-    tp_usuario          integer not null,
+    cd_usuario          integer not null AUTO_INCREMENT,    
 	email               varchar(70) not null,
 	password            varchar(30) not null,
 	dt_criacao          date not null, 
+	tp_usuario          integer not null,
 	PRIMARY KEY(cd_usuario)
 );
 

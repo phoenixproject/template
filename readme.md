@@ -108,7 +108,7 @@ Arquitetura de Software (Cliente)
 
 ### 1.2  Modelagem de Casos de uso 
 
-[Decrição e Diagramas de Casos de Uso Cliente/Servidor e Protótipos(Moockups)](https://github.com/phoenixproject/viagemestelar/wiki/Diagrama-de-Casos-de-Uso---Cliente-Servidor#diagramas_de_caso_de_uso)
+[Decrição e Diagramas de Casos de Uso Cliente/Servidor e Protótipos(Moockups)](https://github.com/phoenixproject/viagemestelar/wiki/Diagrama-de-Casos-de-Uso---Cliente---Servidor#diagramas_de_caso_de_uso)
 
 ### 1.3  Modelagem Estrutural (Modelo Conceitual)
 
