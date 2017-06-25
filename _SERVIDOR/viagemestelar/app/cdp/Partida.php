@@ -17,6 +17,8 @@ class Partida {
     
     private $cd_partida;
     private $pontos;
+    private $inimigos_destruidos;
+    private $fases_completadas;
     private $cd_combinacao;
     private $cd_configuracao;
     private $cd_atividade;
@@ -28,7 +30,23 @@ class Partida {
     function getPontos() : int {
         return $this->pontos;
     }
+    
+    function getInimigos_destruidos() {
+        return $this->inimigos_destruidos;
+    }
 
+    function getFases_completadas() {
+        return $this->fases_completadas;
+    }
+
+    function setInimigos_destruidos($inimigos_destruidos) {
+        $this->inimigos_destruidos = $inimigos_destruidos;
+    }
+
+    function setFases_completadas($fases_completadas) {
+        $this->fases_completadas = $fases_completadas;
+    }
+    
     function getCd_combinacao() : int {
         return $this->cd_combinacao;
     }

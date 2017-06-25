@@ -19,11 +19,11 @@ class DBConfig {
 	
     function __construct() {
 
-            $this->parametro[0]['DB_HOST'] = "172.16.0.116:1433";
+            $this->parametro[0]['DB_HOST'] = "171.15.0.115:1433";
             $this->parametro[0]['DB_USER'] = "paguser";
             $this->parametro[0]['DB_PASS'] = "!@j2t32001";
             $this->parametro[0]['DB_PORT'] = "3306";
-            $this->parametro[0]['DB_NAME'] = "pagpms";
+            $this->parametro[0]['DB_NAME'] = "pagteste";
             $this->parametro[0]['DB_TYPE'] = "mysql";
 
             $this->parametro[1]['DB_HOST'] = "127.0.0.1";

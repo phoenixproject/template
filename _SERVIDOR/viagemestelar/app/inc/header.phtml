@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Teste de Publicação em Bootstrap</title>
+    <title>Viagem Estelar</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,20 +28,80 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="index.php" class="navbar-brand">CRUD</a>
+          <a href="index.php" class="navbar-brand">Viagem Estelar</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">          
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Clientes <span class="caret"></span>
+                    Usuários <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="customers">Gerenciar Clientes</a></li>
-                    <li><a href="customers/add.php">Novo Cliente</a></li>
+                    <li><a href="?usuario=getall">Gerenciar Usuários</a></li>
+                    <li><a href="?usuario=add">Novo Usuário</a></li>
                 </ul>                
             </li>
           </ul>
+          <ul class="nav navbar-nav">          
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Partidas <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="?partida=getall">Gerenciar Clientes</a></li>
+                    <li><a href="?partida=add">Novo Cliente</a></li>
+                </ul>                
+            </li>
+          </ul>            
+          <ul class="nav navbar-nav">          
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Atividades <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="?atividade=getall">Gerenciar Atividades</a></li>
+                    <li><a href="?atividade=add">Nova Atividade</a></li>
+                </ul>                
+            </li>
+          </ul> 
+          <ul class="nav navbar-nav">          
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Combinações <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="?combinacao=getall">Gerenciar Combinações</a></li>
+                    <li><a href="?combinacao=add">Nova Combinação</a></li>
+                </ul>                
+            </li>
+          </ul>     
+          <ul class="nav navbar-nav">          
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Configurações <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="?configuracao=getall">Gerenciar Configuração</a></li>
+                    <li><a href="?configuracao=add">Nova Configuração</a></li>
+                </ul>                
+            </li>
+          </ul>                
+          <ul class="nav navbar-nav">          
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Tipos <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="?tipoatividade=getall">Gerenciar Tipos de Atividade</a></li>
+                    <li><a href="?tipoatividade=add">Novo Tipo de Atividade</a></li>
+                    <li><a href="?tipousuario=getall">Gerenciar Tipos de Usuários</a></li>                    
+                    <li><a href="?tiponave=getall">Gerenciar Tipos de Naves</a></li>
+                    <li><a href="?tiponave=add">Novo Tipo de Nave</a></li>
+                    <li><a href="?tipoarma=getall">Gerenciar Tipos de Armas</a></li>
+                    <li><a href="?tipoarma=add">Novo Tipo de Arma</a></li>
+                </ul>                
+            </li>
+          </ul>            
         <div class="navbar-header">
             <a href="index.php?logout=yes" class="navbar-brand">Logout</a>
         </div>
