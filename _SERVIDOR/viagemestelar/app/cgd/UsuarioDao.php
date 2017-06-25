@@ -7,6 +7,7 @@
  */
 
 namespace app\cgd;
+
 use app\cdp\Usuario;
 use app\cgd\GenericDao;
 /**
@@ -20,7 +21,7 @@ class UsuarioDao extends GenericDao {
         parent::__construct(new Usuario());
     }
         
-    public function ObterUsuarioPorEmailESenha($email, $password) : bool {
+    public function ObterUsuarioPorEmailESenha($email, $password) {
 
         $query = "Select * from {$this->entity->getTable()} where email=:email and password=:password";
 

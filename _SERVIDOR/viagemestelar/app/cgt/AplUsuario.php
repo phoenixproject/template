@@ -9,16 +9,22 @@
 namespace app\cgt;
 
 use app\cgd\UsuarioDao;
+use app\cgt\InterfaceDeLogin;
 /**
  * Description of AplUsuario
  *
  * @author pchan
  */
-class AplUsuario {
+class AplUsuario implements InterfaceDeLogin {
     
     private $usuarioDao;
     
     public function __construct() {
         $this->usuarioDao = new UsuarioDao(); 
     }
+
+    public function ObterUsuarioPorEmailESenha($email, $password) {
+        return $this->usuarioDao->ObterUsuarioPorEmailESenha($email, $password);
+    }
+
 }

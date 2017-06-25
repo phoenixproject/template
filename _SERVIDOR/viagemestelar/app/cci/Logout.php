@@ -16,10 +16,11 @@ use \ifes\controller\Action;
  */
 class Logout extends Action {
         
-    public function yes(){
-        session_destroy();
-        $this->render('index');                   
+    public function yes(){        
+        //$this->render('index');                   
         header("Refresh:0; url=index.php");
+        session_destroy();
+        //header('Location: '.$_SERVER['REQUEST_URI']);
     }
     
 }
