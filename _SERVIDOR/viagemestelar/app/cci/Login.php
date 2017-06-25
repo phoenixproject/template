@@ -50,7 +50,6 @@ class Login extends Action {
             
             if($usuario != 0){
                 
-                //session_start();
                 
                 $_SESSION['usuariosessao'] = $usuario;
                 
@@ -58,11 +57,15 @@ class Login extends Action {
                 header("Refresh:0; url=index.php");
             }
             else{
-                $this->render('start',false);    
+                $this->render('start',false);  
+                
+                echo '<div class="alert alert-danger" role="alert" align="center">
+                    <p><strong>ERRO:</strong> email ou senha estão incorretos!</p>
+                 </div>;';
             }
         }
         else{
-            $this->render('start',false);    
+            $this->render('start',false);                
         }
         
     }
