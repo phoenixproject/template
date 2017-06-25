@@ -1,19 +1,20 @@
 <?php 
     include ("../app/inc/header.phtml"); 
-    use app\cci\Cliente;
-            
-    $cliente = new Cliente();    
-    $customers = $cliente->listar(null);
+    use app\cci\Usuario;
+    //require_once('../app/cci/Cliente.php');
+        
+    $usuarioCCI = new Usuario();    
+    $usuarios = $usuarioCCI->listar(null);
 ?>
 
 <header>
 	<div class="row">
 		<div class="col-sm-6">
-			<h2>Clientes</h2>
+			<h2>Usuários</h2>
 		</div>
 		<div class="col-sm-6 text-right h2">
-	    	<a class="btn btn-primary" href="?cliente=add"><i class="fa fa-plus"></i> Novo Cliente</a>
-	    	<a class="btn btn-default" href="index.php"><i class="fa fa-refresh"></i> Atualizar</a>
+	    	<a class="btn btn-primary" href="?usuario=add"><i class="fa fa-plus"></i> Novo Usuário</a>
+	    	<a class="btn btn-default" href="index.php?usuario=getall"><i class="fa fa-refresh"></i> Atualizar</a>
 	    </div>
 	</div>
 </header>
@@ -32,26 +33,24 @@
 <thead>
 	<tr>
 		<th>ID</th>
-		<th width="30%">Nome</th>
-		<th>CPF/CNPJ</th>
-		<th>Telefone</th>
-		<th>Atualizado em</th>
+		<th width="30%">Email</th>
+		<th>Tipo de Usuário</th>		
+		<th>Data de Cadastro</th>
 		<th>Opções</th>
 	</tr>
 </thead>
 <tbody>
-<?php if ($customers) : ?>
-<?php foreach ($customers as $customer) : ?>
+<?php if ($usuarios) : ?>
+<?php foreach ($usuarios as $usuario) : ?>
 	<tr>
-		<td><?php echo $customer['id']; ?></td>
-		<td><?php echo $customer['name']; ?></td>
-		<td><?php echo $customer['cpf_cnpj']; ?></td>
-		<td>00 0000-0000</td>
-		<td><?php echo $customer['modified']; ?></td>
+		<td><?php echo $usuario['cd_usuario']; ?></td>
+		<td><?php echo $usuario['email']; ?></td>
+		<td><?php echo $usuario['tp_usuario']; ?></td>		
+		<td><?php echo $usuario['dt_criacao']; ?></td>
 		<td class="actions text-right">
-			<a href="?cliente=retrieve&id=<?php echo (int)$customer['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
-			<a href="?cliente=edit&id=<?php echo (int)$customer['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $customer['id']; ?>">
+			<a href="?usuario=retrieve&id=<?php echo (int)$usuario['cd_usuario']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
+			<a href="?usuario=edit&id=<?php echo (int)$usuario['cd_usuario']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
+			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $usuario['cd_usuario']; ?>">
 				<i class="fa fa-trash"></i> Excluir
 			</a>
 		</td>

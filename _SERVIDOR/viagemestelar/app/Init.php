@@ -40,6 +40,26 @@ class Init extends Bootstrap {
             'controller'=>'cliente',
             'action'=>'edit'
         );
+        $ar['usuarioretrieve'] = array(
+            'route'=>'/usuario',
+            'controller'=>'usuario',
+            'action'=>'retrieve'
+        );
+        $ar['usuariogetall'] = array(
+            'route'=>'/usuario',
+            'controller'=>'usuario',
+            'action'=>'getall'
+        );
+        $ar['usuarioadd'] = array(
+            'route'=>'/usuario',
+            'controller'=>'usuario',
+            'action'=>'add'
+        );
+        $ar['usuarioedit'] = array(
+            'route'=>'/usuario',
+            'controller'=>'usuario',
+            'action'=>'edit'
+        );        
         $ar['logout'] = array(
             'route'=>'/logout',
             'controller'=>'logout',

@@ -15,7 +15,7 @@ use app\cgt\InterfaceDeLogin;
  *
  * @author pchan
  */
-class AplUsuario implements InterfaceDeLogin {
+class AplUsuario implements InterfaceDeLogin, InterfaceDeApresentacao {
     
     private $usuarioDao;
     
@@ -25,6 +25,22 @@ class AplUsuario implements InterfaceDeLogin {
 
     public function ObterUsuarioPorEmailESenha($email, $password) {
         return $this->usuarioDao->ObterUsuarioPorEmailESenha($email, $password);
+    }
+
+    public function deletar($id): bool {
+        
+    }
+
+    public function find($id) {
+        
+    }
+
+    public function listar($ordem): array {
+       return $this->usuarioDao->listar($ordem);
+    }
+
+    public function alterar($objeto): bool {
+        
     }
 
 }

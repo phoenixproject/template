@@ -17,5 +17,6 @@ interface InterfaceDeApresentacao {
     function find($id);
     function listar($ordem) : array;
     function deletar($id) : bool;
+    function alterar($objeto) : bool;
     
 }

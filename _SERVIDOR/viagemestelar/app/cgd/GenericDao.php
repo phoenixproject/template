@@ -37,7 +37,6 @@ class GenericDao{
             return $stmt->fetch((PDO::FETCH_ASSOC));	
 	}
 	
-	//public function listar($ordem = null){
         public function listar($ordem) : array{
             
             $query = "";
@@ -52,7 +51,10 @@ class GenericDao{
 
                 $stmt = $this->db->getDbconnect()->query($query);
 
-                return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+                $teste = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+                
+                //return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+                return $teste;
             } 
             catch (PDOException $ex) {
                 # call the get_error function
