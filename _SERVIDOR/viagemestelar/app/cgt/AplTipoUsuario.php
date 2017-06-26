@@ -18,6 +18,11 @@ use app\cgt\InterfaceDeApresentacao;
  */
 class AplTipoUsuario implements InterfaceDeApresentacao {
     
+    private $tipoUsuarioDao;
+    
+    public function __construct() {
+        $this->$tipoUsuarioDao = new TipoUsuarioDao(); 
+    }
     
     public function alterar($objeto): bool {
         
@@ -32,7 +37,7 @@ class AplTipoUsuario implements InterfaceDeApresentacao {
     }
 
     public function listar($ordem): array {
-        
+        return $this->tipoUsuarioDao->
     }
 
 }

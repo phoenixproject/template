@@ -8,11 +8,17 @@
 
 namespace app\cgd;
 
+use app\cdp\TipoUsuario;
+use app\cgd\GenericDao;
 /**
  * Description of TipoUsuarioDao
  *
  * @author pchan
  */
-class TipoUsuarioDao {
-    //put your code here
+class TipoUsuarioDao extends GenericDao {
+    
+    public function __construct(){
+        parent::__construct(new TipoUsuario());
+    }
+    
 }
