@@ -32,7 +32,7 @@ class AplUsuario implements InterfaceDeLogin, InterfaceDeApresentacao {
     }
 
     public function find($id) {
-        
+        return $this->usuarioDao->find($id);
     }
 
     public function listar($ordem): array {

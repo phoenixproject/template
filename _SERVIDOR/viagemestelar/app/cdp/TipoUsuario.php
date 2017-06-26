@@ -13,11 +13,15 @@ namespace app\cdp;
  *
  * @author pchan
  */
-class TipoUsuario {
+class TipoUsuario extends Entity {
     
     protected $tp_usuario;
     protected $ds_tp_usuario;
     
+    public function __construct() {
+        parent::__construct("Tipo_Usuario");
+    }
+            
     function getTp_usuario() : int {
         return $this->tp_usuario;
     }
