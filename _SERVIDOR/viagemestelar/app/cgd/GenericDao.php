@@ -20,21 +20,44 @@ class GenericDao{
 	
         protected $db;
 	protected $entity;
-	
-	public function __construct($entity){
+
+        public function __construct($entity){
+            
             $this->db = new DBConnection();
             $this->entity = $entity;
+            
 	}
         
-	public function find($id){
+        public function find($id){
             
-            $query = "Select * from {$this->entity->getTable()} where id=:id";
+            $codigo = $this->entity->retornaAtributosDaClasse()[0];
+            $metodo = $this->entity->retornaMetodosDaClasse()[0];
+            
+            $metodoReflection = new ReflectionMethod(get_class($this->entity),$metodo);
+            $nomedaclasse = get_class($this->entity);
+            
+            //$query = "Select * from {$this->entity->getTable()} where id=:id";
+            $query = "Select * from {$this->entity->getTable()} where $codigo=:$metodoReflection->invoke(new $nomedaclasse)";
 
-            $stmt = $this->db->getDbconnect()->prepare($query);
-            $stmt->bindValue(':id', $id);
-            $stmt->execute();
+            $teste = "";
+            
+            try{
+                $stmt = $this->db->getDbconnect()->prepare($query);
+                $stmt->bindValue(':id', $id);
+                $stmt->execute();
 
-            return $stmt->fetch((PDO::FETCH_ASSOC));	
+                $teste = $stmt->fetch((\PDO::FETCH_ASSOC));	
+            } catch (Exception $ex) {
+                $teste = $this->get_error($e);
+            } catch (PDOException $ex) {
+                # call the get_error function
+                $teste = $this->get_error($e);
+            }                        
+            
+            return $teste;
+            //return $stmt->fetch((PDO::FETCH_ASSOC));	
+            
+            //return $stmt->fetch((PDO::FETCH_ASSOC));	
 	}
 	
         public function listar($ordem) : array{
@@ -52,7 +75,7 @@ class GenericDao{
                 $stmt = $this->db->getDbconnect()->query($query);
 
                 $teste = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-                
+                                
                 //return $stmt->fetchAll(\PDO::FETCH_ASSOC);
                 return $teste;
             } 

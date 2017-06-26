@@ -15,8 +15,8 @@ namespace app\cdp;
  */
 class TipoUsuario {
     
-    private $tp_usuario;
-    private $ds_tp_usuario;
+    protected $tp_usuario;
+    protected $ds_tp_usuario;
     
     function getTp_usuario() : int {
         return $this->tp_usuario;

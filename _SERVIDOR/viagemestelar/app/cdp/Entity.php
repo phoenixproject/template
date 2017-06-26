@@ -26,5 +26,30 @@ abstract class Entity {
         function setTable($table) {
             $this->table = $table;
         }
+        
+        public function retornaMetodosDaClasse() : array {
+        
+            $metodosdaclasse = get_class_methods($this->getNameOfClass());
 
+            return $metodosdaclasse;
+        }
+
+        public function retornaAtributosDaClasse() : array {
+
+            $metodosdaclasse = get_class_vars($this->getNameOfClass());
+
+            $chaves = array_keys($metodosdaclasse);
+
+            return $chaves;
+        }
+        
+        public function retornaConteudoDeAtributosDaClasse() : array {
+
+            $metodosdaclasse = get_class_vars($this->getNameOfClass());
+
+            $chaves = array_values($metodosdaclasse);
+
+            return $chaves;
+        }
 }
+
