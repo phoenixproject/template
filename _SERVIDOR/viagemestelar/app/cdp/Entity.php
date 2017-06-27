@@ -29,27 +29,34 @@ abstract class Entity {
         
         public function retornaMetodosDaClasse() : array {
         
-            $metodosdaclasse = get_class_methods($this->getNameOfClass());
+            $metodosdaclasse = get_class_methods(get_class($this));
 
             return $metodosdaclasse;
         }
 
         public function retornaAtributosDaClasse() : array {
 
-            $metodosdaclasse = get_class_vars($this->getNameOfClass());
+            $atributosdaclasse = get_class_vars(get_class($this));
 
-            $chaves = array_keys($metodosdaclasse);
+            $chaves = array_keys($atributosdaclasse);
 
             return $chaves;
         }
         
         public function retornaConteudoDeAtributosDaClasse() : array {
 
-            $metodosdaclasse = get_class_vars($this->getNameOfClass());
+            $conteudoatributos = get_class_vars(get_class($this));
 
-            $chaves = array_values($metodosdaclasse);
+            $chaves = array_values($conteudoatributos);
 
             return $chaves;
+        }
+        
+        public function retornaDeQuantidadeAtributosDaClasseFilha() : int {
+            
+            //Retirando um atributo protected (table) da classe pai.
+            return count($this->retornaAtributosDaClasse()) - 1;
+            
         }
 }
 

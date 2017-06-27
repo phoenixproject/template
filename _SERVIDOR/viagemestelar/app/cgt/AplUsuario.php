@@ -40,7 +40,7 @@ class AplUsuario implements InterfaceDeLogin, InterfaceDeApresentacao {
     }
 
     public function alterar($objeto): bool {
-        
+        return $this->usuarioDao->alterar($objeto);
     }
 
 }

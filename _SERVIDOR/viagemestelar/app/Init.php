@@ -60,6 +60,11 @@ class Init extends Bootstrap {
             'controller'=>'usuario',
             'action'=>'edit'
         );        
+        $ar['usuariosave'] = array(
+            'route'=>'/usuario',
+            'controller'=>'usuario',
+            'action'=>'save'
+        );                
         $ar['logout'] = array(
             'route'=>'/logout',
             'controller'=>'logout',
