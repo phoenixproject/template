@@ -95,6 +95,31 @@ class Init extends Bootstrap {
             'controller'=>'configuracao',
             'action'=>'save'
         );                        
+        $ar['partidaretrieve'] = array(
+            'route'=>'/partida',
+            'controller'=>'partida',
+            'action'=>'retrieve'
+        );
+        $ar['partidagetall'] = array(
+            'route'=>'/partida',
+            'controller'=>'partida',
+            'action'=>'getall'
+        );
+        $ar['partidaadd'] = array(
+            'route'=>'/partida',
+            'controller'=>'partida',
+            'action'=>'add'
+        );
+        $ar['partidaedit'] = array(
+            'route'=>'/partida',
+            'controller'=>'partida',
+            'action'=>'edit'
+        );        
+        $ar['partidasave'] = array(
+            'route'=>'/partida',
+            'controller'=>'partida',
+            'action'=>'save'
+        );                        
         $ar['usuarioretrieve'] = array(
             'route'=>'/usuario',
             'controller'=>'usuario',
