@@ -8,11 +8,74 @@
 
 namespace app\cci;
 
+use app\cgt\AplTipoArma;
+use app\cgt\InterfaceDeApresentacao;
+
+use app\cdp\TipoArma;
+
+use ifes\controller\Action;
 /**
  * Description of Tipoarma
  *
  * @author pchan
  */
-class Tipoarma {
-    //put your code here
+class Tipoarma extends Action {
+        
+    private $interfaceDeApresentacao;
+    
+    public function __construct() {        
+        $this->interfaceDeApresentacao = new AplTipoArma();
+    }
+    
+    public function retrieve(){
+        $this->render('retrieve',false);
+    }
+    
+    public function getall(){
+        $this->render('getall',false);        
+    }
+    
+    public function add(){
+        $this->render('add',false);        
+    }
+    
+    public function edit(){
+        $this->render('edit',false);        
+    }
+    
+    public function listar($ordem){
+        return $this->interfaceDeApresentacao->listar($ordem);
+    }
+    
+    public function findById(){
+        if(isset($_GET['id'])){
+            $id = $_GET['id'];
+            return $this->interfaceDeApresentacao->find($id);
+        }
+        return "";        
+    }
+    
+    public function listarTipoArma($ordem){
+        return $this->interfaceDeApresentacao->listar($ordem);
+    }
+    
+    public function save(){
+            
+        if(isset($_POST['tipoarma']))
+        {
+            $tipoArmaDominio = new TipoArma();
+            
+            $tipoArma = $_POST['tipoarma'];            
+                        
+            $chave = array_values($tipoArma);
+                        
+            $tipoArmaDominio->setTp_arma($chave[0]);
+            $tipoArmaDominio->setDs_tp_arma($chave[1]);
+                                    
+            if($this->interfaceDeApresentacaoArma->alterar($tipoArmaDominio)){
+                $this->render('getall',false);        
+            }
+        }    
+        return "";                
+    }
 }
