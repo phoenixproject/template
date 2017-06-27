@@ -9,7 +9,7 @@
 namespace app\cgt;
 
 use app\cgt\InterfaceDeApresentacao;
-use app\cdp\Atividade;
+use app\cgd\AtividadeDAdo;
 /**
  * Description of AplAtividade
  *
@@ -17,20 +17,26 @@ use app\cdp\Atividade;
  */
 class AplAtividade implements InterfaceDeApresentacao {
     
+    private $atividadeDao;
+    
+    public function __construct() {
+        $this->atividadeDao = new AtividadeDao(); 
+    }
+    
     public function alterar($objeto): bool {
-        
+        return $this->atividadeDao->alterar($objeto);
     }
 
     public function deletar($id): bool {
-        
+        return $this->atividadeDao->delete($id);
     }
 
     public function find($id) {
-        
+        return $this->atividadeDao->find($id);
     }
 
     public function listar($ordem): array {
-        
+        return $this->atividadeDao->listar($ordem);    
     }
 
 }
