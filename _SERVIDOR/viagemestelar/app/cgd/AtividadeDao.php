@@ -6,13 +6,13 @@
  * and open the template in the editor.
  */
 
-namespace app\cgt;
+namespace app\cgd;
 
 /**
- * Description of GestorDeGames
+ * Description of AtividadeDao
  *
  * @author pchan
  */
-class GestorDeGame {
+class AtividadeDao {
     //put your code here
 }

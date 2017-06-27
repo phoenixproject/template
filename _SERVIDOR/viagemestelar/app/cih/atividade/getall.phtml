@@ -1,7 +1,8 @@
 <?php 
     include ("../app/inc/header.phtml"); 
     use app\cci\Cliente;
-            
+    //require_once('../app/cci/Cliente.php');
+        
     $cliente = new Cliente();    
     $customers = $cliente->listar(null);
 ?>

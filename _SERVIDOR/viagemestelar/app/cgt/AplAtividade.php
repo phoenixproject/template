@@ -7,18 +7,22 @@
  */
 
 namespace app\cgt;
-use app\cgd\UsuarioDao;
 
+use app\cgt\InterfaceDeApresentacao;
+use app\cdp\Atividade;
 /**
- * Description of GestorDeUsuario
+ * Description of AplAtividade
  *
  * @author pchan
  */
-class GestorDeUsuario implements InterfaceDeApresentacao {
-       
+class AplAtividade implements InterfaceDeApresentacao {
     
+    public function alterar($objeto): bool {
+        
+    }
+
     public function deletar($id): bool {
-        return false;
+        
     }
 
     public function find($id) {
@@ -26,7 +30,7 @@ class GestorDeUsuario implements InterfaceDeApresentacao {
     }
 
     public function listar($ordem): array {
-        return "";
+        
     }
 
 }
