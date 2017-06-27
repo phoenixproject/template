@@ -194,6 +194,81 @@ class Init extends Bootstrap {
             'route'=>'/tiponave',
             'controller'=>'tiponave',
             'action'=>'save'
+        );
+        $ar['tipousuarioretrieve'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'retrieve'
+        );
+        $ar['tipousuariogetall'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'getall'
+        );
+        $ar['tipousuarioadd'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'add'
+        );
+        $ar['tipousuarioedit'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'edit'
+        );        
+        $ar['tipousuariosave'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'save'
+        );                        
+        $ar['tipousuarioretrieve'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'retrieve'
+        );
+        $ar['tipousuariogetall'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'getall'
+        );
+        $ar['tipousuarioadd'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'add'
+        );
+        $ar['tipousuarioedit'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'edit'
+        );        
+        $ar['tipousuariosave'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'save'
+        );                        
+        $ar['tipousuarioretrieve'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'retrieve'
+        );
+        $ar['tipousuariogetall'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'getall'
+        );
+        $ar['tipousuarioadd'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'add'
+        );
+        $ar['tipousuarioedit'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'edit'
+        );        
+        $ar['tipousuariosave'] = array(
+            'route'=>'/tipousuario',
+            'controller'=>'tipousuario',
+            'action'=>'save'
         );                        
         $ar['usuarioretrieve'] = array(
             'route'=>'/usuario',
@@ -219,7 +294,7 @@ class Init extends Bootstrap {
             'route'=>'/usuario',
             'controller'=>'usuario',
             'action'=>'save'
-        );                        
+        );                         
         $ar['logout'] = array(
             'route'=>'/logout',
             'controller'=>'logout',
