@@ -8,11 +8,17 @@
 
 namespace app\cgd;
 
+use app\cdp\TipoAtividade;
+use app\cgd\GenericDao;
 /**
  * Description of TipoArmaDao
  *
  * @author pchan
  */
-class TipoArmaDao {
-    //put your code here
+class TipoArmaDao extends GenericDao {
+    
+    public function __construct(){
+        parent::__construct(new TipoArma());
+    }
+    
 }
