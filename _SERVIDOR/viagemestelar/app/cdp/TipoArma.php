@@ -13,11 +13,15 @@ namespace app\cdp;
  *
  * @author pchan
  */
-class TipoArma {
+class TipoArma extends Entity {
     
-    private $tp_arma;
-    private $ds_tp_arma;
+    protected $tp_arma;
+    protected $ds_tp_arma;
     
+    public function __construct() {
+        parent::__construct('Tipo_Arma');
+    }
+            
     function getTp_arma() : int {
         return $this->tp_arma;
     }

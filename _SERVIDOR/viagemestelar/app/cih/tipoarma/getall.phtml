@@ -13,7 +13,7 @@
 		</div>
 		<div class="col-sm-6 text-right h2">
 	    	<a class="btn btn-primary" href="?tipoarma=add"><i class="fa fa-plus"></i> Novo Tipo de Arma</a>
-	    	<a class="btn btn-default" href="index.php"><i class="fa fa-refresh"></i> Atualizar</a>
+	    	<a class="btn btn-default" href="?tipoarma=getall"><i class="fa fa-refresh"></i> Atualizar</a>
 	    </div>
 	</div>
 </header>
@@ -41,10 +41,10 @@
 <?php foreach ($tiposdearmas as $tipoarma) : ?>
 	<tr>
 		<td><?php echo $tipoarma['tp_arma']; ?></td>
-		<td><?php echo $customer['ds_tp_arma']; ?></td>		
+		<td><?php echo $tipoarma['ds_tp_arma']; ?></td>		
 		<td class="actions text-right">
 			<a href="?tipoarma=retrieve&id=<?php echo (int)$tipoarma['tp_arma']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
-			<a href="?tipoarma=edit&id=<?php echo (int)$tipoarma['arma']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
+			<a href="?tipoarma=edit&id=<?php echo (int)$tipoarma['ds_tp_arma']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
 			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $tipoarma['tp_arma']; ?>">
 				<i class="fa fa-trash"></i> Excluir
 			</a>

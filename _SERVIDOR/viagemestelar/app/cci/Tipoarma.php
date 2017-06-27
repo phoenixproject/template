@@ -11,7 +11,7 @@ namespace app\cci;
 use app\cgt\AplTipoArma;
 use app\cgt\InterfaceDeApresentacao;
 
-use app\cdp\TipoArma;
+use app\cdp\TipoArma as TipoArmaDominio;
 
 use ifes\controller\Action;
 /**
@@ -63,7 +63,7 @@ class Tipoarma extends Action {
             
         if(isset($_POST['tipoarma']))
         {
-            $tipoArmaDominio = new TipoArma();
+            $tipoArmaDominio = new TipoArmaDominio();
             
             $tipoArma = $_POST['tipoarma'];            
                         
