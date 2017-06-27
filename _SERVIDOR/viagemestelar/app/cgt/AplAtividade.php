@@ -8,11 +8,29 @@
 
 namespace app\cgt;
 
+use app\cgt\InterfaceDeApresentacao;
+use app\cdp\Atividade;
 /**
  * Description of AplAtividade
  *
  * @author pchan
  */
-class AplAtividade {
-    //put your code here
+class AplAtividade implements InterfaceDeApresentacao {
+    
+    public function alterar($objeto): bool {
+        
+    }
+
+    public function deletar($id): bool {
+        
+    }
+
+    public function find($id) {
+        
+    }
+
+    public function listar($ordem): array {
+        
+    }
+
 }
