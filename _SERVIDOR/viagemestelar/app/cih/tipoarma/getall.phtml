@@ -1,19 +1,18 @@
 <?php 
     include ("../app/inc/header.phtml"); 
-    use app\cci\Cliente;
-    //require_once('../app/cci/Cliente.php');
-        
-    $cliente = new Cliente();    
-    $customers = $cliente->listar(null);
+    use app\cci\Tipoarma;
+            
+    $tipoArma = new Tipoarma();    
+    $tiposdearmas = $tipoArma->listar(null);
 ?>
 
 <header>
 	<div class="row">
 		<div class="col-sm-6">
-			<h2>Clientes</h2>
+			<h2>Tipo de Arma</h2>
 		</div>
 		<div class="col-sm-6 text-right h2">
-	    	<a class="btn btn-primary" href="?cliente=add"><i class="fa fa-plus"></i> Novo Cliente</a>
+	    	<a class="btn btn-primary" href="?tipoarma=add"><i class="fa fa-plus"></i> Novo Tipo de Arma</a>
 	    	<a class="btn btn-default" href="index.php"><i class="fa fa-refresh"></i> Atualizar</a>
 	    </div>
 	</div>
@@ -33,26 +32,20 @@
 <thead>
 	<tr>
 		<th>ID</th>
-		<th width="30%">Nome</th>
-		<th>CPF/CNPJ</th>
-		<th>Telefone</th>
-		<th>Atualizado em</th>
+		<th width="30%">Descrição</th>		
 		<th>Opções</th>
 	</tr>
 </thead>
 <tbody>
-<?php if ($customers) : ?>
-<?php foreach ($customers as $customer) : ?>
+<?php if ($tiposdearmas) : ?>
+<?php foreach ($tiposdearmas as $tipoarma) : ?>
 	<tr>
-		<td><?php echo $customer['id']; ?></td>
-		<td><?php echo $customer['name']; ?></td>
-		<td><?php echo $customer['cpf_cnpj']; ?></td>
-		<td>00 0000-0000</td>
-		<td><?php echo $customer['modified']; ?></td>
+		<td><?php echo $tipoarma['tp_arma']; ?></td>
+		<td><?php echo $customer['ds_tp_arma']; ?></td>		
 		<td class="actions text-right">
-			<a href="?cliente=retrieve&id=<?php echo (int)$customer['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
-			<a href="?cliente=edit&id=<?php echo (int)$customer['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $customer['id']; ?>">
+			<a href="?tipoarma=retrieve&id=<?php echo (int)$tipoarma['tp_arma']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
+			<a href="?tipoarma=edit&id=<?php echo (int)$tipoarma['arma']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
+			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $tipoarma['tp_arma']; ?>">
 				<i class="fa fa-trash"></i> Excluir
 			</a>
 		</td>
