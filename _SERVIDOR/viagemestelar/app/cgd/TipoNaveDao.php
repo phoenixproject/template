@@ -8,11 +8,18 @@
 
 namespace app\cgd;
 
+use app\cdp\TipoNave;
+use app\cgd\GenericDao;
+
 /**
  * Description of TipoNaveDao
  *
  * @author pchan
  */
-class TipoNaveDao {
-    //put your code here
+class TipoNaveDao extends GenericDao {
+    
+    public function __construct(){
+        parent::__construct(new TipoNave());
+    }
+    
 }
