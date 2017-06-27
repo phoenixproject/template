@@ -8,11 +8,34 @@
 
 namespace app\cgt;
 
+use app\cgd\TipoArmaDao;
+use app\cgt\InterfaceDeApresentacao;
 /**
  * Description of AplTipoArma
  *
  * @author pchan
  */
-class AplTipoArma {
-    //put your code here
+class AplTipoArma implements InterfaceDeApresentacao {
+    
+    private $tipoArmaDao;
+    
+    public function __construct() {
+        $this->tipoArmaDao = new TipoArmaDao(); 
+    }
+    
+    public function alterar($objeto): bool {
+        return $this->tipoArmaDao->alterar($objeto);
+    }
+
+    public function deletar($id): bool {
+        return $this->tipoArmaDao->delete($id);
+    }
+
+    public function find($id) {
+        return $this->tipoArmaDao->find($id);
+    }
+
+    public function listar($ordem): array {
+        return $this->tipoArmaDao->listar($ordem);
+    }
 }
