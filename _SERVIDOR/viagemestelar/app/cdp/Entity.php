@@ -37,6 +37,7 @@ abstract class Entity {
         public function retornaAtributosDaClasse() : array {
 
             $atributosdaclasse = get_class_vars(get_class($this));
+            //$atributosdaclasse = get_object_vars($this);
 
             $chaves = array_keys($atributosdaclasse);
 
@@ -45,7 +46,8 @@ abstract class Entity {
         
         public function retornaConteudoDeAtributosDaClasse() : array {
 
-            $conteudoatributos = get_class_vars(get_class($this));
+            //$conteudoatributos = get_class_vars(get_class($this));
+            $conteudoatributos = get_object_vars($this);
 
             $chaves = array_values($conteudoatributos);
 
@@ -55,7 +57,7 @@ abstract class Entity {
         public function retornaDeQuantidadeAtributosDaClasseFilha() : int {
             
             //Retirando um atributo protected (table) da classe pai.
-            return count($this->retornaAtributosDaClasse()) - 1;
+            return (count($this->retornaAtributosDaClasse()));
             
         }
 }

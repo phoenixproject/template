@@ -26,7 +26,7 @@ class Usuario extends Entity {
     }
     
     function getCd_usuario() : int {
-        return $this->cd_usuario;
+        return $this->cd_usuario;        
     }
 
     function getEmail() : string {

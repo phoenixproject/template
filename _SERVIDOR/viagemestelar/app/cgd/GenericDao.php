@@ -75,67 +75,87 @@ class GenericDao{
             }
 	}
 	
-	public function inserir() : bool {
+	public function inserir($objeto) : bool {
 		
-            $query = "Insert into {$this->entity->getTable()}(nome, email) Values(:nome, :email)";
-	
-            $stmt = $this->db->prepare($query);
-
-            $stmt->bindValue(':nome', $this->entity->getNome());
-            $stmt->bindValue(':email', $this->entity->getEmail());
-
-            if($stmt->execute()){
-                    return true;
+            $query = "Insert into {$this->entity->getTable()} ";
+            $query .= "(";
+            //$query .= "(nome, email) Values(:nome, :email)";
+	            
+            for($posicao = 1; $posicao < $objeto->retornaDeQuantidadeAtributosDaClasseFilha(); $posicao++){            
+                //$query .= $objeto->retornaAtributosDaClasse()[$posicao] ." = :valor".$posicao;                
+                $query .= $objeto->retornaAtributosDaClasse()[$posicao];
+                
+                if($posicao + 1 != $objeto->retornaDeQuantidadeAtributosDaClasseFilha()){                
+                    $query .=  ", ";
+                }
+                else{
+                    $query .=  ") Values( ";
+                }
             }
-            else{
-                    return false;
+            
+            //O índice iniicia a partir do 1 (para eleminar o código) e finaliza antes do atributo que contém informação de tabela
+            for($indice = 1; $indice < $objeto->retornaDeQuantidadeAtributosDaClasseFilha(); $indice++){
+                $query .= $objeto->retornaConteudoDeAtributosDaClasse()[$indice];
+                
+                if($indice + 1 != $objeto->retornaDeQuantidadeAtributosDaClasseFilha()){
+                    $query .=  ", ";
+                }
+                else{
+                    $query .=  ") ";
+                }
+            }
+            
+            try{                
+                $stmt = $this->db->getDbconnect()->prepare($query);
+
+                //O índice iniicia a partir do 1 (para eleminar o código) e finaliza antes do atributo que contém informação de tabela
+                for($indice = 1; $indice < $objeto->retornaDeQuantidadeAtributosDaClasseFilha(); $indice++){
+                    $stmt->bindValue(':valor'.$indice, $objeto->retornaConteudoDeAtributosDaClasse()[$indice]);
+                }
+                
+                $stmt->execute();
+        
+                return true;
+                
+            } catch (Exception $ex) {
+                return $this->get_error($e);
+            } catch (PDOException $ex) {
+                # call the get_error function
+                return $this->get_error($e);
             }
 	}
 	
 	public function alterar($objeto) : bool{
-	
-            $codigo = $this->entity->retornaAtributosDaClasse()[0];
+	    
+            $query = "Update {$objeto->getTable()} set ";
                         
-            $query = "";
-            
-            $query .= "Update {$this->entity->getTable()} ";
-            $query .= "set ";
-            
-            for($posicao = 1; $posicao < $this->entity->retornaDeQuantidadeAtributosDaClasseFilha(); $posicao++){
-                $query .= $this->entity->retornaAtributosDaClasse()[$posicao] ." = :valor".$posicao;
-                if($posicao + 1 != $this->entity->retornaDeQuantidadeAtributosDaClasseFilha()){
+            for($posicao = 1; $posicao < $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1; $posicao++){            
+                $query .= $objeto->retornaAtributosDaClasse()[$posicao] ." = :valor".$posicao;                
+                if($posicao + 1 != $objeto->retornaDeQuantidadeAtributosDaClasseFilha()){                
                     $query .=  ", ";
                 }
             }
             
+            //Obtém o código do objeto a ser alterado
+            $codigo = $objeto->retornaAtributosDaClasse()[0];
+            
             //Finaliza a query com o código
             $query .= " where $codigo = :valor";
 
-            try{
+            try{                
                 $stmt = $this->db->getDbconnect()->prepare($query);
 
-                //Retorna o método na posição 1 que traz o id da classe
-                $metodo = $this->entity->retornaMetodosDaClasse()[1];
+                //Faz o bind do valor do valor do código que está contido no primeiro atributo da classe
+                $stmt->bindValue(':valor', $objeto->retornaConteudoDeAtributosDaClasse()[0]);
 
-                //Utiliza reflection para invocar o método de busca do id da classe.
-                $metodoReflection = new \ReflectionMethod(get_class($objeto),$metodo);
-                $nomedaclasse = get_class($objeto);                            
-                
-                //Faz o bind do valor do código invocando o método por reflection
-                $stmt->bindValue(':valor', $metodoReflection->invoke(new $nomedaclasse));
-
-                //O índice é menor igual ao último registro para não contar o atributo table e de código (que já foi feito o bind)
-                for($indice = 2; $posicao <= $this->entity->retornaDeQuantidadeAtributosDaClasseFilha(); $indice++){
-
-                    $metodoReflection = new \ReflectionMethod(get_class($objeto),$this->entity->retornaMetodosDaClasse()[$indice]);
-                    $nomedaclasse = get_class($objeto);            
-
-                    $stmt->bindValue(':valor'.$indice, $metodoReflection->invoke(new $nomedaclasse));
+                //O índice iniicia a partir do 1 (para eleminar o código) e finaliza antes do atributo que contém informação de tabela
+                for($indice = 1; $indice < $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1; $indice++){
+                    $stmt->bindValue(':valor'.$indice, $objeto->retornaConteudoDeAtributosDaClasse()[$indice]);
                 }
                 
                 $stmt->execute();
-
-                return $stmt->fetch((\PDO::FETCH_ASSOC));	
+        
+                return true;
                 
             } catch (Exception $ex) {
                 return $this->get_error($e);
@@ -166,15 +186,4 @@ class GenericDao{
                 return $this->get_error($e);
             }
 	}
-        
-        public function teste(){
-            
-            $quantidadeatributos = count($this->entity->retornaAtributosDaClasse());
-            
-            $codigo = $this->entity->retornaAtributosDaClasse()[0];
-            $metodo = $this->entity->retornaMetodosDaClasse()[1];
-            
-            $metodoReflection = new \ReflectionMethod(get_class($this->entity),$metodo);
-            $nomedaclasse = get_class($this->entity);
-        }
 }
