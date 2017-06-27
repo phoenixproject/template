@@ -3,13 +3,13 @@
 <br>
 [![Build Status](https://travis-ci.org/phoenixproject/viagemestelar.png)](https://travis-ci.org/phoenixproject/viagemestelar)
 <br><br>
-**Integração Contínua (Code Smells) > Codacy:** 
-<br>
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dbd5d8d8989e464e8ddf5f4b896e7928)](https://www.codacy.com/app/phoenixproject.erp/viagemestelar?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=phoenixproject/viagemestelar&amp;utm_campaign=Badge_Grade)
-<br><br>
 **Integração Contínua > AppVeyor:** 
 <br>
 [![Build status](https://ci.appveyor.com/api/projects/status/bf7lfjpb7aoo3hxs/branch/master?svg=true)](https://ci.appveyor.com/project/phoenixproject/viagemestelar/branch/master)
+<br><br>
+**Integração Contínua (Code Smells) > Codacy:** 
+<br>
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dbd5d8d8989e464e8ddf5f4b896e7928)](https://www.codacy.com/app/phoenixproject.erp/viagemestelar?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=phoenixproject/viagemestelar&amp;utm_campaign=Badge_Grade)
 <br><br>
 **Acompanhamento de Issues > Waffle IO:** 
 <br>
