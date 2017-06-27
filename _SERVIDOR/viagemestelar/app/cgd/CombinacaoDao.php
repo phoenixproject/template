@@ -8,11 +8,16 @@
 
 namespace app\cgd;
 
+use app\cdp\Combinacao;
+use app\cgd\GenericDao;
 /**
  * Description of CombinacaoDao
  *
  * @author pchan
  */
-class CombinacaoDao {
-    //put your code here
+class CombinacaoDao  extends GenericDao {
+    
+    public function __construct(){
+        parent::__construct(new Combinacao());
+    }
 }
