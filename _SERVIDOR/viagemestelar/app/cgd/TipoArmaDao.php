@@ -8,7 +8,7 @@
 
 namespace app\cgd;
 
-use app\cdp\TipoAtividade;
+use app\cdp\TipoArma;
 use app\cgd\GenericDao;
 /**
  * Description of TipoArmaDao

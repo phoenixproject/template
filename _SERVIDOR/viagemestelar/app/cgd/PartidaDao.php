@@ -8,11 +8,17 @@
 
 namespace app\cgd;
 
+use app\cdp\Partida;
+use app\cgd\GenericDao;
 /**
  * Description of PartidaDao
  *
  * @author pchan
  */
-class PartidaDao {
-    //put your code here
+class PartidaDao extends GenericDao {
+    
+    public function __construct(){
+        parent::__construct(new Partida());
+    }
+    
 }
