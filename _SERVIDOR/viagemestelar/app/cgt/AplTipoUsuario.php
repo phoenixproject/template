@@ -39,5 +39,4 @@ class AplTipoUsuario implements InterfaceDeApresentacao {
     public function listar($ordem): array {
         return $this->tipoUsuarioDao->listar($ordem);
     }
-
 }
