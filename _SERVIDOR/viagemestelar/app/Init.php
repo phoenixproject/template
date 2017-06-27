@@ -45,6 +45,31 @@ class Init extends Bootstrap {
             'controller'=>'atividade',
             'action'=>'save'
         );                
+        $ar['combinacaoretrieve'] = array(
+            'route'=>'/combinacao',
+            'controller'=>'combinacao',
+            'action'=>'retrieve'
+        );
+        $ar['combinacaogetall'] = array(
+            'route'=>'/combinacao',
+            'controller'=>'combinacao',
+            'action'=>'getall'
+        );
+        $ar['combinacaoadd'] = array(
+            'route'=>'/combinacao',
+            'controller'=>'combinacao',
+            'action'=>'add'
+        );
+        $ar['combinacaoedit'] = array(
+            'route'=>'/combinacao',
+            'controller'=>'combinacao',
+            'action'=>'edit'
+        );        
+        $ar['combinacaosave'] = array(
+            'route'=>'/combinacao',
+            'controller'=>'combinacao',
+            'action'=>'save'
+        );                        
         $ar['usuarioretrieve'] = array(
             'route'=>'/usuario',
             'controller'=>'usuario',
