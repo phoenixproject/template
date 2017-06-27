@@ -80,11 +80,11 @@ class GenericDao{
             $query .= "(";
             //$query .= "(nome, email) Values(:nome, :email)";
 	            
-            for($posicao = 1; $posicao < $objeto->retornaDeQuantidadeAtributosDaClasseFilha(); $posicao++){            
+            for($posicao = 1; $posicao < $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1; $posicao++){            
                 //$query .= $objeto->retornaAtributosDaClasse()[$posicao] ." = :valor".$posicao;                
                 $query .= $objeto->retornaAtributosDaClasse()[$posicao];
                 
-                if($posicao + 1 != $objeto->retornaDeQuantidadeAtributosDaClasseFilha()){                
+                if($posicao + 1 != $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1){                
                     $query .=  ", ";
                 }
                 else{
@@ -93,10 +93,10 @@ class GenericDao{
             }
             
             //O índice iniicia a partir do 1 (para eleminar o código) e finaliza antes do atributo que contém informação de tabela
-            for($indice = 1; $indice < $objeto->retornaDeQuantidadeAtributosDaClasseFilha(); $indice++){
-                $query .= $objeto->retornaConteudoDeAtributosDaClasse()[$indice];
+            for($indice = 1; $indice < $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1; $indice++){
+                $query .= "'".$objeto->retornaConteudoDeAtributosDaClasse()[$indice]."'";
                 
-                if($indice + 1 != $objeto->retornaDeQuantidadeAtributosDaClasseFilha()){
+                if($indice + 1 != $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1){
                     $query .=  ", ";
                 }
                 else{
@@ -108,8 +108,8 @@ class GenericDao{
                 $stmt = $this->db->getDbconnect()->prepare($query);
 
                 //O índice iniicia a partir do 1 (para eleminar o código) e finaliza antes do atributo que contém informação de tabela
-                for($indice = 1; $indice < $objeto->retornaDeQuantidadeAtributosDaClasseFilha(); $indice++){
-                    $stmt->bindValue(':valor'.$indice, $objeto->retornaConteudoDeAtributosDaClasse()[$indice]);
+                for($indice = 1; $indice < $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1; $indice++){
+                    $stmt->bindValue(':valor'.$indice,$objeto->retornaConteudoDeAtributosDaClasse()[$indice]);
                 }
                 
                 $stmt->execute();
@@ -130,7 +130,7 @@ class GenericDao{
                         
             for($posicao = 1; $posicao < $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1; $posicao++){            
                 $query .= $objeto->retornaAtributosDaClasse()[$posicao] ." = :valor".$posicao;                
-                if($posicao + 1 != $objeto->retornaDeQuantidadeAtributosDaClasseFilha()){                
+                if($posicao + 1 != $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1){                
                     $query .=  ", ";
                 }
             }
@@ -141,17 +141,18 @@ class GenericDao{
             //Finaliza a query com o código
             $query .= " where $codigo = :valor";
 
-            try{                
+            try{
                 $stmt = $this->db->getDbconnect()->prepare($query);
 
                 //Faz o bind do valor do valor do código que está contido no primeiro atributo da classe
                 $stmt->bindValue(':valor', $objeto->retornaConteudoDeAtributosDaClasse()[0]);
 
+                
                 //O índice iniicia a partir do 1 (para eleminar o código) e finaliza antes do atributo que contém informação de tabela
-                for($indice = 1; $indice < $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1; $indice++){
+                for($indice = 1; $indice < $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1; $indice++){                
                     $stmt->bindValue(':valor'.$indice, $objeto->retornaConteudoDeAtributosDaClasse()[$indice]);
                 }
-                
+                                
                 $stmt->execute();
         
                 return true;

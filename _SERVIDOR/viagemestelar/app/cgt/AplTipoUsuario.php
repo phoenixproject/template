@@ -25,19 +25,22 @@ class AplTipoUsuario implements InterfaceDeApresentacao {
     }
     
     public function alterar($objeto): bool {
-        
+        return $this->tipoUsuarioDao->alterar($objeto);
     }
 
     public function deletar($id): bool {
-        
+        return $this->tipoUsuarioDao->delete($id);
     }
 
     public function find($id) {
-        
+        return $this->tipoUsuarioDao->find($id);
     }
 
     public function listar($ordem): array {
         return $this->tipoUsuarioDao->listar($ordem);
     }
-
+    
+    public function inserir($objeto): bool {
+        return $this->inserir($objeto);
+    }
 }

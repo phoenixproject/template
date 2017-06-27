@@ -82,6 +82,5 @@ class Usuario extends Action {
             }
         }    
         return "";                
-    }
-    
+    }    
 }

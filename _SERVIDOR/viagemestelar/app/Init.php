@@ -140,11 +140,16 @@ class Init extends Bootstrap {
             'controller'=>'tipoarma',
             'action'=>'edit'
         );        
-        $ar['tiposave'] = array(
+        $ar['tipoarmasave'] = array(
             'route'=>'/tipoarma',
             'controller'=>'tipoarma',
             'action'=>'save'
         );                        
+        $ar['tipoarmainsert'] = array(
+            'route'=>'/tipoarma',
+            'controller'=>'tipoarma',
+            'action'=>'insert'
+        );        
         $ar['tipoatividaderetrieve'] = array(
             'route'=>'/tipoatividade',
             'controller'=>'tipoatividade',

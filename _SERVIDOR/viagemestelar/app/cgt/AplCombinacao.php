@@ -8,39 +8,38 @@
 
 namespace app\cgt;
 
+use app\cgd\CombinacaoDao;
 use app\cgt\InterfaceDeApresentacao;
-use app\cgd\AtividadeDao;
 /**
- * Description of AplAtividade
+ * Description of Combinacao
  *
  * @author pchan
  */
-class AplAtividade implements InterfaceDeApresentacao {
+class AplCombinacao implements InterfaceDeApresentacao {
     
-    private $atividadeDao;
+    private $combinacaoDao;
     
     public function __construct() {
-        $this->atividadeDao = new AtividadeDao(); 
+        $this->combinacaoDao = new CombinacaoDao(); 
     }
     
     public function alterar($objeto): bool {
-        return $this->atividadeDao->alterar($objeto);
+        return $this->combinacaoDao->alterar($objeto);
     }
 
     public function deletar($id): bool {
-        return $this->atividadeDao->delete($id);
+        return $this->combinacaoDao->delete($id);
     }
 
     public function find($id) {
-        return $this->atividadeDao->find($id);
+        return $this->combinacaoDao->find($id);
     }
 
     public function listar($ordem): array {
-        return $this->atividadeDao->listar($ordem);    
+        return $this->combinacaoDao->listar($ordem);
     }
-
+    
     public function inserir($objeto): bool {
         return $this->inserir($objeto);
     }
-
 }

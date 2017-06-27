@@ -8,11 +8,16 @@
 
 namespace app\cgd;
 
+use app\cdp\Atividade;
+use app\cgd\GenericDao;
 /**
  * Description of AtividadeDao
  *
  * @author pchan
  */
-class AtividadeDao {
-    //put your code here
+class AtividadeDao extends GenericDao {
+    
+    public function __construct(){
+        parent::__construct(new Atividade());
+    }
 }

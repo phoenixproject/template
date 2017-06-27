@@ -7,7 +7,6 @@
  */
 
 namespace app\cgt;
-
 use app\cgt\InterfaceDeServico;
 use app\cgd\ServicoDao;
 /**

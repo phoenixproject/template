@@ -7,10 +7,8 @@
  */
 
 namespace app\cci;
-
 use app\cgt\InterfaceDeServico;
 use app\cgt\AplServico;
-
 /**
  * Description of Servico
  *

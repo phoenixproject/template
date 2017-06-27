@@ -60,5 +60,17 @@ abstract class Entity {
             return (count($this->retornaAtributosDaClasse()));
             
         }
+        
+        public function retornaAtributosVaziosEmArray(){
+            
+            $arraytipoarma = array();
+
+            for($indice = 1; $indice < $this->retornaDeQuantidadeAtributosDaClasseFilha() -1; $indice++){            
+                $arraytipoarma[$this->retornaAtributosDaClasse()[$indice]] = "";            
+            }
+
+            return $arraytipoarma;
+            
+        }
 }
 

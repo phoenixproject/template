@@ -8,39 +8,38 @@
 
 namespace app\cgt;
 
+use app\cgd\PartidaDao;
 use app\cgt\InterfaceDeApresentacao;
-use app\cgd\AtividadeDao;
 /**
- * Description of AplAtividade
+ * Description of AplPartida
  *
  * @author pchan
  */
-class AplAtividade implements InterfaceDeApresentacao {
+class AplPartida implements InterfaceDeApresentacao {
     
-    private $atividadeDao;
+    private $partidaDao;
     
     public function __construct() {
-        $this->atividadeDao = new AtividadeDao(); 
+        $this->partidaDao = new PartidaDao(); 
     }
     
     public function alterar($objeto): bool {
-        return $this->atividadeDao->alterar($objeto);
+        return $this->partidaDao->alterar($objeto);
     }
 
     public function deletar($id): bool {
-        return $this->atividadeDao->delete($id);
+        return $this->partidaDao->delete($id);
     }
 
     public function find($id) {
-        return $this->atividadeDao->find($id);
+        return $this->partidaDao->find($id);
     }
 
     public function listar($ordem): array {
-        return $this->atividadeDao->listar($ordem);    
+        return $this->partidaDao->listar($ordem);
     }
-
+    
     public function inserir($objeto): bool {
         return $this->inserir($objeto);
     }
-
 }

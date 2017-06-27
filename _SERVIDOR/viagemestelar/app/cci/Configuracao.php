@@ -8,23 +8,22 @@
 
 namespace app\cci;
 
-use app\cgt\AplTipoUsuario;
 use app\cgt\InterfaceDeApresentacao;
 
-use app\cdp\TipoUsuario;
+use app\cdp\Configuracao as ConfiguracaoDominio;
 
 use ifes\controller\Action;
 /**
- * Description of Tipousuario
+ * Description of Configuracao
  *
  * @author pchan
  */
-class Tipousuario extends Action {
-        
-    private $interfaceDeApresentacao;
+class Configuracao extends Action {
     
-    public function __construct() {        
-        $this->interfaceDeApresentacao = new AplTipoUsuario();
+    private $interfaceDeApresentacao;
+        
+    public function __construct() {
+        $this->interfaceDeApresentacao = new AplConfiguracao();       
     }
     
     public function retrieve(){
@@ -48,34 +47,33 @@ class Tipousuario extends Action {
     }
     
     public function findById(){
-        if(isset($_GET['id'])){
-            $id = $_GET['id'];
+        
+        $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_SPECIAL_CHARS);
+        
+        if(isset($id)){            
             return $this->interfaceDeApresentacao->find($id);
         }
         return "";        
     }
     
-    public function listarTipoUsuario($ordem){
-        return $this->interfaceDeApresentacao->listar($ordem);
-    }
-    
     public function save(){
-            
-        if(isset($_POST['tipousuario']))
+        
+        $configuracao = filter_input(INPUT_POST, 'configuracao', FILTER_SANITIZE_SPECIAL_CHARS);
+        
+        if(isset($configuracao))
         {
-            $tipoUsuarioDominio = new TipoUsuario();
-            
-            $tipoUsuario = $_POST['tipousuario'];            
+            $configuracaoDominio = new ConfiguracaoDominio();            
                         
-            $chave = array_values($tipoUsuario);
+            $chave = array_values($configuracao);
                         
-            $tipoUsuarioDominio->setTp_usuario($chave[0]);
-            $tipoUsuarioDominio->setDs_tp_usuario($chave[1]);
-                                    
-            if($this->interfaceDeApresentacaoUsuario->alterar($tipoUsuarioDominio)){
+            $configuracaoDominio->setCd_configuracao($chave[0]);
+            $configuracaoDominio->setDs_configuracao($chave[1]);
+            $configuracaoDominio->setNivel_dificuldade($chave[2]);
+                                                
+            if($this->interfaceDeApresentacao->alterar($configuracaoDominio)){
                 $this->render('getall',false);        
             }
         }    
         return "";                
-    }
+    }    
 }

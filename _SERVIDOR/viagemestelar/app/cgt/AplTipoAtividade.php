@@ -8,39 +8,38 @@
 
 namespace app\cgt;
 
+use app\cgd\TipoAtividadeDao;
 use app\cgt\InterfaceDeApresentacao;
-use app\cgd\AtividadeDao;
 /**
- * Description of AplAtividade
+ * Description of AplTipoAtividade
  *
  * @author pchan
  */
-class AplAtividade implements InterfaceDeApresentacao {
+class AplTipoAtividade  implements InterfaceDeApresentacao {
     
-    private $atividadeDao;
+    private $tipoAtividadeDao;
     
     public function __construct() {
-        $this->atividadeDao = new AtividadeDao(); 
+        $this->tipoAtividadeDao = new TipoAtividadeDao(); 
     }
     
     public function alterar($objeto): bool {
-        return $this->atividadeDao->alterar($objeto);
+        return $this->tipoAtividadeDao->alterar($objeto);
     }
 
     public function deletar($id): bool {
-        return $this->atividadeDao->delete($id);
+        return $this->tipoAtividadeDao->delete($id);
     }
 
     public function find($id) {
-        return $this->atividadeDao->find($id);
+        return $this->tipoAtividadeDao->find($id);
     }
 
     public function listar($ordem): array {
-        return $this->atividadeDao->listar($ordem);    
+        return $this->tipoAtividadeDao->listar($ordem);
     }
-
+    
     public function inserir($objeto): bool {
         return $this->inserir($objeto);
     }
-
 }
