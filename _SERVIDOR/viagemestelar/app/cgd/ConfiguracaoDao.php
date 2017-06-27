@@ -8,11 +8,16 @@
 
 namespace app\cgd;
 
+use app\cdp\Configuracao;
+use app\cgd\GenericDao;
 /**
  * Description of ConfiguracaoDao
  *
  * @author pchan
  */
-class ConfiguracaoDao {
-    //put your code here
+class ConfiguracaoDao extends GenericDao {
+    
+    public function __construct(){
+        parent::__construct(new Configuracao());
+    }
 }
