@@ -15,11 +15,11 @@ namespace app\cdp;
  */
 class Usuario extends Entity {
     
-    public $cd_usuario;
-    public $email;
-    public $password;
-    public $dt_criacao;
-    public $tp_usuario;
+    protected $cd_usuario;
+    protected $email;
+    protected $password;
+    protected $dt_criacao;
+    protected $tp_usuario;
     
     public function __construct() {
         parent::__construct("Usuario");        
@@ -64,7 +64,4 @@ class Usuario extends Entity {
     function setTp_usuario($tp_usuario) {
         $this->tp_usuario = $tp_usuario;
     }
-
-
-    
 }

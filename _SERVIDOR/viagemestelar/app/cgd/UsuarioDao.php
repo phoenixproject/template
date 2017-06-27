@@ -23,18 +23,14 @@ class UsuarioDao extends GenericDao {
         
     public function ObterUsuarioPorEmailESenha($email, $password) {
 
-        //$usuario = new Usuario();
-        
         $query = "";
         
         $query .= "Select * from {$this->entity->getTable()} where ";
         $query .= "email=:email and password=:password";
 
-        try{
-        
+        try{        
             $stmt = $this->db->getDbconnect()->prepare($query);
-            //$stmt = $this->db->prepare($query);
-            
+                        
             $stmt->bindValue(':email', $email);
             $stmt->bindValue(':password', $password);
             

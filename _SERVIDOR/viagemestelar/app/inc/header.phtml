@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Viagem Estelar</title>
+    <title>:: Viagem Estelar - Settings ::</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,6 +16,9 @@
     </style>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    
+    <!-- Movimentação do título -->
+    <script src="js/util.js"></script>
 </head>
 <body>
 
@@ -48,8 +51,8 @@
                     Partidas <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="?partida=getall">Gerenciar Clientes</a></li>
-                    <li><a href="?partida=add">Novo Cliente</a></li>
+                    <li><a href="?partida=getall">Gerenciar Partidas</a></li>
+                    <li><a href="?partida=add">Novo Partida (manual)</a></li>
                 </ul>                
             </li>
           </ul>            
@@ -60,7 +63,7 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li><a href="?atividade=getall">Gerenciar Atividades</a></li>
-                    <li><a href="?atividade=add">Nova Atividade</a></li>
+                    <li><a href="?atividade=add">Nova Atividade (manual)</a></li>
                 </ul>                
             </li>
           </ul> 
@@ -101,9 +104,12 @@
                     <li><a href="?tipoarma=add">Novo Tipo de Arma</a></li>
                 </ul>                
             </li>
-          </ul>            
+          </ul>           
         <div class="navbar-header">
-            <a href="index.php?logout=yes" class="navbar-brand">Logout</a>
+            <a href="index.php?logout=yes" class="navbar-text">Logout</a>
+        </div>
+        <div class="navbar-header">
+            <a href="" class="navbar-brand"><?php echo $_SESSION['usuariosessao']['email']; ?></a>
         </div>
         </div><!--/.navbar-collapse -->
       </div>

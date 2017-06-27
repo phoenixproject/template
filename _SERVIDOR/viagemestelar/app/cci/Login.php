@@ -37,32 +37,36 @@ class Login extends Action {
     }
     
     public function start(){
-                        
-        //$teste1 = $_REQUEST['email'];
-        //$teste2 = $_REQUEST['password'];
-        
-        if (isset($_REQUEST['email']) && isset($_REQUEST['password'])) {
-            
-            $email = $_POST['email'];
-            $password = $_POST['password'];            
+               
+        $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_SPECIAL_CHARS);
+        $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_SPECIAL_CHARS);            
+       
+        if (($email != false) && ($password != false)) {
             
             $usuario = $this->interfaceDeLogin->ObterUsuarioPorEmailESenha($email, $password);
             
             if($usuario != 0){
                 
-                //session_start();
-                
                 $_SESSION['usuariosessao'] = $usuario;
+                
+                /*$teste = $_SESSION['usuariosessao'];
+                $teste2 = $_SESSION['usuariosessao']['email'];
+                $teste3 = array_values($_SESSION['usuariosessao']);
+                $teste4 = $teste3[0];*/
                 
                 //Retorna para o índice                
                 header("Refresh:0; url=index.php");
             }
             else{
-                $this->render('start',false);    
+                $this->render('start',false);  
+                
+                echo '<div class="alert alert-danger" role="alert" align="center">
+                    <p><strong>ERRO:</strong> email ou senha estão incorretos!</p>
+                 </div>;';
             }
         }
         else{
-            $this->render('start',false);    
+            $this->render('start',false);                
         }
         
     }

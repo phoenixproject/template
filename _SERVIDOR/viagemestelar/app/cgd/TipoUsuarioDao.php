@@ -6,17 +6,19 @@
  * and open the template in the editor.
  */
 
-namespace app\cgt;
+namespace app\cgd;
 
+use app\cdp\TipoUsuario;
+use app\cgd\GenericDao;
 /**
+ * Description of TipoUsuarioDao
  *
  * @author pchan
  */
-interface InterfaceDeApresentacao {
+class TipoUsuarioDao extends GenericDao {
     
-    function find($id);
-    function listar($ordem) : array;
-    function deletar($id) : bool;
-    function alterar($objeto) : bool;
+    public function __construct(){
+        parent::__construct(new TipoUsuario());
+    }
     
 }
