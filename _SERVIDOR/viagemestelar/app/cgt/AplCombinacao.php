@@ -38,4 +38,8 @@ class AplCombinacao implements InterfaceDeApresentacao {
     public function listar($ordem): array {
         return $this->combinacaoDao->listar($ordem);
     }
+    
+    public function inserir($objeto): bool {
+        return $this->inserir($objeto);
+    }
 }

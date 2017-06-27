@@ -38,4 +38,8 @@ class AplConfiguracao implements InterfaceDeApresentacao {
     public function listar($ordem): array {
         return $this->configuracaoDao->listar($ordem);
     }
+    
+    public function inserir($objeto): bool {
+        return $this->inserir($objeto);
+    }
 }

@@ -38,4 +38,8 @@ class AplPartida implements InterfaceDeApresentacao {
     public function listar($ordem): array {
         return $this->partidaDao->listar($ordem);
     }
+    
+    public function inserir($objeto): bool {
+        return $this->inserir($objeto);
+    }
 }

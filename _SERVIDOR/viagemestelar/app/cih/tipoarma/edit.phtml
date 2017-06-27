@@ -1,10 +1,10 @@
 <?php 
     include ("../app/inc/header.phtml"); 
     use app\cci\Tipoarma;
-    //require_once('../app/cci/Cliente.php');
-        
+            
     $tipoArmaCCI = new Tipoarma();    
-    $tipoarma = $tipoArmaCCI->findById();    
+    
+    $tipoarma = $tipoArmaCCI->findById();
 ?>
 
 <h2>Atualizar Tipo de Arma</h2>

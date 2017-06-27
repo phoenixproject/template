@@ -38,4 +38,8 @@ class AplTipoArma implements InterfaceDeApresentacao {
     public function listar($ordem): array {
         return $this->tipoArmaDao->listar($ordem);
     }
+    
+    public function inserir($objeto): bool {
+        return $this->tipoArmaDao->inserir($objeto);
+    }
 }

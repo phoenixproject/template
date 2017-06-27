@@ -38,4 +38,8 @@ class AplTipoNave implements InterfaceDeApresentacao {
     public function listar($ordem): array {
         return $this->tipoNaveDao->listar($ordem);
     }
+    
+    public function inserir($objeto): bool {
+        return $this->inserir($objeto);
+    }
 }

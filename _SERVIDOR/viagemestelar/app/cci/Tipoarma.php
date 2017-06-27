@@ -60,14 +60,14 @@ class Tipoarma extends Action {
     }
     
     public function save(){
-            
-        if(isset($_POST['tipoarma']))
-        {
+
+        $tipoarma = filter_input(INPUT_POST, 'tipoarma', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($tipoarma))        
+        {   
             $tipoArmaDominio = new TipoArmaDominio();
-            
-            $tipoArma = $_POST['tipoarma'];            
-                        
-            $chave = array_values($tipoArma);
+                                    
+            $chave = array_values($tipoarma);
                         
             $tipoArmaDominio->setTp_arma($chave[0]);
             $tipoArmaDominio->setDs_tp_arma($chave[1]);
@@ -78,4 +78,23 @@ class Tipoarma extends Action {
         }    
         return "";                
     }
+    
+    public function insert(){
+
+        $tipoarma = filter_input(INPUT_POST, 'tipoarma', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($tipoarma))
+        {
+            $tipoArmaDominio = new TipoArmaDominio();
+                                    
+            $chave = array_values($tipoarma);
+                        
+            $tipoArmaDominio->setDs_tp_arma($chave[0]);
+                                                
+            if($this->interfaceDeApresentacao->inserir($tipoArmaDominio)){
+                $this->render('getall',false);        
+            }
+        }    
+        return "";                
+    }    
 }

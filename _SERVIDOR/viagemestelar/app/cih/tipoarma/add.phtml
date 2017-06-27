@@ -1,23 +1,23 @@
-
 <?php 
-  //require_once('functions.php'); 
-  //add();
+  include ("../app/inc/header.phtml");   
+  use app\cdp\Tipoarma;
+  
+  $tipoArmaDominio = new Tipoarma();
+  
+  $tipoarma = $tipoArmaDominio->retornaAtributosVaziosEmArray();
 ?>
 
-<?php 
-    include ("../app/inc/header.phtml"); 
-?>
 
 <h2>Novo Tipo de Arma</h2>
 
-<form action="add.php" method="post">
+<form action="index.php?tipoarma=insert" method="post">
   <!-- area de campos do form -->
   <hr />
   <div class="row">
     
-      <div class="form-group col-md-7">
-      <label for="name">Descrição do Tipo de Arama</label>
-      <input type="text" class="form-control" name="tipoarma['ds_tp_arama']">
+    <div class="form-group col-md-7">
+      <label for="name">Descrição do Tipo de Arma</label>
+      <input type="text" class="form-control" name="tipoarma['ds_tp_arma']" value="<?php echo $tipoarma['ds_tp_arma']; ?>">
     </div>
 
   </div>
@@ -29,5 +29,3 @@
     </div>
   </div>
 </form>
-
-<?php include ("../app/inc/footer.phtml"); ?>

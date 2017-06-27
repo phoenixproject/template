@@ -39,4 +39,8 @@ class AplAtividade implements InterfaceDeApresentacao {
         return $this->atividadeDao->listar($ordem);    
     }
 
+    public function inserir($objeto): bool {
+        return $this->inserir($objeto);
+    }
+
 }

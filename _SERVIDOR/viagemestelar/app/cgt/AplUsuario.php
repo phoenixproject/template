@@ -42,5 +42,9 @@ class AplUsuario implements InterfaceDeLogin, InterfaceDeApresentacao {
     public function alterar($objeto): bool {
         return $this->usuarioDao->alterar($objeto);
     }
+    
+    public function inserir($objeto): bool {
+        return $this->inserir($objeto);
+    }
 
 }
