@@ -76,19 +76,7 @@ class Usuario extends Action {
             $usuarioDominio->setPassword($chave[2]);
             $usuarioDominio->setTp_usuario($chave[3]);
             $usuarioDominio->setDt_criacao($chave[4]);
-            
-            //$teste2 = $usuarioDominio->retornaConteudoDeAtributosDaClasse();
-            //$teste3 = $usuarioDominio->retornaConteudoDeAtributosDaClasse();
-            //$teste4 = get_object_vars($usuarioDominio);
-            
-            /*$atributosdaclasse = get_class_vars(get_class($usuarioDominio));
-            $atributos = array_keys($atributosdaclasse);
-            
-            $conteudoatributos = get_class_vars(get_class($usuarioDominio));
-            $valores = array_values($conteudoatributos);
-            
-            $quantidadeatributos = count($atributos) - 1;*/
-            
+                        
             if($this->interfaceDeApresentacaoUsuario->alterar($usuarioDominio)){
                 $this->render('getall',false);        
             }

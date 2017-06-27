@@ -10,7 +10,6 @@ namespace app\cgd;
 
 use app\cgd\GenericDao;
 use app\cgd\DBConnection;
-use app\cdp\Usuario;
 
 /**
  * Description of GenericDAO

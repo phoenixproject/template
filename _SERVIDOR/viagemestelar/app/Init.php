@@ -19,27 +19,7 @@ class Init extends Bootstrap {
             'route'=>'/',
             'controller'=>'index',
             'action'=>'index'
-        );                
-        $ar['clienteretrieve'] = array(
-            'route'=>'/cliente',
-            'controller'=>'cliente',
-            'action'=>'retrieve'
-        );
-        $ar['clientegetall'] = array(
-            'route'=>'/cliente',
-            'controller'=>'cliente',
-            'action'=>'getall'
-        );
-        $ar['clienteadd'] = array(
-            'route'=>'/cliente',
-            'controller'=>'cliente',
-            'action'=>'add'
-        );
-        $ar['clienteedit'] = array(
-            'route'=>'/cliente',
-            'controller'=>'cliente',
-            'action'=>'edit'
-        );
+        );                        
         $ar['usuarioretrieve'] = array(
             'route'=>'/usuario',
             'controller'=>'usuario',
