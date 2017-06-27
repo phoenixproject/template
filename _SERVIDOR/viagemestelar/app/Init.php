@@ -69,6 +69,31 @@ class Init extends Bootstrap {
             'route'=>'/combinacao',
             'controller'=>'combinacao',
             'action'=>'save'
+        );  
+        $ar['configuracaoretrieve'] = array(
+            'route'=>'/configuracao',
+            'controller'=>'configuracao',
+            'action'=>'retrieve'
+        );
+        $ar['configuracaogetall'] = array(
+            'route'=>'/configuracao',
+            'controller'=>'configuracao',
+            'action'=>'getall'
+        );
+        $ar['configuracaoadd'] = array(
+            'route'=>'/configuracao',
+            'controller'=>'configuracao',
+            'action'=>'add'
+        );
+        $ar['configuracaoedit'] = array(
+            'route'=>'/configuracao',
+            'controller'=>'configuracao',
+            'action'=>'edit'
+        );        
+        $ar['configuracaosave'] = array(
+            'route'=>'/configuracao',
+            'controller'=>'configuracao',
+            'action'=>'save'
         );                        
         $ar['usuarioretrieve'] = array(
             'route'=>'/usuario',
