@@ -28,7 +28,7 @@ class AplUsuario implements InterfaceDeLogin, InterfaceDeApresentacao {
     }
 
     public function deletar($id): bool {
-        
+        return $this->usuarioDao->delete($id);
     }
 
     public function find($id) {
