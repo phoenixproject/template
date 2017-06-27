@@ -76,7 +76,7 @@ class Usuario extends Action {
             $usuarioDominio->setPassword($chave[2]);
             $usuarioDominio->setTp_usuario($chave[3]);
             $usuarioDominio->setDt_criacao($chave[4]);
-            
+                        
             if($this->interfaceDeApresentacaoUsuario->alterar($usuarioDominio)){
                 $this->render('getall',false);        
             }
