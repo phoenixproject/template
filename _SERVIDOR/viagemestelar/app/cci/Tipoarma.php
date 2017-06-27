@@ -72,7 +72,7 @@ class Tipoarma extends Action {
             $tipoArmaDominio->setTp_arma($chave[0]);
             $tipoArmaDominio->setDs_tp_arma($chave[1]);
                                     
-            if($this->interfaceDeApresentacaoArma->alterar($tipoArmaDominio)){
+            if($this->interfaceDeApresentacao->alterar($tipoArmaDominio)){
                 $this->render('getall',false);        
             }
         }    

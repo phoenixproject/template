@@ -44,7 +44,7 @@
 		<td><?php echo $tipoarma['ds_tp_arma']; ?></td>		
 		<td class="actions text-right">
 			<a href="?tipoarma=retrieve&id=<?php echo (int)$tipoarma['tp_arma']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
-			<a href="?tipoarma=edit&id=<?php echo (int)$tipoarma['ds_tp_arma']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
+			<a href="?tipoarma=edit&id=<?php echo (int)$tipoarma['tp_arma']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
 			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $tipoarma['tp_arma']; ?>">
 				<i class="fa fa-trash"></i> Excluir
 			</a>
