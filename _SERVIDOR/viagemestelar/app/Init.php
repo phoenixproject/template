@@ -119,6 +119,31 @@ class Init extends Bootstrap {
             'route'=>'/partida',
             'controller'=>'partida',
             'action'=>'save'
+        );
+        $ar['tipoarmaretrieve'] = array(
+            'route'=>'/tipoarma',
+            'controller'=>'tipoarma',
+            'action'=>'retrieve'
+        );
+        $ar['tipoarmagetall'] = array(
+            'route'=>'/tipoarma',
+            'controller'=>'tipoarma',
+            'action'=>'getall'
+        );
+        $ar['tipoarmaadd'] = array(
+            'route'=>'/tipoarma',
+            'controller'=>'tipoarma',
+            'action'=>'add'
+        );
+        $ar['tipoarmaedit'] = array(
+            'route'=>'/tipoarma',
+            'controller'=>'tipoarma',
+            'action'=>'edit'
+        );        
+        $ar['tiposave'] = array(
+            'route'=>'/tipoarma',
+            'controller'=>'tipoarma',
+            'action'=>'save'
         );                        
         $ar['usuarioretrieve'] = array(
             'route'=>'/usuario',
