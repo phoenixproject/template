@@ -8,11 +8,34 @@
 
 namespace app\cgt;
 
+use app\cgd\CombinacaoDao;
+use app\cgt\InterfaceDeLogin;
 /**
  * Description of Combinacao
  *
  * @author pchan
  */
-class Combinacao {
-    //put your code here
+class Combinacao implements InterfaceDeApresentacao {
+    
+    private $combinacaoDao;
+    
+    public function __construct() {
+        $this->combinacaoDao = new CombinacaoDao(); 
+    }
+    
+    public function alterar($objeto): bool {
+        return $this->combinacaoDao->alterar($objeto);
+    }
+
+    public function deletar($id): bool {
+        return $this->combinacaoDao->delete($id);
+    }
+
+    public function find($id) {
+        return $this->combinacaoDao->find($id);
+    }
+
+    public function listar($ordem): array {
+        return $this->combinacaoDao->listar($ordem);
+    }
 }
