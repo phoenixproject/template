@@ -9,13 +9,13 @@
 namespace app\cgt;
 
 use app\cgd\CombinacaoDao;
-use app\cgt\InterfaceDeLogin;
+use app\cgt\InterfaceDeApresentacao;
 /**
  * Description of Combinacao
  *
  * @author pchan
  */
-class Combinacao implements InterfaceDeApresentacao {
+class AplCombinacao implements InterfaceDeApresentacao {
     
     private $combinacaoDao;
     

@@ -8,11 +8,34 @@
 
 namespace app\cgt;
 
+use app\cgd\ConfiguracaoDao;
+use app\cgt\InterfaceDeApresentacao;
 /**
  * Description of AplConfiguracao
  *
  * @author pchan
  */
-class AplConfiguracao {
-    //put your code here
+class AplConfiguracao implements InterfaceDeApresentacao {
+    
+    private $configuracaoDao;
+    
+    public function __construct() {
+        $this->configuracaoDao = new ConfiguracaoDao(); 
+    }
+    
+    public function alterar($objeto): bool {
+        return $this->configuracaoDao->alterar($objeto);
+    }
+
+    public function deletar($id): bool {
+        return $this->configuracaoDao->delete($id);
+    }
+
+    public function find($id) {
+        return $this->configuracaoDao->find($id);
+    }
+
+    public function listar($ordem): array {
+        return $this->configuracaoDao->listar($ordem);
+    }
 }

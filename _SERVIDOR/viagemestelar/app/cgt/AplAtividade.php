@@ -9,7 +9,7 @@
 namespace app\cgt;
 
 use app\cgt\InterfaceDeApresentacao;
-use app\cgd\AtividadeDAdo;
+use app\cgd\AtividadeDao;
 /**
  * Description of AplAtividade
  *
