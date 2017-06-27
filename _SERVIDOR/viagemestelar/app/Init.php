@@ -170,6 +170,31 @@ class Init extends Bootstrap {
             'controller'=>'tipoatividade',
             'action'=>'save'
         );                        
+        $ar['tiponaveretrieve'] = array(
+            'route'=>'/tiponave',
+            'controller'=>'tiponave',
+            'action'=>'retrieve'
+        );
+        $ar['tiponavegetall'] = array(
+            'route'=>'/tiponave',
+            'controller'=>'tiponave',
+            'action'=>'getall'
+        );
+        $ar['tiponaveadd'] = array(
+            'route'=>'/tiponave',
+            'controller'=>'tiponave',
+            'action'=>'add'
+        );
+        $ar['tiponaveedit'] = array(
+            'route'=>'/tiponave',
+            'controller'=>'tiponave',
+            'action'=>'edit'
+        );        
+        $ar['tiponavesave'] = array(
+            'route'=>'/tiponave',
+            'controller'=>'tiponave',
+            'action'=>'save'
+        );                        
         $ar['usuarioretrieve'] = array(
             'route'=>'/usuario',
             'controller'=>'usuario',
