@@ -20,6 +20,31 @@ class Init extends Bootstrap {
             'controller'=>'index',
             'action'=>'index'
         );                        
+        $ar['atividaderetrieve'] = array(
+            'route'=>'/atividade',
+            'controller'=>'atividade',
+            'action'=>'retrieve'
+        );
+        $ar['atividadegetall'] = array(
+            'route'=>'/atividade',
+            'controller'=>'atividade',
+            'action'=>'getall'
+        );
+        $ar['atividadeadd'] = array(
+            'route'=>'/atividade',
+            'controller'=>'atividade',
+            'action'=>'add'
+        );
+        $ar['atividadeedit'] = array(
+            'route'=>'/atividade',
+            'controller'=>'atividade',
+            'action'=>'edit'
+        );        
+        $ar['atividadesave'] = array(
+            'route'=>'/atividade',
+            'controller'=>'atividade',
+            'action'=>'save'
+        );                
         $ar['usuarioretrieve'] = array(
             'route'=>'/usuario',
             'controller'=>'usuario',
@@ -44,7 +69,7 @@ class Init extends Bootstrap {
             'route'=>'/usuario',
             'controller'=>'usuario',
             'action'=>'save'
-        );                
+        );                        
         $ar['logout'] = array(
             'route'=>'/logout',
             'controller'=>'logout',
