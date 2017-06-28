@@ -238,7 +238,8 @@ O padrão foi utilizado para resolver o problema de .....
 <br>
     Data de Entrega: (Data a ser definida)
 <br>
-### 3.7	DIFICULDADES ENCONTRADAS PELO GRUPO<br>  
+
+<!-- ### 3.7	DIFICULDADES ENCONTRADAS PELO GRUPO<br>  
 
 # Gestão de Configuração
 
@@ -272,14 +273,14 @@ Acompanhamento do projeto: o grupo deve apresentar histórico, por sprint,  do a
 - Apresentando a velocidade do time.
 - Modificações do backlog.
 
-## 4.    Burn down dos sprints
+## 4.    Burn down dos sprints -->
 
 #Gráfico de rendimento dos Sprints 
 <br>
 [![Throughput Graph](https://graphs.waffle.io/phoenixproject/viagemestelar/throughput.svg)](https://waffle.io/phoenixproject/viagemestelar/metrics/throughput)
 <br><br>
 
-## 5.    Retrospectiva 
+<!-- ## 5.    Retrospectiva 
 
 Apresentar a retrospectiva da equipe do sprint realizado.
 
@@ -313,6 +314,6 @@ O grupo deve apresentar a evolução da qualidade dos itens ao longo das entrega
 
 o grupo deve apresentar semanalmente um relato da atividade do grupo. O relato pode conter qualquer tipo de informação (fotos, vídeos) que possam auxiliar no entendimento das atividades do grupo. 
 
-OBS: organize o diário para que não se misture com a documentação. de preferência, coloque-o em outra página.
+OBS: organize o diário para que não se misture com a documentação. de preferência, coloque-o em outra página. -->
 
 **FORMATACAO NO GIT:** https://help.github.com/articles/basic-writing-and-formatting-syntax/
