@@ -112,10 +112,6 @@ inserir principais diagramas comportamentais da análise (principalmente, estado
 #### 2.1.3   Arquitetura de Software
 <!--apresentar diagrama UML da arquitetura do sistema. justificar as decisões tomadas.-->
 
-Diagrama de Arquitetura de Software
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_arquitetura_software.png?raw=true "Diagrama de Arquitetura de Software")
-
 Justificativa - Padrão de Lógica de Negócio (Servidor)
 
 [Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Padrao_De_Logica_Negocio)
@@ -131,29 +127,21 @@ OBS: repetir as seções abaixo para cada subsistema
 
 ##### Projeto do Domínio
 
-[Projeto Arquitetural Servidor Web - Padrão de Lógica de Negócio - Justificativa](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#padrao_de_logica_de_negocio)
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_dominio_problema_cliente.png?raw=true "Modelo Domínio Cliente")
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_dominio_problema_servidor.png?raw=true "Modelo de Domínio Servidor")
+[Projeto de Domínio - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_dominio)
 
 ##### Projeto da Aplicação
-apresentar diagramas de sequência e mapeamento dos casos de uso para classes
+
+[Projeto de Domínio - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_dominio)
+
 #### 2.2.2.  Projeto da Interface com Usuário
+
 ##### Projeto da Visão
-apresentar protótipos de telas e diagramas de classes UML (caso realizado)
-OBS: Essa visão não tem nada a ver com Views de Banco de Dados
+
+[Projeto de Visão - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_da_visao)
 
 ##### Projeto da Interação Humana
 
-<!--apresentar diagrama de classes da IU com controladores e diagrama de sequências. Apresentar diagrama com estados de navegação.-->
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_de_estado_modo_admin.png?raw=true "Diagrama de Estado - Modo Admin")
-<br>
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_de_estado_modo_usuario.png?raw=true "Diagrama de Estado - Modo Usuário")
-<br>
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_interface_usuario_servidor.png?raw=true "Diagrama de Interface com o Usuário - Servidor")
-<br>
+[Projeto de Interação Humana - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_da_interacao_humana)
 
 #### 2.2.3.  Projeto da Persistência de Dados
 
