@@ -50,45 +50,12 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 
 ### 4.1	Requisitos Funcionais (Histórias de Usuário)
 
-| ID | Descrição | Prioridade | Pontos |
-| --- | --- | --- | --- |
-| RF01 | Sendo eu um usuário gostaria de na tela inicial escolher o nível de dificuldade do jogo. | Essencial | 2 |
-| RF02 | Como um usuário, quero escolher iniciar o jogo imediatamente a partir da tela principal. | Essencial | 3 |
-| RF03 | Sendo eu um usuário, ao entrar no menu de opções do game quero personalizar o máximo que consigo em relação a quantidade de vidas e continue. | Importante | 2 |
-| RF04 | Como um usuário eu posso movimentar a nave com as teclas que compõe o direcional do teclado. | Essencial | 1 |
-| RF05 | Sendo eu um usuário quero pressionar um botão que "solta" tiros em outros inimigos e asteróides. | Essencial | 1 |
-| RF06 | Como um usuário, quero no final do jogo poder ver meu ranking junto com o dos outros usuários. | Importante | 2 |
-| RF07 | Para acessar as minhas informações usando o navegador, como um usuário gostaria de apenas digitar meu email e senha. | Importante | 2 |
-| RF08 | Sendo eu um usuário quero ter acesso a todas as informações referentes ao que fiz no jogo, minhas conquistas e pontuações. | Importante | 2 |
-| RF09 | Como um usuário administrador quero ter acesso a todas as informações referentes feitas no jogo a partir de relatórios num navegador na internet. | Importante | 2 |
-| RF10 | Como um usuário quero poder jogar tanto no celular quanto no desktop e te acesso ao mesmo tipo de informação. | Importante | 2 |
-| RF11 | Sendo eu um usuário quero poder compartilhar o meu hanking nas redes socias. | Importante | 1 |
-| RF12 | Para acessar as minhas informações no jogo, como um usuário gostaria de apenas digitar meu email e senha. | Importante | 2 |
-| RF13 | Sendo eu um usuário gostaria de na tela inicial poder escolher se desejo fazer login no servidor ou não. | Essencial | 2 |
-| RF14 | Sendo eu um usuário gostaria de fazer um cadastro de meu email e senha na tela login do jogo. | Essencial | 1 |
-
 ### 4.2	Requisitos Não Funcionais
-
-| ID | Descrição | Prioridade | Categoria | Escopo |
-| --- | --- | --- | --- | --- |
-| RNF01 | Ao escolher o modo para iniciar o jogo o usuário deverá aguardar no máximo 5 segundos até que o jogo se inicie  | Desejável | 3 | Eficiência | RF03 | 
-| RNF02 | Ao acessar o endereço na web utilizando o navegador o usuário poderá acessar página de login do sistema que armazena os hankings de todos os usuários.  | Desejável | 3 | Portabilidade | RF07 | 
-| RNF03 | Ao testar o acesso a internet utilizando o cliente (jogo), o mesmo não poderá transmitir nenhum erro não tratado ao usuário, delimitando-se apenas a uma mensagem informando que a conexão no existe.  | Desejável | 3 | Disponibilidade | RF07 | 
-| RNF04 | A tela de abertura do jogo deverá ter menus de fácil acesso se concentrando em no máximo três e que não se expandam em submenus.  | Desejável | 3 | Usabilidade | RF07 | 
-| RNF05 | O jogo será tanto portado para desktop quanto para dispositivos mobile e permitindo o usuário o mesmo nível de interação nas duas plataformas.  | Desejável | 3 | Portabilidade | RF10 | 
-| RNF06 | O admnistrador terá facilidade para gerar relatórios devido ao tipo de linguagem utilizada para criação do software no servidor.  | Desejável | 2 | Manutenbilidade | RF09 | 
-| RNF07 | O jogo terá um controle simplificado de operações no intuito de facilitar a experiência do usuário.  | Desejável | 3 | Usabilidade | RF01 | 
-
 
 ### 4.3	Regras de Negócio
 
-| ID | Descrição | Prioridade | 
-| --- | --- | --- |
-| RN01 | O tamanho da cadeia de caracteres do nome do usuário é de no máximo 40. | Essencial |
-| RN02 | O tamanho da cadeia de caracteres da senha do usuário é de no máximo 20. | Essencial |
-| RN03 | O usuário não terá seu nome no hanking se não tiver criado seu cadastro. | Essencial |
-| RN04 | A cada 100 pontos o usuário ganha uma prêmiação de mais um nível. | Essencial |
-| RN05 | O jogador poderá combinar a cada fase um tipo de nave e arma diferentes. | Desejável |
+[Requisitos de Usuários - especificação](https://github.com/phoenixproject/viagemestelar/wiki/Requisitos-de-Usu%C3%A1rios#4_requisitos_de_usu%C3%A1rios)
+
 
 # Desenvolvimento do Sistema
 
@@ -112,17 +79,7 @@ Arquitetura de Software (Cliente)
 
 ### 1.3  Modelagem Estrutural (Modelo Conceitual)
 
-Modelo Conceitual representando a rotina do Usuário no Cliente.
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_conceitual_cliente_usuario.png?raw=true "Modelo Conceitual - Cliente (Usuario)")
-
-Modelo Conceitual representando a rotina do Usuário no Servidor.
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_conceitual_servidor_usuario.png?raw=true "Modelo Conceitual - Cliente (Usuario)")
-
-Modelo Conceitual representando a rotina do Administrador no Servidor.
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_conceitual_servidor_administrador.png?raw=true "Modelo Conceitual - Cliente (Usuario)")
+[Modelo Conceitual - Estrutural - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Modelo-Estrutural-(Conceitual)#modelo_conceitual)
 
 ### 1.4  Modelagem Comportamental
 
