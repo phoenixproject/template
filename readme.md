@@ -103,56 +103,11 @@ inserir principais diagramas comportamentais da análise (principalmente, estado
 
 #### 2.1.1   Plataforma de Implementação e Tecnologias
 
-As tecnologias utilizadas no sistema envolvem a engine Unity 5 com linguagem C Sharp no cliente e linguagem PHP 7 com o framework Bootstrap 3 no servidor.
-
-##### Cliente - Justifica-se o uso da engine Unity 5 por conta de sua produtividade e possibilidade de integração com a linguagem C Sharp. Esta linguagem se destaca por conta de ser orientada a objetos e ter uma gama extensa de bibliotecas que a tornam fácil de se trabalhar, especialmente por conter biblioteca que permite manipular o protocolo JSON e utilizá-lo entre comunicação de cliente e servidor.
-
-##### Servidor - A linguagem PHP 7 foi escolhida por sua performance, facilidade de escrita e de hospedagem e por trabalhar com vários tipos de tecnologia web e de comunicação com servidores ou clientes remotos. O framework Bootstrap foi esocolhido por conta de sua fácil adequação a qualquer tipo de layout e seu fácil manuseio diante de uma simples leitura do manual de sua biblioteca.
-
-##### Acerca das tecnologias envolvidas:
-
-##### AppVeyor - Ferramenta/Serviço utilizada para integração contínua e análise de consistência de código durante merge de branchs em pull requests.
-
-##### Codacy - Ferramenta/Serviço utilizada para análise de erros de código em tempo real.
-
-##### Waffle - Ferramenta/Serviço utilizado para gerenciamento de Issues no Github.
-
-##### Astah Community - Programa utilizado para a elaboração de diagramas na documentação do sistema.
-
-##### SQL Developer - Ferramenta da Oracle utilizada para criação de modelo lógico de banco de dados.
-
-##### Composer - Gerenciador de Dependências do PHP.
-
-##### Netbeans - IDE utilizada para desenvolver o projeto de servidor PHP 7.
-
-##### Apache - Servidor web responsável por hospedar e servir os arquivos PHP.
-
-##### Nginx - Proxy reverso utilizado na simulação do projeto para servir as requisições via FAST CGI do PHP-FPM.
-
-##### Bootstrap - Framework CSS que permite desenho de telas em html de modo responsivo.
-
-##### MySQL - Banco de dados da Oracle, free para projetos open source.
-
-##### C# (c sharp) - Linguagem orientada a objetos da Microsoft de alto nível, altamente tipada e utilizada para comunicação com servidor e interação com o game.
-
-##### PHP 7 - Linguagem orientada a objetos de alto nível, fracamente tipada e utilizada para receber requisições de clientes e gerenciar informações em banco de dados MySQL.
-
-##### Visual Studio 2017 Community - IDE responsável pelo desenvolvimento de software cliente em C# e Unity 5.
-
-##### Unity 5 - Game Engine responsável para fazer a intermediação/interação entre a linguagem C# (utilizada como script na Unity) e bitmaps do jogo.
+[Plataforma de Implementação e Tecnologias - Especificação](https://github.com/phoenixproject/viagemestelar/wiki/Plataforma-de-Implementa%C3%A7%C3%A3o-e-Tecnologias#plataforma_implementacao_tecnologias)
 
 #### 2.1.2   Atributos de Qualidade e Táticas
 
-CATEGORIAS | RNF'S | TÁTICAS | 
-| --- | --- | --- |
-| Eficácia do Tempo | RNF01| Oferece a capacidade de trabalhar com a eficiência do tempo para o usuário pelo fato de conter apenas 3 a 4 telas no sistema, consumindo assim menos processamento. | 
-| Portabilidade | RNF02| Dá a opção de usuário acessar parte do sistema também de outra plataforma para poder acompanhar de forma gerencial o seu ranking e pontuação. | 
-| Disponibilidade | RNF03| Mesmo que ocorram erros de conexão o sistema cliente continuará ativo, pois o jogo acontece somente no cliente sem depender do servidor durante o jogo. O servidor apenas armazena informações sobre pontuação e ranking. | 
-| Usabilidade | RNF04| Propõe ao usuário uma forma simples e descomplida de navegação pelos menus por conta de a quantidade de menus ser reduzida. | 
-| Portabilidade | RNF05| O usuário terá opções de poder jogar em plataforma mobile e desktop sem alterações das informações por conta da opção de exportar o jogo na engine. | 
-| Manutenbilidade | RNF06| A escolha da linguagem e PHP e o framework front end Bootstrap visa facilitar a manutenção do código de relatórios e do sistema. | 
-| Usabilidade | RNF07 | O jogo terá apenas o direcional do teclado e um botão de tiro para manuseá-lo. | 
-
+[Atributos de Qualidade e Táticas - Especificação](https://github.com/phoenixproject/viagemestelar/wiki/Plataforma-de-Implementa%C3%A7%C3%A3o-e-Tecnologias#atributos_qualidade_taticas)
 
 #### 2.1.3   Arquitetura de Software
 <!--apresentar diagrama UML da arquitetura do sistema. justificar as decisões tomadas.-->
