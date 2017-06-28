@@ -78,10 +78,9 @@ class GenericDao{
 		
             $query = "Insert into {$this->entity->getTable()} ";
             $query .= "(";
-            //$query .= "(nome, email) Values(:nome, :email)";
-	            
+            	            
             for($posicao = 1; $posicao < $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1; $posicao++){            
-                //$query .= $objeto->retornaAtributosDaClasse()[$posicao] ." = :valor".$posicao;                
+                
                 $query .= $objeto->retornaAtributosDaClasse()[$posicao];
                 
                 if($posicao + 1 != $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1){                
