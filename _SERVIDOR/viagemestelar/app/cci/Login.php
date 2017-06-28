@@ -26,14 +26,8 @@ class Login extends Action {
     private $interfaceDeLogin;
     public $loginuser;
 
-    public function __construct() {        
-       
-        //Inicia a sessão
-        //session_start();
-        
-        $this->interfaceDeLogin = new AplUsuario();
-        
-        //$this->configuraLogin();        
+    public function __construct() {                       
+        $this->interfaceDeLogin = new AplUsuario();       
     }
     
     public function start(){
@@ -47,13 +41,9 @@ class Login extends Action {
             
             if($usuario != 0){
                 
+                //Adiciona o usuário na sessão
                 $_SESSION['usuariosessao'] = $usuario;
-                
-                /*$teste = $_SESSION['usuariosessao'];
-                $teste2 = $_SESSION['usuariosessao']['email'];
-                $teste3 = array_values($_SESSION['usuariosessao']);
-                $teste4 = $teste3[0];*/
-                
+               
                 //Retorna para o índice                
                 header("Refresh:0; url=index.php");
             }
@@ -69,29 +59,13 @@ class Login extends Action {
             $this->render('start',false);                
         }
         
-    }
-    
-    function logar() {
-        
-    if (isset($_GET['id'])) {
-        $id = $_GET['id'];
-        if (isset($_POST['customer'])) {
-          $customer = $_POST['customer'];
-          $customer['modified'] = $now->format("Y-m-d H:i:s");
-          update('customers', $id, $customer);
-          header('location: index.php');
-        } else {
-          global $customer;
-          $customer = find('customers', $id);
-        } 
-      } else {
-        header('location: index.php');
-      }
-    }     
-    
+    }        
     function configuraLogin(){
+        
         $this->loginuser = array();
         $this->loginuser['email'] = "";
         $this->loginuser['password'] = "";
+        
+        return $this->loginuser;
     }
 }
