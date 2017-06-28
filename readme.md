@@ -50,12 +50,15 @@ O jogo exibe uma nave que percorre o Universo lançado seus tiros em asteróides
 
 ### 4.1	Requisitos Funcionais (Histórias de Usuário)
 
+[Requisitos Funcionais - especificação](https://github.com/phoenixproject/viagemestelar/wiki/Requisitos-de-Usu%C3%A1rios#requisitos_funcionais)
+
 ### 4.2	Requisitos Não Funcionais
+
+[Requisitos Não Funcionais - especificação](https://github.com/phoenixproject/viagemestelar/wiki/Requisitos-de-Usu%C3%A1rios#requisitos_nao_funcionais)
 
 ### 4.3	Regras de Negócio
 
-[Requisitos de Usuários - especificação](https://github.com/phoenixproject/viagemestelar/wiki/Requisitos-de-Usu%C3%A1rios#4_requisitos_de_usu%C3%A1rios)
-
+[Regras de Negócio - especificação](https://github.com/phoenixproject/viagemestelar/wiki/Requisitos-de-Usu%C3%A1rios#regras_de_negocio)
 
 # Desenvolvimento do Sistema
 
