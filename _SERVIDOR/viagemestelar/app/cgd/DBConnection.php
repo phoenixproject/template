@@ -18,20 +18,21 @@ class DBConnection extends \Exception {
     
     private $dbconfig;
     private $dbconnect;
-    private $indice;
-
+    
     public function __construct(){
         
-            $this->indice = 1;            
+            //Identificador do banco de dados
+            $indice = 1;            
+                        
             $this->dbconfig = new DBConfig();
             
             try{
                 $this->dbconnect = new \PDO(
-                            $this->dbconfig->getParametro()[$this->indice]['DB_TYPE'].
-                            ":host=".$this->dbconfig->getParametro()[$this->indice]['DB_HOST'].";".
-                            "dbname=".$this->dbconfig->getParametro()[$this->indice]['DB_NAME'],
-                            $this->dbconfig->getParametro()[$this->indice]['DB_USER'],
-                            $this->dbconfig->getParametro()[$this->indice]['DB_PASS']
+                            $this->dbconfig->getParametro()[$indice]['DB_TYPE'].
+                            ":host=".$this->dbconfig->getParametro()[$indice]['DB_HOST'].";".
+                            "dbname=".$this->dbconfig->getParametro()[$indice]['DB_NAME'],
+                            $this->dbconfig->getParametro()[$indice]['DB_USER'],
+                            $this->dbconfig->getParametro()[$indice]['DB_PASS']
                         );                                
             } catch (\PDOException $e){
                 //die("Não foi possível estabelecer uma conexã com o banco: Erro: ".$e->getMessage());
@@ -41,8 +42,6 @@ class DBConnection extends \Exception {
             } catch (Exception $e) {
                 $e->getMessage();                
             }            
-
-            //echo $this->dbconnect;
     }
 
     public function getDb() : DBConfig {

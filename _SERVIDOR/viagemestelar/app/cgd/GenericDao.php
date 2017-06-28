@@ -24,8 +24,7 @@ class GenericDao{
         public function __construct($entity){
             
             $this->db = new DBConnection();
-            $this->entity = $entity;
-            
+            $this->entity = $entity;            
 	}
         
         public function find($id){
@@ -76,7 +75,7 @@ class GenericDao{
 	
 	public function inserir($objeto) : bool {
 		
-            $query = "Insert into {$this->entity->getTable()} ";
+            $query = "Insert into {$objeto->getTable()} ";
             $query .= "(";
             	            
             for($posicao = 1; $posicao < $objeto->retornaDeQuantidadeAtributosDaClasseFilha() -1; $posicao++){            
