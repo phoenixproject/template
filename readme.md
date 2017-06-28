@@ -165,7 +165,7 @@ apresentar classes de acesso ao banco de dados. apresentar diagramas de sequênc
 
 ### 3.2	Modelo Lógico<br>
 
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_modelo_logico_sql_developer.png?raw=true "Diagrama de Modelo Lógico")
+[Modelo Lógico de Banco de Dados - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Banco-de-Dados---MySQL-Server#modelo_logico)
 
 ### 3.3	MODELO FÍSICO<br>
 
