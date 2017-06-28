@@ -82,7 +82,11 @@ Arquitetura de Software (Cliente)
 
 ### 1.3  Modelagem Estrutural (Modelo Conceitual)
 
-[Modelo Conceitual - Estrutural - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Modelo-Estrutural-(Conceitual)#modelo_conceitual)
+[Modelo Conceitual - Cliente - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Modelo-Estrutural-(Conceitual)#modelo_conceitual_cliente)
+
+[Modelo Conceitual - Servidor/Usuário - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Modelo-Estrutural-(Conceitual)#modelo_conceitual_usuario_servidor)
+
+[Modelo Conceitual - Servidor/Administrador - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Modelo-Estrutural-(Conceitual)#modelo_conceitual_administrador_servidor)
 
 ### 1.4  Modelagem Comportamental
 
