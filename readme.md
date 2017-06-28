@@ -103,63 +103,14 @@ inserir principais diagramas comportamentais da análise (principalmente, estado
 
 #### 2.1.1   Plataforma de Implementação e Tecnologias
 
-As tecnologias utilizadas no sistema envolvem a engine Unity 5 com linguagem C Sharp no cliente e linguagem PHP 7 com o framework Bootstrap 3 no servidor.
-
-##### Cliente - Justifica-se o uso da engine Unity 5 por conta de sua produtividade e possibilidade de integração com a linguagem C Sharp. Esta linguagem se destaca por conta de ser orientada a objetos e ter uma gama extensa de bibliotecas que a tornam fácil de se trabalhar, especialmente por conter biblioteca que permite manipular o protocolo JSON e utilizá-lo entre comunicação de cliente e servidor.
-
-##### Servidor - A linguagem PHP 7 foi escolhida por sua performance, facilidade de escrita e de hospedagem e por trabalhar com vários tipos de tecnologia web e de comunicação com servidores ou clientes remotos. O framework Bootstrap foi esocolhido por conta de sua fácil adequação a qualquer tipo de layout e seu fácil manuseio diante de uma simples leitura do manual de sua biblioteca.
-
-##### Acerca das tecnologias envolvidas:
-
-##### AppVeyor - Ferramenta/Serviço utilizada para integração contínua e análise de consistência de código durante merge de branchs em pull requests.
-
-##### Codacy - Ferramenta/Serviço utilizada para análise de erros de código em tempo real.
-
-##### Waffle - Ferramenta/Serviço utilizado para gerenciamento de Issues no Github.
-
-##### Astah Community - Programa utilizado para a elaboração de diagramas na documentação do sistema.
-
-##### SQL Developer - Ferramenta da Oracle utilizada para criação de modelo lógico de banco de dados.
-
-##### Composer - Gerenciador de Dependências do PHP.
-
-##### Netbeans - IDE utilizada para desenvolver o projeto de servidor PHP 7.
-
-##### Apache - Servidor web responsável por hospedar e servir os arquivos PHP.
-
-##### Nginx - Proxy reverso utilizado na simulação do projeto para servir as requisições via FAST CGI do PHP-FPM.
-
-##### Bootstrap - Framework CSS que permite desenho de telas em html de modo responsivo.
-
-##### MySQL - Banco de dados da Oracle, free para projetos open source.
-
-##### C# (c sharp) - Linguagem orientada a objetos da Microsoft de alto nível, altamente tipada e utilizada para comunicação com servidor e interação com o game.
-
-##### PHP 7 - Linguagem orientada a objetos de alto nível, fracamente tipada e utilizada para receber requisições de clientes e gerenciar informações em banco de dados MySQL.
-
-##### Visual Studio 2017 Community - IDE responsável pelo desenvolvimento de software cliente em C# e Unity 5.
-
-##### Unity 5 - Game Engine responsável para fazer a intermediação/interação entre a linguagem C# (utilizada como script na Unity) e bitmaps do jogo.
+[Plataforma de Implementação e Tecnologias - Especificação](https://github.com/phoenixproject/viagemestelar/wiki/Plataforma-de-Implementa%C3%A7%C3%A3o-e-Tecnologias#plataforma_implementacao_tecnologias)
 
 #### 2.1.2   Atributos de Qualidade e Táticas
 
-CATEGORIAS | RNF'S | TÁTICAS | 
-| --- | --- | --- |
-| Eficácia do Tempo | RNF01| Oferece a capacidade de trabalhar com a eficiência do tempo para o usuário pelo fato de conter apenas 3 a 4 telas no sistema, consumindo assim menos processamento. | 
-| Portabilidade | RNF02| Dá a opção de usuário acessar parte do sistema também de outra plataforma para poder acompanhar de forma gerencial o seu ranking e pontuação. | 
-| Disponibilidade | RNF03| Mesmo que ocorram erros de conexão o sistema cliente continuará ativo, pois o jogo acontece somente no cliente sem depender do servidor durante o jogo. O servidor apenas armazena informações sobre pontuação e ranking. | 
-| Usabilidade | RNF04| Propõe ao usuário uma forma simples e descomplida de navegação pelos menus por conta de a quantidade de menus ser reduzida. | 
-| Portabilidade | RNF05| O usuário terá opções de poder jogar em plataforma mobile e desktop sem alterações das informações por conta da opção de exportar o jogo na engine. | 
-| Manutenbilidade | RNF06| A escolha da linguagem e PHP e o framework front end Bootstrap visa facilitar a manutenção do código de relatórios e do sistema. | 
-| Usabilidade | RNF07 | O jogo terá apenas o direcional do teclado e um botão de tiro para manuseá-lo. | 
-
+[Atributos de Qualidade e Táticas - Especificação](https://github.com/phoenixproject/viagemestelar/wiki/Plataforma-de-Implementa%C3%A7%C3%A3o-e-Tecnologias#atributos_qualidade_taticas)
 
 #### 2.1.3   Arquitetura de Software
 <!--apresentar diagrama UML da arquitetura do sistema. justificar as decisões tomadas.-->
-
-Diagrama de Arquitetura de Software
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_arquitetura_software.png?raw=true "Diagrama de Arquitetura de Software")
 
 Justificativa - Padrão de Lógica de Negócio (Servidor)
 
@@ -176,29 +127,21 @@ OBS: repetir as seções abaixo para cada subsistema
 
 ##### Projeto do Domínio
 
-[Projeto Arquitetural Servidor Web - Padrão de Lógica de Negócio - Justificativa](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#padrao_de_logica_de_negocio)
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_dominio_problema_cliente.png?raw=true "Modelo Domínio Cliente")
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_dominio_problema_servidor.png?raw=true "Modelo de Domínio Servidor")
+[Projeto de Domínio - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_dominio)
 
 ##### Projeto da Aplicação
-apresentar diagramas de sequência e mapeamento dos casos de uso para classes
+
+[Projeto de Domínio - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_dominio)
+
 #### 2.2.2.  Projeto da Interface com Usuário
+
 ##### Projeto da Visão
-apresentar protótipos de telas e diagramas de classes UML (caso realizado)
-OBS: Essa visão não tem nada a ver com Views de Banco de Dados
+
+[Projeto de Visão - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_da_visao)
 
 ##### Projeto da Interação Humana
 
-<!--apresentar diagrama de classes da IU com controladores e diagrama de sequências. Apresentar diagrama com estados de navegação.-->
-
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_de_estado_modo_admin.png?raw=true "Diagrama de Estado - Modo Admin")
-<br>
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_de_estado_modo_usuario.png?raw=true "Diagrama de Estado - Modo Usuário")
-<br>
-![Alt text](https://github.com/phoenixproject/viagemestelar/blob/master/_MEDIA/diagrama_interface_usuario_servidor.png?raw=true "Diagrama de Interface com o Usuário - Servidor")
-<br>
+[Projeto de Interação Humana - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_da_interacao_humana)
 
 #### 2.2.3.  Projeto da Persistência de Dados
 
@@ -210,13 +153,7 @@ apresentar classes de acesso ao banco de dados. apresentar diagramas de sequênc
 
 ##### Padrões de Projeto
 
-No diagrama abaixo é destacado o padrão de projeto método fábrica que foi utilizado para melhorar a coesão e diminiuir o acoplamento entre as clases do sistema. O pode-se notar a classe FabricaDeFormatos cria os objetos FormatoPng, FormatoJpeg e FormatoGif tirando a dependencia entre a classes Main e essas classes. Vale ressaltar que o padrão utiliza um Interface Formato para diminiuir o acoplamento entre as classes.
-
-![Alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Cria%C3%A7%C3%A3o/metodo_fabrica/ImagemMetodoFabrica/padrao_metodo_fabrica_conversao_imagem.png)
-
-O padrão foi utilizado para resolver o problema de .....
-
-O padrão foi utilizado para resolver o problema de .....
+[Decisões em Padrões de Projeto](https://github.com/phoenixproject/viagemestelar/wiki/Padr%C3%B5es-de-Projeto#padroes_de_projeto)
 
 ## 3.    Banco de Dados (BD)
 
