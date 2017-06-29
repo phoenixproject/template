@@ -83,4 +83,27 @@ class Usuario extends Action {
         }    
         return "";                
     }    
+    
+    public function insert(){
+
+        $usuario = filter_input(INPUT_POST, 'usuario', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($usuario))
+        {
+            $usuarioDominio = new UsuarioDominio();
+                                    
+            $chave = array_values($usuario);
+                        
+            $usuarioDominio->setCd_usuario($chave[0]);
+            $usuarioDominio->setEmail($chave[1]);
+            $usuarioDominio->setPassword($chave[2]);
+            $usuarioDominio->setTp_usuario($chave[3]);
+            $usuarioDominio->setDt_criacao($chave[4]);
+                                                
+            if($this->interfaceDeApresentacaoUsuario->inserir($usuarioDominio)){
+                $this->render('getall',false);        
+            }
+        }    
+        return "";                
+    }     
 }
