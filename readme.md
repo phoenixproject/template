@@ -145,7 +145,8 @@ OBS: repetir as seções abaixo para cada subsistema
 
 #### 2.2.3.  Projeto da Persistência de Dados
 
-apresentar classes de acesso ao banco de dados. apresentar diagramas de sequência.
+<!--apresentar classes de acesso ao banco de dados. apresentar diagramas de sequência.-->
+[Diagrama de Sequência de Acesso ao Servidor](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#diagramas_de_sequencia)
 
 #### 2.4.   Padrões
 
