@@ -33,13 +33,13 @@ Trabalho desenvolvido durante as disciplinas de:
 
 # Gerência de Requisitos
 
-## 1 Motivação e Propósito do Sistema 
+## 1 - Motivação e Propósito do Sistema 
 
-[Motivação e Propósito do Sistema](https://github.com/phoenixproject/viagemestelar/wiki/Ger%C3%AAncia-de-Requisitos#motivacao_e_proposito)
+[Motivação e Propósito do Sistema - Especificação](https://github.com/phoenixproject/viagemestelar/wiki/Ger%C3%AAncia-de-Requisitos#motivacao_e_proposito)
 
-## 2 Personas
+## 2 - Personas
 
-Os usuários deste sistema de jogo prezam prezam pela ação e interação constante que estimule a adrenalina.
+[Personas - Especificação](https://github.com/phoenixproject/viagemestelar/wiki/Ger%C3%AAncia-de-Requisitos#personas)
 
 ## 3_Mini_Mundo
 
