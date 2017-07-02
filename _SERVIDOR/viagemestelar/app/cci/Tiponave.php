@@ -60,8 +60,10 @@ class Tiponave extends Action {
     }
     
     public function save(){
-            
-        if(isset($_POST['tiponave']))
+        
+        $tiponave = filter_input(INPUT_POST, 'tiponave', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($tiponave))
         {
             $tipoNaveDominio = new TipoNave();
             
@@ -78,4 +80,23 @@ class Tiponave extends Action {
         }    
         return "";                
     }
+    
+    public function insert(){
+
+        $tipoarma = filter_input(INPUT_POST, 'tipoarma', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($tipoarma))
+        {
+            $tipoArmaDominio = new TipoArmaDominio();
+                                    
+            $chave = array_values($tipoarma);
+                        
+            $tipoArmaDominio->setDs_tp_arma($chave[0]);
+                                                
+            if($this->interfaceDeApresentacao->inserir($tipoArmaDominio)){
+                $this->render('getall',false);        
+            }
+        }    
+        return "";                
+    }     
 }
