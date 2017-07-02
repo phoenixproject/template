@@ -1,0 +1,71 @@
+<?php 
+    include ("../app/inc/header.phtml"); 
+    use app\cci\Tipoatividade;
+            
+    $tipoAtividade = new Tipoatividade();    
+    $tiposdeatividades = $tipoAtividade->listar(null);
+?>
+
+<header>
+	<div class="row">
+		<div class="col-sm-6">
+			<h2>Tipo de Atividade</h2>
+		</div>
+		<div class="col-sm-6 text-right h2">
+	    	<a class="btn btn-primary" href="?tipoatividade=add"><i class="fa fa-plus"></i> Novo Tipo de Atividade</a>
+	    	<a class="btn btn-default" href="?tipoatividade=getall"><i class="fa fa-refresh"></i> Atualizar</a>
+	    </div>
+	</div>
+</header>
+
+<?php if (!empty($_SESSION['message'])) : ?>
+	<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<?php echo $_SESSION['message']; ?>
+	</div>
+	<?php clear_messages(); ?>
+<?php endif; ?>
+
+<hr>
+
+<table class="table table-hover">
+<thead>
+	<tr>
+		<th>ID</th>
+		<th width="30%">Descrição</th>		
+		<th>Opções</th>
+	</tr>
+</thead>
+<tbody>
+<?php if ($tiposdeatividades) : ?>
+<?php foreach ($tiposdeatividades as $tipoatividade) : ?>
+	<tr>
+		<td><?php echo $tipoatividade['tp_atividade']; ?></td>
+		<td><?php echo $tipoatividade['ds_tp_atividade']; ?></td>		
+		<td class="actions text-right">
+			<a href="?tipoatividade=retrieve&id=<?php echo (int)$tipoatividade['tp_atividade']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
+			<a href="?tipoatividade=edit&id=<?php echo (int)$tipoatividade['tp_atividade']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
+			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $tipoatividade['tp_atividade']; ?>">
+				<i class="fa fa-trash"></i> Excluir
+			</a>
+		</td>
+	</tr>
+<?php endforeach; ?>
+<?php else : ?>
+	<tr>
+		<td colspan="6">Nenhum registro encontrado.</td>
+	</tr>
+<?php endif; ?>
+</tbody>
+</table>
+
+<?php 
+    include ("../app/inc/modal.phtml");     
+?>
+
+<?php 
+    include ("../app/inc/footer.phtml");     
+?>
+
+
+
