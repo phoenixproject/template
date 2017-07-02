@@ -12,6 +12,7 @@ use app\cgt\AplTipoUsuario;
 use app\cgt\InterfaceDeApresentacao;
 
 use app\cdp\TipoUsuario;
+use app\cdp\TipoAtividade as TipoAtividadeDominio;
 
 use ifes\controller\Action;
 /**
@@ -60,10 +61,12 @@ class Tipoatividade extends Action {
     }
     
     public function save(){
-            
-        if(isset($_POST['tipoatividade']))
+        
+        $tipoatividade = filter_input(INPUT_POST, 'tipoatividade', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($tipoatividade))
         {
-            $tipoAtividadeDominio = new TipoAtividade();
+            $tipoAtividadeDominio = new TipoAtividadeDominio();
             
             $tipoAtividade = $_POST['tipoatividade'];            
                         
@@ -78,4 +81,23 @@ class Tipoatividade extends Action {
         }    
         return "";                
     }
+    
+    public function insert(){
+
+        $tipoatividade = filter_input(INPUT_POST, 'tipoatividade', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($tipoatividade))
+        {
+            $tipoAtividadeDominio = new TipoAtividadeDominio();
+                                    
+            $chave = array_values($tipoatividade);
+                        
+            $tipoAtividadeDominio->setDs_tp_atividade($chave[0]);
+                                                
+            if($this->interfaceDeApresentacao->inserir($tipoAtividadeDominio)){
+                $this->render('getall',false);        
+            }
+        }    
+        return "";                
+    }    
 }
