@@ -8,15 +8,20 @@
 
 namespace app\cdp;
 
+use app\cdp\Entity;
 /**
  * Description of TipoNave
  *
  * @author pchan
  */
-class TipoNave {
+class TipoNave extends Entity {
     
-        private $tp_nave;
+    private $tp_nave;
     private $ds_tp_nave;
+    
+    public function __construct() {
+        parent::__construct('Tipo_Nave');
+    }
     
     function getTp_nave() : int {
         return $this->tp_nave;
