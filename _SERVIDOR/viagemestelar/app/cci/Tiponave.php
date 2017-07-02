@@ -11,7 +11,7 @@ namespace app\cci;
 use app\cgt\AplTipoNave;
 use app\cgt\InterfaceDeApresentacao;
 
-use app\cdp\TipoNave;
+use app\cdp\TipoNave as TipoNaveDominio;
 
 use ifes\controller\Action;
 /**
@@ -65,7 +65,7 @@ class Tiponave extends Action {
         
         if(isset($tiponave))
         {
-            $tipoNaveDominio = new TipoNave();
+            $tipoNaveDominio = new TipoNaveDominio();
             
             $tipoNave = $_POST['tiponave'];            
                         
@@ -83,17 +83,17 @@ class Tiponave extends Action {
     
     public function insert(){
 
-        $tipoarma = filter_input(INPUT_POST, 'tipoarma', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        $tiponave = filter_input(INPUT_POST, 'tiponave', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
         
-        if(isset($tipoarma))
+        if(isset($tiponave))
         {
-            $tipoArmaDominio = new TipoArmaDominio();
+            $tipoNaveDominio = new TipoNaveDominio();
                                     
-            $chave = array_values($tipoarma);
+            $chave = array_values($tiponave);
                         
-            $tipoArmaDominio->setDs_tp_arma($chave[0]);
+            $tipoNaveDominio->setDs_tp_nave($chave[0]);
                                                 
-            if($this->interfaceDeApresentacao->inserir($tipoArmaDominio)){
+            if($this->interfaceDeApresentacao->inserir($tipoNaveDominio)){
                 $this->render('getall',false);        
             }
         }    
