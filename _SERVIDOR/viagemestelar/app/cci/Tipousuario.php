@@ -11,7 +11,7 @@ namespace app\cci;
 use app\cgt\AplTipoUsuario;
 use app\cgt\InterfaceDeApresentacao;
 
-use app\cdp\TipoUsuario as TipousuarioDominio;
+use app\cdp\TipoUsuario as TipoUsuarioDominio;
 
 use ifes\controller\Action;
 /**
@@ -65,7 +65,7 @@ class Tipousuario extends Action {
         
         if(isset($usuario))
         {
-            $tipoUsuarioDominio = new TipoUsuario();
+            $tipoUsuarioDominio = new TipoUsuarioDominio();
             
             $tipoUsuario = $_POST['tipousuario'];            
                         
@@ -74,7 +74,7 @@ class Tipousuario extends Action {
             $tipoUsuarioDominio->setTp_usuario($chave[0]);
             $tipoUsuarioDominio->setDs_tp_usuario($chave[1]);
                                     
-            if($this->interfaceDeApresentacaoUsuario->alterar($tipoUsuarioDominio)){
+            if($this->interfaceDeApresentacao->alterar($tipoUsuarioDominio)){
                 $this->render('getall',false);        
             }
         }    
