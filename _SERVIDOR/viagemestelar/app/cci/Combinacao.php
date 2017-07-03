@@ -91,4 +91,26 @@ class Combinacao extends Action {
         }    
         return "";                
     }    
+    
+    public function insert(){
+
+        $combinacao = filter_input(INPUT_POST, 'combinacao', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($combinacao))
+        {
+            $combinacaoDominio = new CombinacaoDominio();            
+                        
+            $chave = array_values($combinacao);
+                        
+            $combinacaoDominio->setCd_combinacao($chave[0]);
+            $combinacaoDominio->setDs_combinacao($chave[1]);
+            $combinacaoDominio->setTp_nave($chave[2]);
+            $combinacaoDominio->setTp_arma($chave[3]);
+                                                
+            if($this->interfaceDeApresentacaoCombinacao->inserir($usuarioDominio)){
+                $this->render('getall',false);        
+            }
+        }    
+        return "";                
+    }     
 }

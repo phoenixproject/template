@@ -107,7 +107,7 @@ class Atividade extends Action {
             $atividadeDominio->setCd_usuario($chave[2]);
             $atividadeDominio->setTp_atividade($chave[3]);
                                                 
-            if($this->interfaceDeApresentacaoUsuario->inserir($usuarioDominio)){
+            if($this->interfaceDeApresentacaoAtividade->inserir($usuarioDominio)){
                 $this->render('getall',false);        
             }
         }    
