@@ -10,6 +10,7 @@ namespace app\cci;
 
 use app\cgt\AplUsuario;
 use app\cgt\AplTipoAtividade;
+use app\cgt\AplAtividade;
 use app\cgt\InterfaceDeApresentacao;
 
 use app\cdp\Atividade as AtividadeDominio;
@@ -49,7 +50,7 @@ class Atividade extends Action {
     }
     
     public function listarAtividade($ordem){
-        return $this->interfaceDeApresentacaoUsuario->listar($ordem);
+        return $this->interfaceDeApresentacaoAtividade->listar($ordem);
     }
     
     public function listarTipoDeAtividade($ordem){
