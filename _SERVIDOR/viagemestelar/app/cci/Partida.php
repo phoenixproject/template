@@ -100,4 +100,28 @@ class Partida  extends Action {
         }    
         return "";                
     }    
+    
+    public function insert(){
+
+        $partida = filter_input(INPUT_POST, 'partida', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($partida))
+        {
+            $partidaDominio = new PartidaDominio();            
+                        
+            $chave = array_values($partida);
+                        
+            $partidaDominio->setCd_partida($chave[0]);
+            $partidaDominio->setPontos($chave[1]);
+            $partidaDominio->setFases_completadas($chave[2]);
+            $partidaDominio->setCd_combinacao($chave[3]);
+            $partidaDominio->setCd_configuracao($chave[4]);
+            $partidaDominio->setCd_atividade($chave[5]);
+                                                
+            if($this->interfaceDeApresentacaoConfiguracao->inserir($usuarioDominio)){
+                $this->render('getall',false);        
+            }
+        }    
+        return "";                
+    } 
 }
