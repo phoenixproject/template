@@ -76,4 +76,25 @@ class Configuracao extends Action {
         }    
         return "";                
     }    
+    
+    public function insert(){
+
+        $configuracao = filter_input(INPUT_POST, 'configuracao', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($configuracao))
+        {
+            $configuracaoDominio = new ConfiguracaoDominio();            
+                        
+            $chave = array_values($configuracao);
+                        
+            $configuracaoDominio->setCd_configuracao($chave[0]);
+            $configuracaoDominio->setDs_configuracao($chave[1]);
+            $configuracaoDominio->setNivel_dificuldade($chave[2]);
+                                                
+            if($this->interfaceDeApresentacaoConfiguracao->inserir($usuarioDominio)){
+                $this->render('getall',false);        
+            }
+        }    
+        return "";                
+    }    
 }
