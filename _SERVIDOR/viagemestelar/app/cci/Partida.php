@@ -11,6 +11,7 @@ namespace app\cci;
 use app\cgt\AplCombinacao;
 use app\cgt\AplConfiguracao;
 use app\cgt\AplAtividade;
+use app\cgt\AplPartida;
 use app\cgt\InterfaceDeApresentacao;
 
 use app\cdp\Partida as PartidaDominio;
