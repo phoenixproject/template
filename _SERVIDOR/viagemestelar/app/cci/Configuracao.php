@@ -9,6 +9,7 @@
 namespace app\cci;
 
 use app\cgt\InterfaceDeApresentacao;
+use app\cgt\AplConfiguracao;
 
 use app\cdp\Configuracao as ConfiguracaoDominio;
 
@@ -91,7 +92,7 @@ class Configuracao extends Action {
             $configuracaoDominio->setDs_configuracao($chave[1]);
             $configuracaoDominio->setNivel_dificuldade($chave[2]);
                                                 
-            if($this->interfaceDeApresentacaoConfiguracao->inserir($usuarioDominio)){
+            if($this->interfaceDeApresentacao->inserir($usuarioDominio)){
                 $this->render('getall',false);        
             }
         }    

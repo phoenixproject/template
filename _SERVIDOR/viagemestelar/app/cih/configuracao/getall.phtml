@@ -1,0 +1,74 @@
+<?php 
+    include ("../app/inc/header.phtml"); 
+    use app\cci\Configuracao;
+    //require_once('../app/cci/Cliente.php');
+        
+    $configuracaoCCI = new Configuracao();    
+    $configuracaos = $configuracaoCCI->listar(null);
+?>
+
+<header>
+	<div class="row">
+		<div class="col-sm-6">
+			<h2>Configuraçãos</h2>
+		</div>
+		<div class="col-sm-6 text-right h2">
+	    	<a class="btn btn-primary" href="?configuracao=add"><i class="fa fa-plus"></i> Novo Configuração</a>
+	    	<a class="btn btn-default" href="index.php?configuracao=getall"><i class="fa fa-refresh"></i> Atualizar</a>
+	    </div>
+	</div>
+</header>
+
+<?php if (!empty($_SESSION['message'])) : ?>
+	<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<?php echo $_SESSION['message']; ?>
+	</div>
+	<?php clear_messages(); ?>
+<?php endif; ?>
+
+<hr>
+
+<table class="table table-hover">
+<thead>
+	<tr>
+		<th>ID</th>
+		<th width="30%">Email</th>
+		<th>Descrição da Configuração</th>		
+		<th>Nível de Dificuldade</th>
+		<th>Opções</th>
+	</tr>
+</thead>
+<tbody>
+<?php if ($configuracaos) : ?>
+<?php foreach ($configuracaos as $configuracao) : ?>
+	<tr>
+		<td><?php echo $configuracao['cd_configuracao']; ?></td>
+		<td><?php echo $configuracao['ds_configuracao']; ?></td>
+		<td><?php echo $configuracao['nivel_dificuldade']; ?></td>				
+		<td class="actions text-right">
+			<a href="?configuracao=retrieve&id=<?php echo (int)$configuracao['cd_configuracao']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
+			<a href="?configuracao=edit&id=<?php echo (int)$configuracao['cd_configuracao']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
+			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $configuracao['cd_configuracao']; ?>">
+				<i class="fa fa-trash"></i> Excluir
+			</a>
+		</td>
+	</tr>
+<?php endforeach; ?>
+<?php else : ?>
+	<tr>
+		<td colspan="6">Nenhum registro encontrado.</td>
+	</tr>
+<?php endif; ?>
+</tbody>
+</table>
+
+<?php 
+    include ("../app/inc/modal.phtml");     
+?>
+
+<?php 
+    include ("../app/inc/footer.phtml");     
+?>
+
+
