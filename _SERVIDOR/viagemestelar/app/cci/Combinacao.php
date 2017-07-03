@@ -10,6 +10,7 @@ namespace app\cci;
 
 use app\cgt\AplTipoNave;
 use app\cgt\AplTipoArma;
+use app\cgt\AplCombinacao;
 use app\cgt\InterfaceDeApresentacao;
 
 use app\cdp\Combinacao as CombinacaoDominio;
