@@ -9,6 +9,7 @@
 namespace app\cci;
 
 use app\cgt\AplTipoUsuario;
+use app\cgt\AplTipoAtividade;
 use app\cgt\InterfaceDeApresentacao;
 
 use app\cdp\TipoUsuario;
