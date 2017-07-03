@@ -90,5 +90,27 @@ class Atividade extends Action {
             }
         }    
         return "";                
-    }    
+    }   
+    
+    public function insert(){
+
+        $atividade = filter_input(INPUT_POST, 'atividade', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($atividade))
+        {
+            $atividadeDominio = new AtividadeDominio();            
+                        
+            $chave = array_values($atividade);
+                        
+            $atividadeDominio->setCd_atividade($chave[0]);
+            $atividadeDominio->setDt_atividade($chave[1]);
+            $atividadeDominio->setCd_usuario($chave[2]);
+            $atividadeDominio->setTp_atividade($chave[3]);
+                                                
+            if($this->interfaceDeApresentacaoUsuario->inserir($usuarioDominio)){
+                $this->render('getall',false);        
+            }
+        }    
+        return "";                
+    } 
 }
