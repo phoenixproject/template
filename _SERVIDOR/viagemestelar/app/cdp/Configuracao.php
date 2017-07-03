@@ -8,16 +8,21 @@
 
 namespace app\cdp;
 
+use app\cdp\Entity;
 /**
  * Description of Configuracao
  *
  * @author pchan
  */
-class Configuracao {
+class Configuracao extends Entity {
     
     private $cd_configuracao;
     private $ds_configuracao;
     private $nivel_dificuldade;
+    
+    public function __construct() {
+        parent::__construct("Configuracao");        
+    }
     
     function getCd_configuracao() : int {
         return $this->cd_configuracao;
