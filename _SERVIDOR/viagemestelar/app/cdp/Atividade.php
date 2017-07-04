@@ -8,18 +8,22 @@
 
 namespace app\cdp;
 
-
+use app\cdp\Entity;
 /**
  * Description of Atividade
  *
  * @author pchan
  */
-class Atividade {
+class Atividade extends Entity {
     
     private $cd_atividade;
     private $dt_atividade;
     private $cd_usuario;
     private $tp_atividade;
+    
+    public function __construct() {
+        parent::__construct("Atividade");        
+    }
     
     function getCd_atividade() : int {
         return $this->cd_atividade;

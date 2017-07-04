@@ -10,6 +10,7 @@ namespace app\cci;
 
 use app\cgt\AplUsuario;
 use app\cgt\AplTipoAtividade;
+use app\cgt\AplAtividade;
 use app\cgt\InterfaceDeApresentacao;
 
 use app\cdp\Atividade as AtividadeDominio;
@@ -49,7 +50,7 @@ class Atividade extends Action {
     }
     
     public function listarAtividade($ordem){
-        return $this->interfaceDeApresentacaoUsuario->listar($ordem);
+        return $this->interfaceDeApresentacaoAtividade->listar($ordem);
     }
     
     public function listarTipoDeAtividade($ordem){
@@ -90,5 +91,27 @@ class Atividade extends Action {
             }
         }    
         return "";                
-    }    
+    }   
+    
+    public function insert(){
+
+        $atividade = filter_input(INPUT_POST, 'atividade', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($atividade))
+        {
+            $atividadeDominio = new AtividadeDominio();            
+                        
+            $chave = array_values($atividade);
+                        
+            $atividadeDominio->setCd_atividade($chave[0]);
+            $atividadeDominio->setDt_atividade($chave[1]);
+            $atividadeDominio->setCd_usuario($chave[2]);
+            $atividadeDominio->setTp_atividade($chave[3]);
+                                                
+            if($this->interfaceDeApresentacaoAtividade->inserir($usuarioDominio)){
+                $this->render('getall',false);        
+            }
+        }    
+        return "";                
+    } 
 }

@@ -1,20 +1,20 @@
 <?php 
     include ("../app/inc/header.phtml"); 
-    use app\cci\Cliente;
+    use app\cci\Atividade;
     //require_once('../app/cci/Cliente.php');
         
-    $cliente = new Cliente();    
-    $customers = $cliente->listar(null);
+    $atividadeCCI = new Atividade();    
+    $atividades = $atividadeCCI->listarAtividade(null);
 ?>
 
 <header>
 	<div class="row">
 		<div class="col-sm-6">
-			<h2>Clientes</h2>
+			<h2>Atividades</h2>
 		</div>
 		<div class="col-sm-6 text-right h2">
-	    	<a class="btn btn-primary" href="?cliente=add"><i class="fa fa-plus"></i> Novo Cliente</a>
-	    	<a class="btn btn-default" href="index.php"><i class="fa fa-refresh"></i> Atualizar</a>
+	    	<a class="btn btn-primary" href="?atividade=add"><i class="fa fa-plus"></i> Novo Atividade</a>
+	    	<a class="btn btn-default" href="index.php?atividade=getall"><i class="fa fa-refresh"></i> Atualizar</a>
 	    </div>
 	</div>
 </header>
@@ -33,26 +33,24 @@
 <thead>
 	<tr>
 		<th>ID</th>
-		<th width="30%">Nome</th>
-		<th>CPF/CNPJ</th>
-		<th>Telefone</th>
-		<th>Atualizado em</th>
+                <th>Data da Atividade</th>
+		<th width="30%">Usuário</th>
+		<th>Tipo de Atividade</th>				
 		<th>Opções</th>
 	</tr>
 </thead>
 <tbody>
-<?php if ($customers) : ?>
-<?php foreach ($customers as $customer) : ?>
+<?php if ($atividades) : ?>
+<?php foreach ($atividades as $atividade) : ?>
 	<tr>
-		<td><?php echo $customer['id']; ?></td>
-		<td><?php echo $customer['name']; ?></td>
-		<td><?php echo $customer['cpf_cnpj']; ?></td>
-		<td>00 0000-0000</td>
-		<td><?php echo $customer['modified']; ?></td>
+		<td><?php echo $atividade['cd_atividade']; ?></td>
+		<td><?php echo $atividade['dt_atividade']; ?></td>
+		<td><?php echo $atividade['cd_usuario']; ?></td>		
+		<td><?php echo $atividade['tp_atividade']; ?></td>
 		<td class="actions text-right">
-			<a href="?cliente=retrieve&id=<?php echo (int)$customer['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
-			<a href="?cliente=edit&id=<?php echo (int)$customer['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $customer['id']; ?>">
+			<a href="?atividade=retrieve&id=<?php echo (int)$atividade['cd_atividade']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
+			<a href="?atividade=edit&id=<?php echo (int)$atividade['cd_atividade']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
+			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $atividade['cd_atividade']; ?>">
 				<i class="fa fa-trash"></i> Excluir
 			</a>
 		</td>

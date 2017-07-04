@@ -1,0 +1,75 @@
+<?php 
+    include ("../app/inc/header.phtml"); 
+    use app\cci\Partida;
+    //require_once('../app/cci/Cliente.php');
+        
+    $partidaCCI = new Partida();    
+    $partidas = $partidaCCI->listarPartida(null);
+?>
+
+<header>
+	<div class="row">
+		<div class="col-sm-6">
+			<h2>Partidas</h2>
+		</div>
+		<div class="col-sm-6 text-right h2">
+	    	<a class="btn btn-primary" href="?partida=add"><i class="fa fa-plus"></i> Novo Partida</a>
+	    	<a class="btn btn-default" href="index.php?partida=getall"><i class="fa fa-refresh"></i> Atualizar</a>
+	    </div>
+	</div>
+</header>
+
+<?php if (!empty($_SESSION['message'])) : ?>
+	<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<?php echo $_SESSION['message']; ?>
+	</div>
+	<?php clear_messages(); ?>
+<?php endif; ?>
+
+<hr>
+
+<table class="table table-hover">
+<thead>
+	<tr>
+		<th>ID</th>
+		<th width="30%">Pontos</th>
+		<th>Inimigos Destruídos</th>		
+		<th>Fases Completadas</th>
+		<th>Opções</th>
+	</tr>
+</thead>
+<tbody>
+<?php if ($partidas) : ?>
+<?php foreach ($partidas as $partida) : ?>
+	<tr>
+		<td><?php echo $partida['cd_partida']; ?></td>
+		<td><?php echo $partida['pontos']; ?></td>
+		<td><?php echo $partida['inimigos_desruidos']; ?></td>		
+		<td><?php echo $partida['fases_completadas']; ?></td>
+		<td class="actions text-right">
+			<a href="?partida=retrieve&id=<?php echo (int)$partida['cd_partida']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
+			<a href="?partida=edit&id=<?php echo (int)$partida['cd_partida']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
+			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $partida['cd_partida']; ?>">
+				<i class="fa fa-trash"></i> Excluir
+			</a>
+		</td>
+	</tr>
+<?php endforeach; ?>
+<?php else : ?>
+	<tr>
+		<td colspan="6">Nenhum registro encontrado.</td>
+	</tr>
+<?php endif; ?>
+</tbody>
+</table>
+
+<?php 
+    include ("../app/inc/modal.phtml");     
+?>
+
+<?php 
+    include ("../app/inc/footer.phtml");     
+?>
+
+

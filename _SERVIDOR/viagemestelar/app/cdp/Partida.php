@@ -8,12 +8,13 @@
 
 namespace app\cdp;
 
+use app\cdp\Entity;
 /**
  * Description of Partida
  *
  * @author pchan
  */
-class Partida {
+class Partida extends Entity {
     
     private $cd_partida;
     private $pontos;
@@ -22,6 +23,10 @@ class Partida {
     private $cd_combinacao;
     private $cd_configuracao;
     private $cd_atividade;
+    
+    public function __construct() {
+        parent::__construct("Partida");        
+    }
     
     function getCd_partida() : int {
         return $this->cd_partida;

@@ -63,12 +63,13 @@ class Usuario extends Action {
     }
     
     public function save(){
-            
-        if(isset($_POST['usuario']))
+        
+        $usuario = filter_input(INPUT_POST, 'usuario', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($usuario))
         {
             $usuarioDominio = new UsuarioDominio();
-            $usuario = $_POST['usuario'];            
-                        
+                                    
             $chave = array_values($usuario);
                         
             $usuarioDominio->setCd_usuario($chave[0]);

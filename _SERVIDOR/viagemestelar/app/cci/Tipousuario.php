@@ -11,7 +11,7 @@ namespace app\cci;
 use app\cgt\AplTipoUsuario;
 use app\cgt\InterfaceDeApresentacao;
 
-use app\cdp\TipoUsuario;
+use app\cdp\TipoUsuario as TipoUsuarioDominio;
 
 use ifes\controller\Action;
 /**
@@ -60,10 +60,12 @@ class Tipousuario extends Action {
     }
     
     public function save(){
-            
-        if(isset($_POST['tipousuario']))
+        
+        $tipousuario = filter_input(INPUT_POST, 'tipousuario', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($usuario))
         {
-            $tipoUsuarioDominio = new TipoUsuario();
+            $tipoUsuarioDominio = new TipoUsuarioDominio();
             
             $tipoUsuario = $_POST['tipousuario'];            
                         
@@ -72,10 +74,29 @@ class Tipousuario extends Action {
             $tipoUsuarioDominio->setTp_usuario($chave[0]);
             $tipoUsuarioDominio->setDs_tp_usuario($chave[1]);
                                     
-            if($this->interfaceDeApresentacaoUsuario->alterar($tipoUsuarioDominio)){
+            if($this->interfaceDeApresentacao->alterar($tipoUsuarioDominio)){
                 $this->render('getall',false);        
             }
         }    
         return "";                
     }
+    
+    public function insert(){
+
+        $tipousuario = filter_input(INPUT_POST, 'tipousuario', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+        
+        if(isset($tipousuario))
+        {
+            $tipoUsuarioDominio = new TipoUsuarioDominio();
+                                    
+            $chave = array_values($tipousuario);
+                        
+            $tipoUsuarioDominio->setDs_tp_usuario($chave[0]);
+                                                
+            if($this->interfaceDeApresentacao->inserir($tipoUsuarioDominio)){
+                $this->render('getall',false);        
+            }
+        }    
+        return "";                
+    } 
 }

@@ -8,15 +8,21 @@
 
 namespace app\cdp;
 
+use app\cdp\Entity;
+
 /**
  * Description of TipoAtividade
  *
  * @author pchan
  */
-class TipoAtividade {
+class TipoAtividade extends Entity {
     
-        private $tp_atividade;
+    private $tp_atividade;
     private $ds_tp_atividade;
+    
+    public function __construct() {
+        parent::__construct('Tipo_Atividade');
+    }
     
     function getTp_atividade() : int {
         return $this->tp_atividade;

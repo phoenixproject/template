@@ -8,17 +8,23 @@
 
 namespace app\cdp;
 
+use app\cdp\Entity;
+
 /**
  * Description of Combinacao
  *
  * @author pchan
  */
-class Combinacao {
+class Combinacao extends Entity {
     
     private $cd_combinacao;
     private $ds_combinacao;
     private $tp_nave;
     private $tp_arma;
+    
+    public function __construct() {
+        parent::__construct("Combinacao");        
+    }
     
     function getCd_combinacao() : int {
         return $this->cd_combinacao;
