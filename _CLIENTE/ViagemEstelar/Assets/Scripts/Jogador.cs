@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Jogador : MonoBehaviour {
 
+	[SerializeField]
+	private Estado estado;
+
+	Animator animator;
+
 	private float moverHorizontal;
 	private float moverVertical;
 	private Vector2 mover;
@@ -13,8 +18,7 @@ public class Jogador : MonoBehaviour {
 	private float eixoXMin, eixoXMax;
 	private float eixoYMin, eixoYMax;
 
-	private float posicaoX;
-	private float posicaoY;
+	private float posicaoX, posicaoY;
 
 	[SerializeField]
 	private float velocidade;
@@ -25,30 +29,37 @@ public class Jogador : MonoBehaviour {
 	[SerializeField]
 	private GameObject prefabBomba;
 
+	[SerializeField]
+	private GameObject prefabExplosao;
+
 	private float controle;
 
 	[SerializeField]
 	private float atirarTempo;
 
-	private string email;
-	private string password;
+	void Awake()
+	{
+		estado.Iniciar();
+	}
 
 	// Use this for initialization
 	void Start () {
-		
+
+		animator = GetComponent<Animator>();
+
 		//Para iniciar o controle que definirá a medidad do intervalo
 		controle = 0f;
 
-		//eixoXMax = CameraPrincipal.LimitarDireitaX(transform.position);
-		//eixoXMin = CameraPrincipal.LimitarEsquerdaX(transform.position);
-		//eixoYMax = CameraPrincipal.LimitarParaCimaY(transform.position);
-		//eixoYMin = CameraPrincipal.LimitarParaBaixoY(transform.position);
+		eixoXMax = CameraPrincipal.LimitarDireitaX(transform.position);
+		eixoXMin = CameraPrincipal.LimitarEsquerdaX(transform.position);
+		eixoYMax = CameraPrincipal.LimitarParaCimaY(transform.position);
+		eixoYMin = CameraPrincipal.LimitarParaBaixoY(transform.position);
 
 		//Inicializar o RigidBody 2d		
 		rb2d = GetComponent<Rigidbody2D>();		
 
 		//Para referenciar o componente de áudio a ser utilizado
-		//audioSource = GetComponent<AudioSource>();
+		audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -58,7 +69,7 @@ public class Jogador : MonoBehaviour {
 
 	private void FixedUpdate()
 	{
-		/*moverHorizontal = Input.GetAxis("Horizontal");
+		moverHorizontal = Input.GetAxis("Horizontal");
 		moverVertical = Input.GetAxis("Vertical");
 
 		//Para encontrar o valor das variáveis
@@ -83,7 +94,7 @@ public class Jogador : MonoBehaviour {
 			}
 		}
 
-		LimitarPosicaoJogador();*/
+		LimitarPosicaoJogador();
 
 		moverHorizontal = Input.GetAxis("Horizontal");
 		moverVertical = Input.GetAxis("Vertical");
@@ -127,6 +138,44 @@ public class Jogador : MonoBehaviour {
 		if (posicaoY != transform.position.y)
 		{
 			rb2d.position = new Vector2(rb2d.position.x, posicaoY);
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D outro)
+	{
+		PerderVida(outro);
+		GanharVida(outro);
+	}
+
+	void GanharVida(Collider2D outro)
+	{
+		if (outro.tag == "Energia")
+		{
+			if (estado.ValorAtual < estado.MaximoValor)
+			{
+				estado.ValorAtual += 2;
+				Destroy(outro.gameObject);
+			}
+		}
+	}
+
+	void PerderVida(Collider2D outro)
+	{
+		if (outro.tag == "Asteroid" || outro.tag == "Inimigo")
+		{
+			if (estado.ValorAtual > 0)
+			{
+				estado.ValorAtual -= 10;
+				animator.SetTrigger("Dano");
+
+			}
+
+			if (estado.ValorAtual <= 0)
+			{
+				Instantiate(prefabExplosao, transform.position, transform.rotation);
+				Destroy(gameObject);
+				Mensagens.gameOver = true;
+			}
 		}
 	}
 }
