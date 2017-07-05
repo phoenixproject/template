@@ -39,16 +39,16 @@ public class Jogador : MonoBehaviour {
 		//Para iniciar o controle que definirá a medidad do intervalo
 		controle = 0f;
 
-		//eixoXMax = CameraPrincipal.LimitarDireitaX(transform.position);
-		//eixoXMin = CameraPrincipal.LimitarEsquerdaX(transform.position);
-		//eixoYMax = CameraPrincipal.LimitarParaCimaY(transform.position);
-		//eixoYMin = CameraPrincipal.LimitarParaBaixoY(transform.position);
+		eixoXMax = CameraPrincipal.LimitarDireitaX(transform.position);
+		eixoXMin = CameraPrincipal.LimitarEsquerdaX(transform.position);
+		eixoYMax = CameraPrincipal.LimitarParaCimaY(transform.position);
+		eixoYMin = CameraPrincipal.LimitarParaBaixoY(transform.position);
 
 		//Inicializar o RigidBody 2d		
 		rb2d = GetComponent<Rigidbody2D>();		
 
 		//Para referenciar o componente de áudio a ser utilizado
-		//audioSource = GetComponent<AudioSource>();
+		audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -58,7 +58,7 @@ public class Jogador : MonoBehaviour {
 
 	private void FixedUpdate()
 	{
-		/*moverHorizontal = Input.GetAxis("Horizontal");
+		moverHorizontal = Input.GetAxis("Horizontal");
 		moverVertical = Input.GetAxis("Vertical");
 
 		//Para encontrar o valor das variáveis
@@ -83,7 +83,7 @@ public class Jogador : MonoBehaviour {
 			}
 		}
 
-		LimitarPosicaoJogador();*/
+		LimitarPosicaoJogador();
 
 		moverHorizontal = Input.GetAxis("Horizontal");
 		moverVertical = Input.GetAxis("Vertical");

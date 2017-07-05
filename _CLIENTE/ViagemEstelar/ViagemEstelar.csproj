@@ -78,7 +78,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Asteroide.cs" />
+    <Compile Include="Assets\Scripts\Asteroid.cs" />
     <Compile Include="Assets\Scripts\Bomba.cs" />
     <Compile Include="Assets\Scripts\CameraPrincipal.cs" />
     <Compile Include="Assets\Scripts\Colisor.cs" />

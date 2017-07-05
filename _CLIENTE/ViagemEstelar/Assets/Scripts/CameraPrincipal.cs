@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraPrincipal : MonoBehaviour {
 
@@ -8,6 +9,8 @@ public class CameraPrincipal : MonoBehaviour {
 	private static Vector3 esquerda;
 	private static Vector3 paraCima;
 	private static Vector3 paraBaixo;
+
+	public int cena;
 
 	public static float LimitarDireitaX(Vector3 eixo)
 	{
@@ -50,5 +53,18 @@ public class CameraPrincipal : MonoBehaviour {
 		Vector3 posicao = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 
 		return posicao;
+	}
+
+	void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.N))
+		{
+			SceneManager.LoadScene(cena);
+		}
+
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.Quit();
+		}
 	}
 }

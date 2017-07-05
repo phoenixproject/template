@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Asteroide : MonoBehaviour {
+public class Asteroid : MonoBehaviour {
 
 	[SerializeField]
 	private Rigidbody2D rb2d;
@@ -16,6 +16,7 @@ public class Asteroide : MonoBehaviour {
 	private int tempoVida;
 	[SerializeField]
 	private int pontos;
+
 	[SerializeField]
 	private GameObject prefabExplosao1;
 	[SerializeField]
@@ -23,10 +24,14 @@ public class Asteroide : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {		
+	void Start()
+	{
+		//Inicializar o RigidBody 2d		
+		//rb2d = GetComponent<Rigidbody2D>();
+
 		Movimentar();
 	}
-	
+
 	void Movimentar()
 	{
 		rb2d.angularVelocity = Random.Range(minimo, maximo);
@@ -43,21 +48,25 @@ public class Asteroide : MonoBehaviour {
 		if (outro.tag == "Bomba")
 		{
 			Instantiate(prefabExplosao1, transform.position, transform.rotation);
+			
+			if (tempoVida > 0)
+			{
+
+				tempoVida--;
+			}
+
+			if (tempoVida <= 0)
+			{
+				Instantiate(prefabExplosao2, transform.position, transform.rotation);
+
+				//Mensagens.pontos += valorAsteroide;
+
+				Destroy(gameObject);
+
+			}
+			Destroy(outro.gameObject);
+
 		}
 
-		if (tempoVida > 0)
-		{
-			tempoVida--;
-		}
-
-		if (tempoVida <= 0)
-		{
-			Instantiate(prefabExplosao2, transform.position, transform.rotation);
-
-			//Adicionar pontos
-			Destroy(gameObject);
-		}
-
-		Destroy(outro.gameObject);
 	}
 }
