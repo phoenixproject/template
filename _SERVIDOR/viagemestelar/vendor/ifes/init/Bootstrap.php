@@ -52,15 +52,24 @@ abstract class Bootstrap{
                         $controller->$method();
                     }
                     else{                        
-                        if(strcmp($this->action,$route['action']) == 0){                        
+                        //Neste será algo vindo do web service
+                        if(strcmp($this->action,'/game') == 0){                        
+                            //ucfirst quer dizer que a primeira letra do controller será maíuscula
+                            $class = "app\\cs\\".ucfirst($route['controller']);
+                            $controller = new $class;                            
+                            $method = $route['action'];
+                            $controller->$method();
+                        }
+                        else{
+                            if(strcmp($this->action,$route['action']) == 0){                        
                             //ucfirst quer dizer que a primeira letra do controller será maíuscula
                             $class = "app\\cci\\".ucfirst($route['controller']);
                             $controller = new $class;                            
                             $method = $route['action'];
                             $controller->$method();
+                            }
                         }
-                    }
-                    
+                    }                    
     		}
     	});
     }
