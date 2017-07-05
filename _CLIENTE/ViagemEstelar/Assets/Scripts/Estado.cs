@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Estado : MonoBehaviour {
+public class Estado {
 
 	[SerializeField]
 	private Bar bar;
