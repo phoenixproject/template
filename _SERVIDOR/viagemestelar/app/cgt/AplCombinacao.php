@@ -10,6 +10,7 @@ namespace app\cgt;
 
 use app\cgd\CombinacaoDao;
 use app\cgt\InterfaceDeApresentacao;
+use app\cdp\Combinacao;
 /**
  * Description of Combinacao
  *
@@ -31,7 +32,7 @@ class AplCombinacao implements InterfaceDeApresentacao {
         return $this->combinacaoDao->delete($id);
     }
 
-    public function find($id) {
+    public function find($id) { 
         return $this->combinacaoDao->find($id);
     }
 
@@ -40,6 +41,19 @@ class AplCombinacao implements InterfaceDeApresentacao {
     }
     
     public function inserir($objeto): bool {
-        return $this->inserir($objeto);
+        return $this->combinacaoDao->inserir($objeto);
+    }
+    
+    public function metodoFabricaCombinacao($tp_nave, $tp_arma) : Combinacao{
+        
+        $combinacao = new Combinacao();
+        
+        $resultado = $this->combinacaoDao->buscarCombinacao($tp_nave, $tp_arma);
+        
+        $combinacao->setDs_combinacao($resultado['ds_combinacao']);
+        $combinacao->setTp_nave($resultado['tp_nave']);
+        $combinacao->setTp_arma($resultado['tp_arma']);
+        
+        return $combinaacao;        
     }
 }
