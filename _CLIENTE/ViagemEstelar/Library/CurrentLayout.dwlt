@@ -72,7 +72,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 271}
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
-  controlID: 73
+  controlID: 116
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -344,8 +344,8 @@ MonoBehaviour:
     - {fileID: 1107194441168059552, guid: 18980d183f9826441a063e220c265652, type: 2}
     m_ValueSerializationHelper:
     - {x: 387.6, y: 174}
-    - {x: 249.40001, y: 134.20001}
-    - {x: 291, y: 134.20001}
+    - {x: 253.00002, y: 118.20001}
+    - {x: 291, y: 70.20001}
     - {x: 353.40002, y: 128}
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 9100000, guid: 18980d183f9826441a063e220c265652,
@@ -430,19 +430,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\_BASE\_SISTEMAS\_DOTNET\_IFES\ViagemEstelar\_CLIENTE\ViagemEstelar
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 4}
-    m_SelectedIDs: ae250000
-    m_LastClickedID: 9646
-    m_ExpandedIDs: 00000000b424000000ca9a3bffffff7f
+    m_SelectedIDs: f4240000
+    m_LastClickedID: 9460
+    m_ExpandedIDs: 00000000b224000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -470,7 +470,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b4240000
+    m_ExpandedIDs: 00000000b2240000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -498,7 +498,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 6424000082250000a05cffff000000004e2400006e2400001c2400001e2400008c2400000008ffff202500003e2500002e25000022f3ffff762400007a24000026240000fe2400000025000018250000122500000e25000064250000
+    m_ExpandedInstanceIDs: 6424000082250000a05cffff4e2400006e2400001c2400001e2400008c2400000008ffff202500003e2500002e25000022f3ffff762400007a24000026240000fe2400000025000018250000122500000e2500006425000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -586,9 +586,9 @@ MonoBehaviour:
     height: 347
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9c060000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 78d6fffff4f3ffffa6faffffd8fbffff00000000
+    m_SelectedIDs: 32c1feff
+    m_LastClickedID: -81614
+    m_ExpandedIDs: d0e9feffd8fbffff000000000e260000442600005e260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -643,9 +643,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 83.967705, y: 302.48083, z: 0}
+    m_Target: {x: 315.67953, y: 220.50801, z: 0}
     speed: 2
-    m_Value: {x: 83.967705, y: 302.48083, z: 0}
+    m_Value: {x: 315.67953, y: 220.50801, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -672,9 +672,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 73.51664
+    m_Target: 481.1695
     speed: 2
-    m_Value: 73.51664
+    m_Value: 481.1695
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -731,7 +731,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1

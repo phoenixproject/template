@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\Inimigo.cs" />
     <Compile Include="Assets\Scripts\Instanciador.cs" />
     <Compile Include="Assets\Scripts\Jogador.cs" />
+    <Compile Include="Assets\Scripts\Mensagens.cs" />
     <Compile Include="Assets\Scripts\ObjetosCaindo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

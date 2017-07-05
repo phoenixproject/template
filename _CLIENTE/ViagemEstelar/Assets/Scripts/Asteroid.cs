@@ -15,8 +15,7 @@ public class Asteroid : MonoBehaviour {
 	[SerializeField]
 	private int tempoVida;
 	[SerializeField]
-	private int pontos;
-
+	private int valorAsteroide;
 	[SerializeField]
 	private GameObject prefabExplosao1;
 	[SerializeField]
@@ -26,8 +25,6 @@ public class Asteroid : MonoBehaviour {
 	// Use this for initialization
 	void Start()
 	{
-		//Inicializar o RigidBody 2d		
-		//rb2d = GetComponent<Rigidbody2D>();
 
 		Movimentar();
 	}
@@ -48,7 +45,8 @@ public class Asteroid : MonoBehaviour {
 		if (outro.tag == "Bomba")
 		{
 			Instantiate(prefabExplosao1, transform.position, transform.rotation);
-			
+
+
 			if (tempoVida > 0)
 			{
 
@@ -59,7 +57,7 @@ public class Asteroid : MonoBehaviour {
 			{
 				Instantiate(prefabExplosao2, transform.position, transform.rotation);
 
-				//Mensagens.pontos += valorAsteroide;
+				Mensagens.pontos += valorAsteroide;
 
 				Destroy(gameObject);
 

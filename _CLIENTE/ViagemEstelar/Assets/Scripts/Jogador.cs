@@ -37,9 +37,16 @@ public class Jogador : MonoBehaviour {
 	[SerializeField]
 	private float atirarTempo;
 
+	void Awake()
+	{
+		estado.Iniciar();
+	}
+
 	// Use this for initialization
 	void Start () {
-		
+
+		animator = GetComponent<Animator>();
+
 		//Para iniciar o controle que definirá a medidad do intervalo
 		controle = 0f;
 
@@ -167,7 +174,7 @@ public class Jogador : MonoBehaviour {
 			{
 				Instantiate(prefabExplosao, transform.position, transform.rotation);
 				Destroy(gameObject);
-				//Mensagens.gameOver = true;
+				Mensagens.gameOver = true;
 			}
 		}
 	}

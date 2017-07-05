@@ -66,7 +66,7 @@ public class Inimigo : MonoBehaviour {
 			if (vida <= 0)
 			{
 				Instantiate(prefabExplosao2, transform.position, transform.rotation);
-				//Mensagens.pontos += valorInimigo;
+				Mensagens.pontos += valorInimigo;
 
 				Destroy(gameObject);
 			}
