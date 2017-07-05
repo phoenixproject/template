@@ -299,7 +299,12 @@ class Init extends Bootstrap {
             'route'=>'/usuario',
             'controller'=>'usuario',
             'action'=>'save'
-        );                         
+        ); 
+        $ar['gameserviceput'] = array(
+            'route'=>'/game',
+            'controller'=>'game',
+            'action'=>'put'
+        );          
         $ar['logout'] = array(
             'route'=>'/logout',
             'controller'=>'logout',
