@@ -48,7 +48,7 @@ public class CameraPrincipal : MonoBehaviour {
 		return paraCima.y;
 	}
 
-	public Vector2 CoordenadaCamera()
+	public static Vector2 CoordenadaCamera()
 	{
 		Vector3 posicao = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 

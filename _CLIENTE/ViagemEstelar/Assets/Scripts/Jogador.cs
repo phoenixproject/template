@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Jogador : MonoBehaviour {
 
+	[SerializeField]
+	private Estado estado;
+
+	Animator animator;
+
 	private float moverHorizontal;
 	private float moverVertical;
 	private Vector2 mover;
@@ -13,8 +18,7 @@ public class Jogador : MonoBehaviour {
 	private float eixoXMin, eixoXMax;
 	private float eixoYMin, eixoYMax;
 
-	private float posicaoX;
-	private float posicaoY;
+	private float posicaoX, posicaoY;
 
 	[SerializeField]
 	private float velocidade;
@@ -25,13 +29,13 @@ public class Jogador : MonoBehaviour {
 	[SerializeField]
 	private GameObject prefabBomba;
 
+	[SerializeField]
+	private GameObject prefabExplosao;
+
 	private float controle;
 
 	[SerializeField]
 	private float atirarTempo;
-
-	private string email;
-	private string password;
 
 	// Use this for initialization
 	void Start () {
@@ -127,6 +131,44 @@ public class Jogador : MonoBehaviour {
 		if (posicaoY != transform.position.y)
 		{
 			rb2d.position = new Vector2(rb2d.position.x, posicaoY);
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D outro)
+	{
+		PerderVida(outro);
+		GanharVida(outro);
+	}
+
+	void GanharVida(Collider2D outro)
+	{
+		if (outro.tag == "Energia")
+		{
+			if (estado.ValorAtual < estado.MaximoValor)
+			{
+				estado.ValorAtual += 2;
+				Destroy(outro.gameObject);
+			}
+		}
+	}
+
+	void PerderVida(Collider2D outro)
+	{
+		if (outro.tag == "Asteroid" || outro.tag == "Inimigo")
+		{
+			if (estado.ValorAtual > 0)
+			{
+				estado.ValorAtual -= 10;
+				animator.SetTrigger("Dano");
+
+			}
+
+			if (estado.ValorAtual <= 0)
+			{
+				Instantiate(prefabExplosao, transform.position, transform.rotation);
+				Destroy(gameObject);
+				//Mensagens.gameOver = true;
+			}
 		}
 	}
 }
