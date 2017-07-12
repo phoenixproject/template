@@ -117,7 +117,7 @@ Justificativa - Padrão de Lógica de Negócio (Servidor)
 
 Justificativa - Padrão de Lógica de Negócio (Cliente)
 
-[Padrão de Lógica de Negócio Desktop](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Cliente)#padrao_de_logica_negocio)
+[Padrão de Lógica de Negócio Desktop](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Desktop)#padrao_de_logica_negocio)
 
 ### 2.2. Projeto Detalhado
 OBS: repetir as seções abaixo para cada subsistema
