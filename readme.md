@@ -126,11 +126,13 @@ OBS: repetir as seções abaixo para cada subsistema
 
 ##### Projeto do Domínio
 
-[Projeto de Domínio - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_dominio)
+[Projeto de Domínio - Cliente - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_dominio_cliente)
+
+[Projeto de Domínio - Servidor - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_dominio_servidor)
 
 ##### Projeto da Aplicação
 
-[Projeto de Domínio - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_dominio)
+[Projeto de Domínio - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_da_aplicacao)
 
 #### 2.2.2.  Projeto da Interface com Usuário
 
