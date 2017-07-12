@@ -12,5 +12,6 @@ namespace ViagemEstelar.Repositorio
 		private static readonly HttpClient client = new HttpClient();
 
 
+		//public String EnviaAtividadeParaOServidor()
 	}
 }

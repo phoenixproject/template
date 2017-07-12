@@ -49,11 +49,11 @@ Trabalho desenvolvido durante as disciplinas de:
 
 ### 4.1	Requisitos Funcionais (Histórias de Usuário)
 
-[Requisitos Funcionais - especificação](https://github.com/phoenixproject/viagemestelar/wiki/Requisitos-de-Usu%C3%A1rios#requisitos_funcionais)
+[Requisitos Funcionais - especificação](https://github.com/phoenixproject/viagemestelar/wiki/Ger%C3%AAncia-de-Requisitos#requisitos_funcionais)
 
 ### 4.2	Requisitos Não Funcionais
 
-[Requisitos Não Funcionais - especificação](https://github.com/phoenixproject/viagemestelar/wiki/Requisitos-de-Usu%C3%A1rios#requisitos_nao_funcionais)
+[Requisitos Não Funcionais - especificação](https://github.com/phoenixproject/viagemestelar/wiki/Ger%C3%AAncia-de-Requisitos#requisitos_nao_funcionais)
 
 ### 4.3	Regras de Negócio
 
@@ -113,11 +113,11 @@ inserir principais diagramas comportamentais da análise (principalmente, estado
 
 Justificativa - Padrão de Lógica de Negócio (Servidor)
 
-[Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Padrao_De_Logica_Negocio)
+[Padrão de Lógica de Negócio Servidor Web](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#padrao_de_logica_negocio)
 
 Justificativa - Padrão de Lógica de Negócio (Cliente)
 
-[Padrão de Lógica de Negócio Desktop](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Web)#Cliente)
+[Padrão de Lógica de Negócio Desktop](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-Detalhado-(Cliente)#padrao_de_logica_negocio)
 
 ### 2.2. Projeto Detalhado
 OBS: repetir as seções abaixo para cada subsistema
