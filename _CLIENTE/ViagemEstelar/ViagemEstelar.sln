@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViagemEstelar", "ViagemEstelar.csproj", "{E14749FA-E022-130B-3BA6-F7218A19CB46}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViagemEstelar.Aplicacao", "ViagemEstelar.Aplicacao\ViagemEstelar.Aplicacao.csproj", "{10155A2E-84AE-420B-9305-636086640C9A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViagemEstelar.Repositorio", "ViagemEstelar.Repositorio\ViagemEstelar.Repositorio.csproj", "{BDACCF5B-C0D0-4414-8686-8481AF0C7BFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViagemEstelar.Dominio", "ViagemEstelar.Dominio\ViagemEstelar.Dominio.csproj", "{27FEC037-B067-4B5B-B409-B08FB11FED36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{BDACCF5B-C0D0-4414-8686-8481AF0C7BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDACCF5B-C0D0-4414-8686-8481AF0C7BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDACCF5B-C0D0-4414-8686-8481AF0C7BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27FEC037-B067-4B5B-B409-B08FB11FED36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27FEC037-B067-4B5B-B409-B08FB11FED36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27FEC037-B067-4B5B-B409-B08FB11FED36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27FEC037-B067-4B5B-B409-B08FB11FED36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
