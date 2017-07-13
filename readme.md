@@ -132,7 +132,7 @@ OBS: repetir as seções abaixo para cada subsistema
 
 ##### Projeto da Aplicação
 
-[Projeto de Domínio - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_da_aplicacao)
+[Projeto de Aplicação - Especificações](https://github.com/phoenixproject/viagemestelar/wiki/Projeto-de-L%C3%B3gica-de-Neg%C3%B3cio#projeto_da_aplicacao)
 
 #### 2.2.2.  Projeto da Interface com Usuário
 
