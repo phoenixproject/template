@@ -54,7 +54,8 @@ CREATE TABLE IF NOT EXISTS Partida (
 	inimigos_destruidos	integer not null,
 	fases_completadas	integer not null,
 	cd_combinacao		integer not null,
-	cd_atividade		integer not null,    
+	cd_atividade		integer not null,
+    cd_configuracao		integer not null,
 	PRIMARY KEY(cd_partida)
 );
 
